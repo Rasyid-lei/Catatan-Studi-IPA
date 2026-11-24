@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catatan Konsep Dasar IPA di SD (PDGK4103)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf5ff;--card:#fff;--tx:#2b1b45;--mu:#6b5a85;--bd:#e9d8fd;--g:linear-gradient(135deg,#7c3aed,#ec4899);--ok:#16a34a;--no:#dc2626;--okb:#dcfce7;--nob:#fee2e2;--box:#fdf2f8}
+:root[data-theme=dark]{--bg:#150d26;--card:#21163a;--tx:#f3e8ff;--mu:#b9a6d6;--bd:#3b2a5e;--okb:#14532d;--nob:#7f1d1d;--box:#2d1b4a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 "Plus Jakarta Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top)}
+header{background:var(--g);color:#fff;padding:18px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+header h1{font-size:1.05rem;margin:0;line-height:1.3}
+header a{color:#fff;text-decoration:none;font-weight:800}
+button{font:inherit;cursor:pointer}
+#theme{background:#fff3;border:0;border-radius:99px;color:#fff;padding:8px 12px}
+main{max-width:860px;margin:0 auto;padding:16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{display:block;background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:16px;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.card:hover,.card:active{transform:translateY(-4px) scale(1.02);box-shadow:0 10px 24px #7c3aed33}
+.card b{display:inline-block;background:var(--g);color:#fff;border-radius:99px;padding:2px 12px;font-size:.8rem}
+.card .em{font-size:2rem;display:block;margin:6px 0 0}.card h3{margin:4px 0;font-size:1rem}.card p{margin:0;color:var(--mu);font-size:.85rem}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;position:sticky;top:62px;background:var(--bg);z-index:4}
+.tabs button{white-space:nowrap;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:8px 16px;transition:transform .15s}
+.tabs button:active{transform:scale(.94)}
+.tabs button.on{background:var(--g);color:#fff;border-color:transparent}
+.pane{display:none}.pane.on{display:block;animation:f .3s}
+@keyframes f{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+h2{font-size:1.25rem;margin:26px 0 6px}h3.s{font-size:1.05rem;margin:18px 0 4px;color:#9333ea}
+section.bag{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:4px 18px 14px;margin:14px 0}
+.ingat{background:var(--box);border-left:5px solid #ec4899;border-radius:14px;padding:10px 14px;margin:12px 0}
+.exam{background:var(--nob);border-radius:14px;padding:6px 16px;margin:12px 0}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;min-width:520px;width:100%;font-size:.9rem}
+th,td{border:1px solid var(--bd);padding:8px;text-align:left;vertical-align:top}th{background:var(--g);color:#fff}
+.score{position:sticky;top:112px;background:var(--g);color:#fff;border-radius:99px;padding:6px 16px;display:inline-block;font-weight:800;z-index:3}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:12px 16px;margin:12px 0}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:14px;border:2px solid var(--bd);background:var(--bg);color:var(--tx);transition:transform .15s}
+.o:active{transform:scale(.97)}.o.ok{background:var(--okb);border-color:var(--ok)}.o.no{background:var(--nob);border-color:var(--no)}
+.ex{display:none;font-size:.9rem;color:var(--mu)}.q.done .ex{display:block}
+.soon{text-align:center;padding:40px 10px;color:var(--mu)}
+small.pg{color:var(--mu)}.plus{background:#fde68a;color:#78350f;border-radius:8px;padding:1px 8px;font-size:.72rem;font-weight:800;white-space:nowrap}.add{border-left:5px solid #f59e0b;padding-left:10px}
+</style>
+</head>
+<body>
+<header><h1><a href="#">🔬 Konsep Dasar IPA di SD</a></h1><button id="theme" aria-label="Ganti mode">🌗 Mode</button></header>
+<main>
+<div id="menu"><p>Pilih modul, lalu ketuk tab <b>Materi</b> atau <b>Tes Formatif</b> ✨</p><div class="grid" id="grid"></div></div>
+
+<!-- ===================== MODUL 1 ===================== -->
+<div class="modul" id="m1" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🧬 KB 1 — Dari mana kehidupan berasal?</h2>
+<section class="bag"><h3 class="s">Cerita awal</h3>
+<p>Dulu orang mengira jangkrik muncul dari rumput teki dan belatung muncul sendiri dari daging busuk. Lama-lama para ilmuwan menguji dengan percobaan. Lahirlah <b>lima teori</b> asal mula kehidupan.</p>
+<div class="tw"><table><tr><th>Teori</th><th>Isi singkat</th><th>Tokoh</th></tr>
+<tr><td>1. Abiogenesis</td><td>Hidup muncul begitu saja dari benda <b>tak hidup</b></td><td>Aristoteles, Leeuwenhoek</td></tr>
+<tr><td>2. Biogenesis</td><td>Hidup berasal dari hidup sebelumnya</td><td>Redi, Spallanzani, Pasteur</td></tr>
+<tr><td>3. Evolusi kimia (neoabiogenesis)</td><td>Hidup tersusun pelan-pelan dari zat kimia di bumi purba</td><td>Oparin, Haldane, Urey, Miller</td></tr>
+<tr><td>4. Panspermia</td><td>Benih hidup datang dari luar angkasa</td><td>Ilmuwan antariksa abad ke-19</td></tr>
+<tr><td>5. Penciptaan</td><td>Hidup diciptakan Tuhan</td><td>Ajaran agama</td></tr></table></div>
+<div class="ingat">💡 <b>Ingat urutan:</b> A-B-E-P-P (Abio, Bio, Evolusi kimia, Panspermia, Penciptaan).</div></section>
+<section class="bag"><h3 class="s">Biogenesis: tiga percobaan terkenal</h3>
+<ul><li><b>Redi (1626–1697):</b> tiga stoples berisi daging. Terbuka → ada belatung. Tertutup rapat → tidak ada. Ditutup kain kasa → belatung hanya di atas kain. Kesimpulan: belatung berasal dari <b>telur lalat</b>.</li>
+<li><b>Needham (1700)</b> membela abiogenesis: kaldu direbus lalu ditutup, tetap muncul mikroorganisme (rebusnya kurang lama).</li>
+<li><b>Spallanzani (1729–1796):</b> kaldu direbus lama lalu ditutup rapat → tidak ada mikroorganisme. Tapi penganut abiogenesis membalas: “tertutup, jadi tidak ada udara (daya hidup)”.</li>
+<li><b>Pasteur (1822–1895), tahun 1863:</b> labu <b>leher angsa</b>, udara boleh masuk tapi kuman tersangkut. Kaldu tetap bening; leher dipatahkan → penuh kuman. Slogan: <b><i>omne vivum ex vivo</i></b> (semua hidup dari hidup).</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> R-S-P: <b>R</b>edi (stoples) → <b>S</b>pallanzani (rebus lama) → <b>P</b>asteur (leher angsa).</div></section>
+<section class="bag"><h3 class="s">Evolusi kimia, panspermia, penciptaan</h3>
+<ul><li><b>Evolusi kimia:</b> bumi berumur ± 4,5 miliar tahun. Tahun <b>1920</b>, <b>Oparin dan Haldane</b>: atmosfer purba berisi nitrogen, uap air, metan, hidrogen, karbon monoksida, amonia (belum ada oksigen). Dengan sinar matahari dan petir, gas jadi molekul organik. Tahun <b>1953</b>, <b>Urey dan Miller</b> membuktikan lewat alat listrik: muncul <b>asam amino</b>, urea, asam laktat.</li>
+<li><b>Panspermia:</b> benih hidup tersebar di jagat raya, mungkin dibawa meteorit. Mendukung biogenesis.</li>
+<li><b>Penciptaan:</b> berdasarkan keyakinan agama (Bibel: enam hari; Islam: segala yang hidup dari air, QS 21:30). Sulit dibuktikan dengan percobaan.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Pasteur <b>bukan</b> yang pertama menentang abiogenesis (Redi dan Spallanzani lebih dulu).</li>
+<li>Leeuwenhoek = pendukung <b>abiogenesis</b>. Ulat dari telur kupu-kupu = biogenesis.</li>
+<li>Oparin-Haldane = hipotesis (1920); Urey-Miller = percobaan (1953).</li>
+<li>Semua teori ilmiah bertentangan dengan penciptaan; agama Islam justru mendukung penciptaan.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr>
+<tr><td>Pengantar &amp; A. Abiogenesis</td><td>1.4–1.6</td></tr><tr><td>B. Biogenesis (Redi, Needham, Spallanzani, Pasteur)</td><td>1.6–1.9</td></tr>
+<tr><td>C. Evolusi kimia</td><td>1.10–1.12</td></tr><tr><td>D. Panspermia</td><td>1.12–1.13</td></tr><tr><td>E. Penciptaan</td><td>1.13–1.14</td></tr>
+<tr><td>Latihan · Rangkuman</td><td>1.14–1.16</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>1.16–1.18 · 1.53</td></tr></table></div>
+</div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="1-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🌿 KB 2 — Ciri-ciri makhluk hidup</h2>
+<section class="bag"><h3 class="s">Hidup atau tidak hidup?</h3>
+<p>Roti berjamur dan besi berkarat sama-sama berubah warna, tapi hanya satu yang hidup. Kuncinya: <b>lima ciri makhluk hidup</b>.</p>
+<div class="ingat">💡 <b>Ingat “N-M-T-B-R”:</b> <b>N</b>apas, <b>M</b>akan dan minum, <b>T</b>umbuh kembang, <b>B</b>erkembang biak, <b>R</b>espons (peka rangsang).</div>
+<div class="tw"><table><tr><th>Ciri</th><th>Penjelasan mudah</th></tr>
+<tr><td>Bernapas</td><td>Ambil O₂, keluar CO₂. Hewan: organ napas khusus. Tumbuhan: <b>stomata, lentisel, rambut akar</b>. Bukti tumbuhan bernapas: botol berisi kapur tohor jadi keruh (ada CO₂); botol berisi batu tetap bening.</td></tr>
+<tr><td>Makan dan minum</td><td>Hewan makan bahan makanan jadi (padat/cair). Tumbuhan buat makanan sendiri (<b>fotosintesis</b>) dari cair dan gas. Makanan untuk tenaga, tumbuh, ganti sel rusak.</td></tr>
+<tr><td>Tumbuh kembang</td><td><b>Tumbuh</b> = makin besar. <b>Kembang</b> = makin dewasa (telur → larva → pupa → nyamuk). Stalaktit dan es batu “membesar” tapi <b>bukan</b> tumbuh: bahannya sama, bukan dari makanan.</td></tr>
+<tr><td>Berkembang biak</td><td>Menghasilkan keturunan agar jenisnya lestari. Belatung berasal dari <b>telur lalat</b>.</td></tr>
+<tr><td>Respons (iritabilitas)</td><td>Menanggapi rangsang: cahaya, panas, sentuhan. Putri malu menutup saat disentuh; tanaman membelok ke arah cahaya (<b>fototropisme</b>). Benda mati bergerak hanya kalau didorong (gaya).</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Hewan vs tumbuhan</h3>
+<div class="tw"><table><tr><th>Hal</th><th>Hewan</th><th>Tumbuhan</th></tr><tr><td>Napas</td><td>Organ khusus</td><td>Seluruh tubuh (difusi)</td></tr><tr><td>Makanan</td><td>Padat/cair, jadi</td><td>Cair/gas, buat sendiri</td></tr><tr><td>Gerak</td><td>Cepat, bebas</td><td>Umumnya lambat</td></tr><tr><td>Tubuh</td><td>Bentuk dan jumlah bagian tertentu</td><td>Jumlah bagian tak tentu</td></tr></table></div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Menempati ruang, punya bobot = sifat <b>benda</b> (juga makhluk hidup), <b>bukan</b> pembeda.</li>
+<li>“Kecuali”: menambah ukuran = pertumbuhan; pematangan = perkembangan (bukan pertumbuhan).</li>
+<li>Putri malu: respons tumbuhan yang <b>cepat/spontan</b>. Ragi bernapas tanpa oksigen (anaerob).</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr>
+<tr><td>Pengantar &amp; dasar pembeda</td><td>1.19–1.20</td></tr><tr><td>A.1 Pernapasan</td><td>1.20–1.22</td></tr><tr><td>A.2 Makanan dan air</td><td>1.22–1.23</td></tr><tr><td>A.3 Tumbuh kembang</td><td>1.23–1.24</td></tr><tr><td>A.4 Berkembang biak</td><td>1.24–1.25</td></tr><tr><td>A.5 Iritabilitas</td><td>1.25–1.26</td></tr><tr><td>B. Tumbuhan vs hewan</td><td>1.26–1.27</td></tr><tr><td>➕ Tabel 1.1, 1.3 lengkap, contoh perbanyakan tumbuhan</td><td>Bukan dari modul (kosong di pindaian)</td></tr><tr><td>Latihan · Rangkuman</td><td>1.28–1.30</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>1.30–1.32 · 1.53–1.54</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="1-2"></div></div>
+<div class="pane" data-tab="📖 Materi KB3"><h2>🔬 KB 3 — Dari sel sampai organisme</h2>
+<section class="bag"><h3 class="s">Seperti LEGO</h3>
+<p>Tubuh makhluk hidup disusun seperti LEGO: keping kecil → dinding → ruangan → lantai → gedung.</p>
+<div class="ingat">💡 <b>S-J-O-S-O:</b> <b>S</b>el → <b>J</b>aringan → <b>O</b>rgan → <b>S</b>istem organ → <b>O</b>rganisme.</div></section>
+<section class="bag"><h3 class="s">Sel = unit terkecil</h3>
+<ul><li>Bagian sel: <b>membran plasma, sitoplasma (berisi organel), inti sel</b>. Sel tumbuhan punya <b>dinding sel (selulosa)</b> dan <b>plastida</b>; sel hewan punya <b>sentrosom</b>.</li>
+<li><b>Eukariot</b> = punya inti berselaput (hewan, tumbuhan). <b>Prokariot</b> = tanpa membran inti (bakteri, alga biru).</li>
+<li>Organel: mitokondria (tenaga), <b>ribosom (buat protein)</b>, retikulum endoplasma, badan Golgi, lisosom, vakuola.</li>
+<li>Inti sel = pusat pengendali; berisi kromosom (DNA, gen).</li></ul></section>
+<section class="bag"><h3 class="s">Jaringan tumbuhan (6)</h3>
+<div class="tw"><table><tr><th>Jaringan</th><th>Tugas / contoh</th></tr><tr><td>Meristem</td><td>Sel terus membelah (ujung akar, pucuk batang, <b>kambium</b>)</td></tr><tr><td>Dasar (parenkim)</td><td>Fotosintesis, simpan cadangan</td></tr><tr><td>Pelindung</td><td>Epidermis, endodermis</td></tr><tr><td>Penguat</td><td>Kolenkim, sklerenkim</td></tr><tr><td>Pengangkut</td><td><b>Xilem</b>: air ke atas. <b>Floem</b>: hasil fotosintesis ke seluruh tubuh</td></tr><tr><td>Sekretori</td><td>Mengeluarkan zat (hidatoda, kelenjar madu)</td></tr></table></div>
+<div class="ingat">💡 <b>Ingat:</b> “Me-Da-Pel-Peng-Peng-Sek”.</div></section>
+<section class="bag"><h3 class="s">Jaringan hewan (4): E-P-O-S</h3>
+<ul><li><b>Epitel:</b> menutupi/membatasi (kulit, usus). Epitel lensa mata = <b>kubus selapis</b>.</li>
+<li><b>Penyokong:</b> tulang rawan (lentur), tulang keras, darah, lemak, jaringan ikat. <b>Tendon</b> = otot–tulang; <b>ligamen</b> = tulang–tulang.</li>
+<li><b>Otot:</b> polos (organ dalam, tak beraturan, tak berlurik), jantung (hanya di jantung), lurik (rangka).</li>
+<li><b>Saraf:</b> neuron; menerima dan meneruskan rangsang.</li></ul></section>
+<section class="bag"><h3 class="s">Organ → sistem organ → organisme</h3>
+<ul><li>Organ tumbuhan: <b>akar, batang, daun, bunga</b>. Akar: rambut akar, epidermis, korteks, endodermis (<b>pita kaspari</b>). Daun: stomata di epidermis <b>bawah</b>, klorofil di palisade.</li>
+<li>Sistem organ manusia: pencernaan, pernapasan, peredaran darah, pengeluaran, rangka, otot, reproduksi, saraf, hormon. Otak + sumsum tulang belakang + saraf + indra = <b>sistem saraf</b>.</li>
+<li>Organisme = beberapa sistem organ yang bekerja sama.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Ribosom = pembuat protein. Meristem ada di <b>kambium</b>. Pita kaspari = endodermis akar.</li>
+<li>Korteks batang = parenkim + kolenkim + sklerenkim. Tendon vs ligamen sering tertukar.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr>
+<tr><td>Pengantar</td><td>1.33</td></tr><tr><td>A. Sel (bentuk, struktur, organel, inti)</td><td>1.33–1.36</td></tr><tr><td>B.1 Jaringan tumbuhan</td><td>1.36–1.41</td></tr><tr><td>B.2 Jaringan hewan dan manusia</td><td>1.41–1.44</td></tr><tr><td>C. Organ (tumbuhan, hewan)</td><td>1.45–1.48</td></tr><tr><td>D. Sistem organ</td><td>1.48</td></tr><tr><td>E. Organisme</td><td>1.49</td></tr><tr><td>➕ Tabel 1.4–1.9 lengkap</td><td>Bukan dari modul (kosong di pindaian)</td></tr><tr><td>Latihan · Rangkuman</td><td>1.49–1.50</td></tr><tr><td>Tes Formatif 3 · Kunci</td><td>1.50–1.52 · 1.54</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 3"><div class="quiz" data-q="1-3"></div></div>
+</div>
+<!-- ===================== MODUL 2 ===================== -->
+<div class="modul" id="m2" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🦴 KB 1 — Alat gerak hewan dan manusia</h2>
+<section class="bag"><h3 class="s">Tulang pasif, otot aktif</h3>
+<p>Tulang itu seperti boneka (<b>alat gerak pasif</b>), otot seperti dalang yang menggerakkannya (<b>alat gerak aktif</b>). Vertebrata punya rangka dalam (endoskeleton).</p>
+<div class="ingat">💡 <b>Ingat:</b> Otot = Aktif, Tulang = Pasif.</div></section>
+<section class="bag"><h3 class="s">Alat gerak vertebrata</h3>
+<div class="tw"><table><tr><th>Hewan</th><th>Hal penting</th></tr>
+<tr><td>Ikan</td><td>Bentuk ramping (streamline). Sirip untuk berenang dan seimbang. Gerak sirip ekor = <b>kontraksi otot</b> di dua sisi tubuh. Kepala tak bisa diputar.</td></tr>
+<tr><td>Katak</td><td>Tulang belakang 9 ruas + urostil. Tungkai belakang panjang dan kuat untuk melompat; selaput renang untuk berenang.</td></tr>
+<tr><td>Kadal</td><td>Empat tungkai pendek, jari bercakar.</td></tr>
+<tr><td>Burung</td><td>Tulang <b>berongga</b> (ringan). <b>Sternum</b> luas dan <b>keel</b> tempat lekat otot terbang. Otot dada: <b>pektoralis</b> (sayap turun) dan <b>supracoracoideus</b> (sayap naik). Bulu: remiges (sayap), retrices (ekor), tectrices (badan); plumae (terbang), <b>plumulae (isolator)</b>, filoplumae.</td></tr>
+<tr><td>Mamalia</td><td>Mirip manusia: humerus, radius-ulna, femur, tibia-fibula.</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Rangka manusia (± 206 tulang)</h3>
+<ul><li><b>4 bentuk tulang:</b> pipa (paha, lengan), pipih (rusuk, belikat, tengkorak), pendek (pergelangan), tak beraturan (ruas tulang belakang).</li>
+<li><b>3 kelompok:</b> tengkorak, tulang badan, anggota gerak.</li>
+<li><b>Tengkorak:</b> kranium (dahi, ubun-ubun, kepala belakang, baji, tapis, pelipis) dan tulang muka (rahang, pipi, mata/<b>lakrimal</b>, hidung).</li>
+<li><b>Tulang belakang 33 ruas: 7 leher, 12 punggung, 5 pinggang, 5 kelangkang, 4 ekor.</b> Rusuk: 7 pasang sejati, 3 palsu, 2 melayang. Dada: hulu, badan, taju pedang.</li>
+<li>Lengan: <b>humerus</b> (atas), <b>radius/pengumpil</b> (sisi <b>ibu jari</b>), <b>ulna/hasta</b> (sisi kelingking), karpus, metakarpus, falanges. Kaki: <b>femur</b>, tibia (kering), fibula (betis).</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> tulang belakang <b>7-12-5-5-4</b>. Radius = jempol.</div></section>
+<section class="bag"><h3 class="s">Otot</h3>
+<div class="tw"><table><tr><th>Otot</th><th>Ciri</th></tr><tr><td>Lurik</td><td>Menempel di tulang; banyak inti; gerak <b>sadar</b></td></tr><tr><td>Polos</td><td>Organ dalam; sel gelendong; tak sadar, tak cepat lelah</td></tr><tr><td>Jantung</td><td>Hanya di jantung; bercabang; <b>teratur dan tidak cepat lelah</b></td></tr></table></div>
+<ul><li>Otot bekerja <b>berpasangan</b>: biseps (membengkokkan siku) lawan triseps (meluruskan). Gastrocnemius = betis; quadriceps = depan paha.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Tulang punggung = <b>12 ruas</b>. Tulang searah ibu jari = <b>pengumpil</b>. Tulang muka: lakrimal.</li>
+<li>Bulu isolator = plumulae. Otot dada burung = pektoralis dan supracoracoideus.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr>
+<tr><td>Pengantar &amp; A (awal)</td><td>2.5</td></tr><tr><td>A.1 Pisces</td><td>2.6</td></tr><tr><td>A.2 Amfibi</td><td>2.6–2.7</td></tr><tr><td>A.3 Reptil</td><td>2.7–2.8</td></tr><tr><td>A.4 Aves (tulang, otot, bulu)</td><td>2.8–2.10</td></tr><tr><td>A.5 Mamalia</td><td>2.11</td></tr><tr><td>B.1 Rangka, bentuk tulang</td><td>2.11–2.14</td></tr><tr><td>Susunan rangka (tengkorak, badan, anggota gerak)</td><td>2.14–2.20</td></tr><tr><td>B.2 Otot</td><td>2.21–2.25</td></tr><tr><td>Latihan · Rangkuman</td><td>2.26–2.27</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>2.27–2.29 · 2.44</td></tr><tr><td>➕ Tabel 2.1 lengkap</td><td>Kosong di pindaian; pengetahuan umum</td></tr></table></div>
+</div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="2-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🌿 KB 2 — Struktur tubuh tumbuhan</h2>
+<section class="bag"><h3 class="s">Dikotil dan monokotil</h3>
+<div class="tw"><table><tr><th>Hal</th><th>Dikotil</th><th>Monokotil</th></tr><tr><td>Keping biji</td><td>2</td><td>1</td></tr><tr><td>Akar</td><td>Tunggang</td><td>Serabut</td></tr><tr><td>Batang</td><td>Ada kambium, bisa membesar</td><td>Tanpa kambium</td></tr><tr><td>Bunga</td><td>Kelipatan 2, 4, 5</td><td>Kelipatan 3</td></tr><tr><td>Contoh</td><td>Kacang, mangga</td><td>Padi, jagung</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Akar 🌱</h3>
+<p>Fungsi: menahan tumbuhan, menyerap air dan mineral, menyimpan makanan, bernapas. Dari luar ke dalam: <b>E-K-E-S</b> = Epidermis (rambut akar), Korteks, <b>Endodermis</b> (pita kaspari), <b>Stele</b> (perisikel, xilem, floem). Xilem dikotil berbentuk <b>bintang</b>.</p></section>
+<section class="bag"><h3 class="s">Batang dan daun</h3>
+<ul><li><b>Batang:</b> menyangga, titik tumbuh, napas lewat lentisel. Muda: kolenkim; tua: <b>sklerenkim</b>. Dikotil: berkas melingkar + kambium; monokotil: berkas menyebar.</li>
+<li><b>Daun:</b> tempat fotosintesis. Epidermis (stomata, lebih banyak di bawah), <b>palisade</b> (klorofil banyak, rapat), spons (ada ruang udara), tulang daun (xilem-floem). Monokotil tak punya palisade.</li></ul></section>
+<section class="bag"><h3 class="s">Bunga, buah, biji</h3>
+<ul><li><b>Bunga:</b> kelopak (calyx, pelindung), <b>mahkota (corolla, berwarna)</b>, benang sari (jantan: kepala sari/antera, tangkai sari), putik (betina: kepala putik, tangkai putik, bakal buah). <b>Polen terbentuk di teka</b> (dalam antera).</li>
+<li>Bunga lengkap/tidak lengkap, jantan, betina, hermafrodit.</li>
+<li><b>Buah:</b> tunggal (mangga), <b>agregat</b> (sirsak, srikaya; banyak bakal buah dari <b>satu</b> bunga), <b>majemuk</b> (nanas, nangka, cempedak; dari <b>banyak</b> bunga).</li>
+<li><b>Biji:</b> kulit biji, <b>lembaga (bakal tanaman)</b>, keping lembaga.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Perisikel = perikambium. Klorofil di palisade. Stomata di epidermis.</li>
+<li>Hiasan bunga berwarna = corolla. Cempedak = buah majemuk.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr>
+<tr><td>Pengantar, Tabel 2.2</td><td>2.30</td></tr><tr><td>A. Akar</td><td>2.30–2.33</td></tr><tr><td>B. Batang</td><td>2.33–2.35</td></tr><tr><td>C. Daun</td><td>2.35–2.36</td></tr><tr><td>D. Bunga</td><td>2.36–2.38</td></tr><tr><td>E. Buah</td><td>2.38</td></tr><tr><td>F. Biji</td><td>2.39</td></tr><tr><td>Latihan · Rangkuman</td><td>2.39–2.41</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>2.41–2.43 · 2.44</td></tr><tr><td>Glosarium</td><td>2.47–2.48</td></tr><tr><td>➕ Tabel 2.2, 2.3, tabel batang</td><td>Kosong di pindaian; pengetahuan umum</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="2-2"></div></div>
+</div>
+<!-- ===================== MODUL 3 ===================== -->
+<div class="modul" id="m3" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌱 KB 1 — Organ dan sistem organ tumbuhan</h2>
+<section class="bag"><h3 class="s">Organ pokok</h3>
+<p>Tumbuhan punya <b>akar, batang, daun</b> (vegetatif) dan <b>bunga</b> (generatif). Tumbuhan yang punya akar-batang-daun jelas = <b>kormus</b> (paku dan biji). Lumut dan jamur belum punya akar sejati (<b>rhizoid</b> lumut hanya berupa benang).</p></section>
+<section class="bag"><h3 class="s">Akar dan modifikasinya</h3>
+<ul><li>Akar tumbuh ke tanah (geotropisme +), ke air (hidrotropisme +), menjauhi cahaya (fototropisme −).</li>
+<li>Modifikasi: <b>akar napas</b> (bakau), <b>akar hawa</b> (anggrek), <b>akar tunjang</b> (menopang batang), akar adventif.</li></ul></section>
+<section class="bag"><h3 class="s">Batang: simpanan di dalam tanah</h3>
+<div class="tw"><table><tr><th>Bentuk</th><th>Contoh</th></tr><tr><td>Rizoma</td><td><b>Jahe</b>, kencur, lengkuas</td></tr><tr><td>Stolon (menjalar)</td><td>Rumput teki</td></tr><tr><td>Umbi batang</td><td><b>Kentang</b></td></tr><tr><td>Umbi lapis</td><td>Bawang merah</td></tr><tr><td>Tunas/anakan (sucker)</td><td>Pisang</td></tr></table></div>
+<p><b>Ubi kayu dan wortel</b> = umbi <b>akar</b> (bukan batang). Batang pisang = batang semu.</p></section>
+<section class="bag"><h3 class="s">Daun dan bunga</h3>
+<ul><li>Daun lengkap: pelepah, tangkai, helaian. Modifikasi: <b>piala</b> (kantong semar), perangkap lalat, <b>filodium</b> (akasia), duri, sulur.</li>
+<li>Bunga sempurna: kelopak, mahkota, benang sari, putik (contoh kembang sepatu).</li></ul></section>
+<section class="bag"><h3 class="s">Sistem organ tumbuhan</h3>
+<ul><li><b>Pernapasan:</b> dua tahap (pertukaran gas dan respirasi sel). Alat: <b>stomata</b>, <b>lentisel</b>, rambut akar, akar napas. Stomata terbuka saat sel penjaga banyak ion kalium (air masuk secara osmosis).</li>
+<li><b>Fotosintesis:</b> 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (butuh cahaya).</li>
+<li><b>Transportasi:</b> xilem dan floem. <b>Imbibisi</b> (biji direndam mengembang), <b>difusi</b> (tinggi → rendah), <b>osmosis</b> (lewat membran, dari encer ke pekat).</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “Jahe Rizoma, Teki Stolon, Kentang Tuber, Bawang Lapis, Pisang Sucker.”</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Rizoma = jahe. Stolon = rumput teki. Kentang = batang simpanan. Singkong/wortel = umbi akar.</li>
+<li>Duri mawar = modifikasi daun (menurut kunci modul).</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar</td><td>3.5</td></tr><tr><td>A. Akar</td><td>3.6–3.8</td></tr><tr><td>Batang dan modifikasi</td><td>3.8–3.11</td></tr><tr><td>Daun dan modifikasi</td><td>3.12–3.13</td></tr><tr><td>Bunga</td><td>3.14</td></tr><tr><td>B. Sistem organ (pernapasan, fotosintesis, transportasi)</td><td>3.15–3.20</td></tr><tr><td>Latihan · Rangkuman</td><td>3.20–3.21</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>3.22–3.24 · 3.50</td></tr><tr><td>➕ Tabel observasi, jawaban latihan</td><td>Bukan dari modul</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="3-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🐟 KB 2 — Organ dan sistem organ vertebrata</h2>
+<section class="bag"><h3 class="s">Makin tinggi, makin sempurna</h3>
+<p>Lima kelas vertebrata: ikan, amfibi, reptil, burung, mamalia. Tiga hal yang dibandingkan:</p>
+<div class="tw"><table><tr><th>Sistem</th><th>Intinya</th></tr>
+<tr><td>Pernapasan</td><td>Tukar gas di kapiler darah. Hewan air: <b>insang/kulit</b>. Hewan darat: <b>paru-paru</b>. Katak: paru-paru + kulit.</td></tr>
+<tr><td>Pencernaan</td><td>Muara: <b>anus</b> (ikan, mamalia) vs <b>kloaka</b> (amfibi, reptil, burung). Burung punya <b>tembolok</b>. Ruminansia punya <b>rumen</b>.</td></tr>
+<tr><td>Gerak</td><td>Tulang (pasif) + otot (aktif) + saraf.</td></tr>
+<tr><td>Peredaran darah</td><td>Jantung: ikan 2 ruang, <b>amfibi 3 ruang</b>, reptil 3, burung dan mamalia 4.</td></tr></table></div>
+<div class="ingat">💡 <b>Ingat:</b> jantung 2-3-3-4-4 (Ikan, Amfibi, Reptil, Burung, Mamalia).</div></section>
+<section class="bag"><h3 class="s">Organ indra manusia</h3>
+<ul><li><b>Mata:</b> kornea, iris (pupil), lensa, retina (sel batang dan kerucut), bintik kuning (paling peka), bintik buta. <b>Miopi</b> (rabun jauh): bayangan di <b>depan</b> retina, kacamata cekung/minus. <b>Hipermetropi</b> (rabun dekat): di <b>belakang</b>, cembung/plus. Presbiop: akomodasi berkurang karena usia. Astigmatisme: lensa silindris.</li>
+<li><b>Telinga:</b> luar (gendang), tengah (<b>martil, landasan, sanggurdi</b>, pembuluh eustachius menyamakan tekanan), dalam (<b>koklea</b> untuk dengar; saluran gelung untuk <b>keseimbangan</b>).</li>
+<li><b>Hidung:</b> sel pencium di rongga atas. <b>Lidah:</b> pucuk pengecap; empat rasa: asam, pahit, manis, asin. Cita rasa = rasa + bau.</li>
+<li><b>Kulit:</b> epidermis, dermis, hipodermis. Reseptor: <b>Meissner</b> (sentuh), <b>Pacini</b> (tekan), <b>Ruffini</b> (panas), <b>Krause</b> (dingin), ujung saraf bebas (sakit).</li>
+<li><b>Refleks:</b> reseptor → saraf sensoris → sumsum tulang belakang → saraf motorik → otot. Tanpa otak.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Meissner-sentuh, Pacini-tekan, Ruffini-panas, Krause-dingin.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Katak bernapas dengan kulit; jantung tiga ruang = katak/kodok.</li>
+<li>Rabun dekat → bayangan di belakang bintik kuning. Menelan ludah di ketinggian → eustachius terbuka.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar</td><td>3.26</td></tr><tr><td>A. Tabel 3.1 pernapasan</td><td>3.27–3.29</td></tr><tr><td>Tabel 3.2 pencernaan</td><td>3.29–3.31</td></tr><tr><td>Tabel 3.3 gerak</td><td>3.31–3.33</td></tr><tr><td>Tabel 3.4 transportasi</td><td>3.34–3.36</td></tr><tr><td>B. Indra: pengantar, otak, refleks</td><td>3.36–3.37</td></tr><tr><td>Mata</td><td>3.37–3.39</td></tr><tr><td>Telinga dan keseimbangan</td><td>3.39–3.42</td></tr><tr><td>Hidung · Lidah</td><td>3.42–3.43 · 3.43–3.44</td></tr><tr><td>Kulit, refleks</td><td>3.44–3.45</td></tr><tr><td>Latihan · Rangkuman</td><td>3.45–3.46</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>3.47–3.49 · 3.50</td></tr><tr><td>Glosarium</td><td>3.53</td></tr><tr><td>➕ Tabel 3.4 dan 3.5 lengkap</td><td>Gambar/kosong di pindaian; pengetahuan umum</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="3-2"></div></div>
+</div>
+<!-- ===================== MODUL 4 ===================== -->
+<div class="modul" id="m4" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌱 KB 1 — Perkembangbiakan tumbuhan</h2>
+<section class="bag"><h3 class="s">Dua cara besar</h3>
+<p>Semua makhluk hidup berkembang biak supaya jenisnya tidak punah. Tumbuhan punya dua cara: <b>vegetatif</b> (tanpa sel kelamin: membelah, tunas, spora, umbi) dan <b>generatif</b> (ada penyatuan sel kelamin).</p></section>
+<section class="bag"><h3 class="s">Tumbuhan rendah</h3>
+<ul><li><b>Membelah diri:</b> bakteri (pembelahan biner). <b>Bertunas:</b> ragi (pembuat tape), lumut hati. <b>Spora:</b> jamur, ganggang, lumut, paku (dibentuk lewat <b>meiosis</b>, jadi haploid).</li>
+<li><b>Generatif:</b> <b>isogami</b> (dua gamet sama bentuk: <i>Chlamydomonas</i>, <i>Ulva</i>), <b>anisogami</b> (sperma dan ovum berbeda: <i>Oedogonium</i>, <i>Fucus</i>), <b>konjugasi</b> (tukar inti lewat tabung konjugasi: <i>Spirogyra</i>).</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> I-sama, Ani-beda. Ganggang biru-hijau membelah diri.</div></section>
+<section class="bag"><h3 class="s">Tumbuhan tinggi: vegetatif</h3>
+<div class="tw"><table><tr><th>Alami</th><th>Contoh</th></tr><tr><td>Rhizoma (rimpang)</td><td>Jahe, kunyit</td></tr><tr><td>Umbi lapis</td><td>Bawang</td></tr><tr><td>Umbi batang</td><td>Kentang (singkong bukan: umbi <b>akar</b>)</td></tr><tr><td>Geragih</td><td>Arbei, rumput teki</td></tr><tr><td>Tunas</td><td>Pisang, bambu, tebu</td></tr><tr><td>Tunas adventif</td><td>Cocor bebek, sukun</td></tr></table></div>
+<p><b>Buatan (oleh manusia):</b> setek, cangkok, menyambung/okulasi, merunduk, kultur jaringan.</p></section>
+<section class="bag"><h3 class="s">Tumbuhan tinggi: generatif</h3>
+<ul><li><b>Gimnospermae</b> (biji terbuka, contoh pinus): konus jantan dan betina, <b>pembuahan tunggal</b>.</li>
+<li><b>Angiospermae</b> (biji tertutup, contoh mangga, tomat): serbuk sari jatuh di kepala putik → buluh serbuk (1 inti vegetatif + 2 inti sperma) → <b>pembuahan ganda</b>: sperma 1 + sel telur = embrio; sperma 2 + inti polar = <b>endosperma (3n)</b>, cadangan makanan.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Gimno = tunggal. Angio = ganda.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Konjugasi bukan sel kelamin, melainkan tukar inti. Singkong = umbi akar. Setek tidak umum untuk mangga (cangkok/okulasi).</li>
+<li>Inti vegetatif tidak membuahi inti polar.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar, definisi</td><td>4.4–4.5</td></tr><tr><td>A. Tumbuhan rendah</td><td>4.5–4.9</td></tr><tr><td>B. Tumbuhan tinggi (vegetatif)</td><td>4.9–4.12</td></tr><tr><td>Generatif Gimnospermae, Angiospermae</td><td>4.12–4.14</td></tr><tr><td>Latihan · Rangkuman</td><td>4.14–4.15</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>4.16–4.17 · 4.53</td></tr><tr><td>➕ Tabel 4.1, cara vegetatif buatan</td><td>Bukan dari modul</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="4-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🐛 KB 2 — Perkembangbiakan hewan dan manusia</h2>
+<section class="bag"><h3 class="s">Hewan rendah</h3>
+<div class="tw"><table><tr><th>Cara</th><th>Contoh</th></tr><tr><td>Membelah diri</td><td><b>Amoeba</b> (arah bebas), <b>Paramaecium melintang</b>, <b>Euglena membujur</b></td></tr><tr><td>Bertunas</td><td><i>Hydra</i></td></tr><tr><td>Fragmentasi</td><td><b>Planaria</b> (tiap potongan jadi individu baru; penanda air jernih), bintang laut</td></tr><tr><td>Konjugasi</td><td>Paramaecium</td></tr><tr><td>Hermafrodit</td><td>Hydra, cacing tanah (tetap kawin silang)</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Hewan tinggi (hanya generatif)</h3>
+<ul><li><b>Pembuahan di luar (eksternal):</b> ikan, katak. <b>Di dalam (internal):</b> reptil, burung, mamalia.</li>
+<li><b>Burung:</b> hanya ovarium <b>kiri</b> yang berkembang; cangkang dibentuk di uterus; muara kloaka. <b>Tikus/mamalia:</b> embrio menempel di uterus, ada <b>plasenta</b>, testis dalam skrotum.</li></ul></section>
+<section class="bag"><h3 class="s">Manusia: hormon dan siklus</h3>
+<ul><li><b>Pria:</b> testis di skrotum; sel Leydig membuat <b>testosteron</b> (umpan balik negatif).</li>
+<li><b>Wanita (siklus ± 28 hari):</b> folikel membuat <b>estrogen</b> (dinding rahim menebal) → <b>ovulasi hari ke-14</b> → korpus luteum membuat <b>progesteron</b> → jika tak dibuahi, dinding luruh = <b>menstruasi</b>. Jika dibuahi, hari ke-7 <b>implantasi</b>, ada plasenta.</li>
+<li><b>Kelahiran:</b> hormon <b>oksitosin</b> membuat rahim berkontraksi.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Estrogen = menebalkan, Progesteron = memelihara, Oksitosin = mendorong lahir. Ovulasi = hari ke-14.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Hanya membelah = amoeba. Membujur = Euglena. Planaria dipotong 3 → semua jadi baru.</li>
+<li>Menstruasi hanya pada primata (kera, manusia); lainnya siklus estrus. Testis buaya dan burung di rongga perut.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar, A. Hewan rendah (vegetatif)</td><td>4.19–4.23</td></tr><tr><td>Generatif hewan rendah</td><td>4.23–4.25</td></tr><tr><td>B. Eksternal (ikan, katak)</td><td>4.26–4.29</td></tr><tr><td>Internal (burung, tikus)</td><td>4.29–4.32</td></tr><tr><td>Manusia, hormon, siklus, kelahiran</td><td>4.32–4.35</td></tr><tr><td>Latihan · Rangkuman</td><td>4.36–4.37</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>4.38–4.39 · 4.53–4.54</td></tr><tr><td>➕ Tabel 4.2</td><td>Bukan dari modul</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="4-2"></div></div>
+<div class="pane" data-tab="📖 Materi KB3"><h2>🧪 KB 3 — Pemuliaan tanaman dan hewan</h2>
+<section class="bag"><h3 class="s">Pemuliaan = membuat bibit unggul</h3>
+<p>Contoh hasilnya: semangka tanpa biji, jeruk mandarin, lele dumbo, ayam broiler. Ada <b>tiga teknik</b>:</p>
+<div class="tw"><table><tr><th>Teknik</th><th>Prinsip</th><th>Contoh</th></tr>
+<tr><td><b>Hibridisasi</b></td><td>Kawin silang dua varietas; sifat anak = gabungan induk (dasar: <b>Mendel</b>)</td><td>Padi unggul, sapi brangus, ayam broiler</td></tr>
+<tr><td><b>Radiasi</b></td><td>Sinar (<b>gamma</b>) menyebabkan <b>mutasi</b></td><td>Padi <b>Atomita</b>, kedelai Muria, pepaya</td></tr>
+<tr><td><b>Rekayasa genetik</b></td><td>Menyisipkan/membuang gen</td><td>Kapas <b>Bt</b> (gen dari <i>Bacillus thuringiensis</i>), domba susu pembeku darah, ikan salem tahan beku</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Pada hewan</h3>
+<ul><li><b>Kawin suntik:</b> sperma unggul (awet dalam nitrogen cair) disuntik ke uterus lewat vagina.</li>
+<li><b>Bayi tabung (in vitro):</b> sel telur + sperma di tabung → kultur sampai <b>morula/blastosis</b> → dipindah ke uterus.</li>
+<li><b>Radiasi:</b> serangga jantan dimandulkan sinar gamma lalu dilepas agar hama berkurang.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Hibridisasi = kawin (Mendel). Radiasi = mutasi (gamma). Rekayasa = sisip gen.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Atomita = <b>radiasi</b> (bukan rekayasa genetik). Ayam broiler = kawin silang (bukan rekayasa).</li>
+<li>Kapas Bt = gen disisipkan dari bakteri.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar</td><td>4.41</td></tr><tr><td>A. Hibridisasi, radiasi, rekayasa genetik tanaman</td><td>4.41–4.45</td></tr><tr><td>B. Pemuliaan hewan</td><td>4.45–4.47</td></tr><tr><td>Latihan · Rangkuman</td><td>4.48–4.49</td></tr><tr><td>Tes Formatif 3 · Kunci</td><td>4.49–4.51 · 4.54</td></tr><tr><td>Glosarium</td><td>4.57–4.58</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 3"><div class="quiz" data-q="4-3"></div></div>
+</div>
+<!-- ===================== MODUL 5 ===================== -->
+<div class="modul" id="m5" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌳 KB 1 — Individu sampai ekosistem</h2>
+<section class="bag"><h3 class="s">Tangga kehidupan</h3>
+<div class="ingat">💡 <b>I-P-K-E-B:</b> <b>I</b>ndividu → <b>P</b>opulasi → <b>K</b>omunitas → <b>E</b>kosistem → <b>B</b>iosfer.</div>
+<ul><li><b>Individu:</b> <b>satu</b> makhluk (seekor elang).</li>
+<li><b>Populasi:</b> kumpulan individu <b>satu jenis</b> di satu tempat dan waktu.</li>
+<li><b>Komunitas:</b> <b>banyak populasi</b> (banyak jenis) di satu tempat.</li>
+<li><b>Ekosistem:</b> komunitas + faktor <b>abiotik</b> (suhu, air, tanah, cahaya).</li>
+<li><b>Biosfer:</b> semua ekosistem; lapisan bumi tempat makhluk hidup.</li></ul></section>
+<section class="bag"><h3 class="s">Ciri populasi</h3>
+<ul><li>Kepadatan, pola persebaran, struktur umur, dinamika (lahir, mati, migrasi), pertumbuhan, produktivitas.</li>
+<li><b>Pola:</b> berkelompok (gajah, bambu; paling sering), merata (padi), acak (laba-laba).</li></ul>
+<p><b>Ciri komunitas:</b> keragaman, stabilitas, struktur trofik (rantai makanan), dinamis (suksesi menuju klimaks). Banyak jenis (keragaman tinggi) = ciri komunitas, bukan populasi.</p></section>
+<section class="bag"><h3 class="s">Interaksi antarpopulasi (enam)</h3>
+<div class="tw"><table><tr><th>Bentuk</th><th>Arti</th><th>Contoh</th></tr><tr><td>Netralisme</td><td>Tidak saling mengganggu (0/0)</td><td>Ayam dan kambing</td></tr><tr><td>Predasi</td><td>Memangsa</td><td>Harimau–kelinci</td></tr><tr><td>Parasitisme</td><td>Satu untung, satu rugi</td><td>Cacing pita–babi, kutu–tikus</td></tr><tr><td>Mutualisme</td><td>Dua-duanya untung</td><td>Bakteri usus sapi</td></tr><tr><td>Komensalisme</td><td>Satu untung, satu tak terpengaruh</td><td>Anggrek di pohon</td></tr><tr><td>Kompetisi</td><td>Berebut sumber daya</td><td>Sapi dan kambing</td></tr></table></div></section>
+<section class="bag"><h3 class="s">Isi ekosistem</h3>
+<ul><li><b>Autotrof</b> (buat makanan sendiri) vs <b>heterotrof</b>.</li>
+<li>5 komponen: abiotik, <b>produsen</b> (tumbuhan berklorofil), <b>konsumen</b>, <b>pengurai</b> (bakteri, jamur), detritivor (cacing tanah).</li>
+<li><b>Habitat</b> = “alamat”, <b>relung</b> = “pekerjaan/peran”.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Seekor elang = individu; sekumpulan domba = populasi; berbagai tumbuhan hutan = komunitas.</li>
+<li>Produsen = tumbuhan <b>berklorofil</b>. Habitat cacing tanah = tanah lembap.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar</td><td>5.4</td></tr><tr><td>A. Individu, populasi (karakteristik)</td><td>5.4–5.7</td></tr><tr><td>Komunitas</td><td>5.7–5.8</td></tr><tr><td>B. Interaksi antarindividu</td><td>5.8–5.9</td></tr><tr><td>C. Interaksi antarpopulasi</td><td>5.9–5.10</td></tr><tr><td>D. Ekosistem, relung, biosfer</td><td>5.11–5.12</td></tr><tr><td>Latihan · Rangkuman</td><td>5.13</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>5.14–5.15 · 5.48</td></tr><tr><td>➕ Tabel kosong diisi</td><td>Bukan dari modul</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="5-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🦋 KB 2 — Keanekaragaman hayati</h2>
+<section class="bag"><h3 class="s">Tiga tingkat</h3>
+<p>Keanekaragaman hayati ada di tingkat <b>gen</b> (varietas satu jenis), <b>spesies</b> (banyak jenis), dan <b>ekosistem</b>. Indonesia adalah satu dari tujuh pusat raksasa keanekaragaman hayati dunia.</p></section>
+<section class="bag"><h3 class="s">Lima kingdom</h3>
+<div class="tw"><table><tr><th>Kingdom</th><th>Ciri</th><th>Contoh</th></tr><tr><td>Monera</td><td>Prokariotik (tanpa inti berselaput)</td><td>Bakteri</td></tr><tr><td>Protista</td><td>Eukariotik, uniseluler/koloni</td><td>Amoeba, ganggang</td></tr><tr><td>Plantae</td><td>Eukariotik, berklorofil, autotrof</td><td>Mangga, paku</td></tr><tr><td>Fungi</td><td>Eukariotik, <b>tak berklorofil</b>, heterotrof</td><td>Ragi, jamur tempe</td></tr><tr><td>Animalia</td><td>Eukariotik, multiseluler, heterotrof</td><td>Semua hewan</td></tr></table></div>
+<small class="pg">Catatan: uraian modul menyebut protista eukariotik, tetapi kunci TF2 no. 3 menjawab “prokariotik”.</small></section>
+<section class="bag"><h3 class="s">Takson dan nama ilmiah</h3>
+<ul><li>Urutan: Kingdom → Filum/Divisio → Kelas → Ordo → <b>Familia (suku)</b> → Genus → <b>Spesies</b>. Makin ke bawah makin mirip. Akhiran suku tumbuhan <b>-aceae</b> (Solanaceae), hewan <b>-idae</b>.</li>
+<li><b>3 sistem klasifikasi:</b> alami (morfologi), <b>artifisial</b> (tujuan praktis, mis. tanaman obat), filogenetik (kekerabatan).</li>
+<li><b>Homolog</b> = asal sama (tangan manusia ↔ sayap burung); <b>analog</b> = fungsi sama (sayap burung ↔ sayap kupu-kupu).</li>
+<li><b>Linnaeus</b> = bapak taksonomi. Nama ilmiah <b>binomial</b>: genus huruf besar, spesies huruf kecil, <b>miring</b>: <i>Oryza sativa</i>, <i>Homo sapiens</i>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “K-F-K-O-F-G-S”. Homolog = Hasal sama; Analog = fungsi sAma.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Takson paling banyak kesamaan = spesies. Tata nama = binomial (bukan polinomial).</li>
+<li>Kunyit dan jahe sebagai “tanaman obat” = sistem artifisial.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Keanekaragaman hayati, gen, spesies</td><td>5.17–5.19</td></tr><tr><td>Lima kingdom</td><td>5.19–5.23</td></tr><tr><td>B. Konsep pengelompokan, tiga sistem, analog–homolog</td><td>5.24–5.27</td></tr><tr><td>C. Tata nama</td><td>5.27–5.29</td></tr><tr><td>Latihan · Rangkuman</td><td>5.29–5.30</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>5.31–5.32 · 5.48</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="5-2"></div></div>
+<div class="pane" data-tab="📖 Materi KB3"><h2>♻️ KB 3 — Pencemaran dan etika lingkungan</h2>
+<section class="bag"><h3 class="s">Pencemaran</h3>
+<p><b>Pencemaran</b> = masuknya zat atau energi (<b>polutan</b>) ke lingkungan sehingga lingkungan rusak dan mengganggu kesehatan. Ada pencemaran <b>air, udara, tanah</b>. Tingkat (WHO): 1 tak merugikan, 2 iritasi ringan, 3 sakit kronis, 4 sakit/kematian.</p>
+<div class="tw"><table><tr><th>Polutan</th><th>Akibat</th></tr><tr><td>Merkuri (Hg)</td><td>Gangguan saraf</td></tr><tr><td>Timbal (Pb)</td><td>Tulang, hemoglobin</td></tr><tr><td>Kadmium (Cd)</td><td>Ginjal, hati, tulang</td></tr><tr><td>Tembaga (Cu)</td><td>Ginjal, hati, asam amino</td></tr><tr><td>CO</td><td>Menghalangi O₂ dalam darah</td></tr><tr><td>CO₂</td><td>Efek rumah kaca (penyebab terbesar: bakar hutan/sampah)</td></tr><tr><td>SO₂, NOₓ</td><td>Hujan asam (korosif, merusak bangunan)</td></tr></table></div>
+<p><b>Menjaga:</b> penghijauan, kurangi pupuk kimia, buang sampah pada tempatnya, daur ulang.</p></section>
+<section class="bag"><h3 class="s">Etika lingkungan</h3>
+<p>Etika lingkungan = sikap bijak agar hubungan manusia dan alam seimbang. <b>Lima pandangan</b> manusia terhadap lingkungan: ketuhanan, kosmogoni (manusia bagian alam), posibilisme, optimisme teknologi, kependudukan.</p>
+<p><b>Delapan prinsip:</b> hormat pada alam, tanggung jawab, solidaritas, kasih sayang, tidak merusak, hidup sederhana, keadilan, integritas moral.</p>
+<div class="ingat">💡 <b>Ingat:</b> Hg → saraf, Cd → ginjal, Pb → tulang. Limbah pabrik kertas gatal = tingkat <b>kedua</b>.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Solusi CO₂ kendaraan: <b>penghijauan</b>. Gangguan keseimbangan alam: pupuk <b>kimia</b>.</li>
+<li>“Kecuali” pelanggaran etika: menanam penghijauan.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar, A. Pencemaran (air, udara, tanah)</td><td>5.34–5.38</td></tr><tr><td>B. Etika lingkungan</td><td>5.38–5.39</td></tr><tr><td>C. Mengapa perlu etika; pandangan</td><td>5.39–5.42</td></tr><tr><td>D. Prinsip etika</td><td>5.42–5.43</td></tr><tr><td>Latihan · Rangkuman</td><td>5.43–5.45</td></tr><tr><td>Tes Formatif 3 · Kunci</td><td>5.45–5.47 · 5.49</td></tr><tr><td>Glosarium</td><td>5.51–5.52</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 3"><div class="quiz" data-q="5-3"></div></div>
+</div>
+<!-- ===================== MODUL 6 ===================== -->
+<div class="modul" id="m6" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🍎 KB 1 — Makanan</h2>
+<section class="bag"><h3 class="s">Istilah dasar</h3>
+<ul><li><b>Makanan:</b> bahan yang dimakan dan memberi paling sedikit satu zat gizi. <b>Pangan:</b> semua dari sumber hayati untuk makanan/minuman. <b>Gizi:</b> proses tubuh memakai makanan (konsumsi → cerna → serap → angkut → asimilasi → ekskresi).</li>
+<li><b>Diet seimbang</b> = semua zat gizi cukup. Salah satu salah → <b>malnutrisi</b>.</li>
+<li>Enam zat makanan: <b>K-P-L-V-M-A</b> = Karbohidrat, Protein, Lemak, Vitamin, Mineral, Air.</li></ul></section>
+<section class="bag"><h3 class="s">Fungsi makanan</h3>
+<div class="tw"><table><tr><th>Fungsi</th><th>Pelaku</th></tr><tr><td>Sumber <b>tenaga</b></td><td>Karbohidrat (utama), lemak, protein. <b>1 g karbohidrat = 4 kkal; lemak = 9; protein = 4</b></td></tr><tr><td><b>Pembangun</b></td><td>Protein (utama)</td></tr><tr><td><b>Pengatur</b></td><td>Vitamin, mineral, air</td></tr></table></div>
+<div class="ingat">💡 <b>Ingat:</b> 4-9-4. Pokok = tenaga, lauk = pembangun, sayur-buah = pengatur.</div></section>
+<section class="bag"><h3 class="s">Kekurangan zat gizi</h3>
+<ul><li><b>Kwashiorkor:</b> kurang <b>protein</b> (energi cukup). <b>Marasmus:</b> kurang <b>energi dan protein</b>.</li>
+<li>Vitamin A: hati, telur → kurang = rabun senja. Vitamin D: tulang. Vitamin C: sariawan (bukan dari susu). B1: beri-beri.</li>
+<li><b>Kalsium</b> kurang → osteoporosis, rakitis. <b>Yodium</b> → gondok. <b>Besi</b> → anemia.</li>
+<li>Kelebihan karbohidrat → kegemukan.</li></ul></section>
+<section class="bag"><h3 class="s">Penyakit lewat makanan dan makanan sehat</h3>
+<ul><li><b>Salmonella</b> (daging, telur, susu) → diare. <i>Clostridium botulinum</i> → makanan kaleng. Tempe bongkrek → asam bongkrek.</li>
+<li><b>Kanker dan penyakit jantung</b> dipengaruhi makanan <i>dan</i> faktor lain (hubungan kompleks). Gondok: zat goitrogen (kubis). Hipertensi: garam tinggi.</li>
+<li><b>Enam syarat makanan sehat:</b> cukup gizi, beragam, cukup serat/tepung, <b>tidak banyak gula</b>, <b>tidak banyak garam</b>, <b>tidak banyak lemak</b>.</li>
+<li>9 kelompok FAO: padi-padian, umbi, hewani, minyak/lemak, biji berminyak, kacang, gula, sayur-buah, bumbu.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Susu bukan sumber vitamin C. Kwashiorkor ≠ marasmus.</li>
+<li>Menu banyak kue manis, kurang sayur/buah → kurang serat dan tidak sehat.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Pengertian</td><td>6.5–6.8</td></tr><tr><td>B. Fungsi makanan</td><td>6.9–6.10</td></tr><tr><td>C. Bahan dan zat makanan</td><td>6.10–6.15</td></tr><tr><td>D. Kecukupan gizi</td><td>6.16–6.19</td></tr><tr><td>E. Penyakit berhubungan makanan</td><td>6.19–6.21</td></tr><tr><td>F. Pedoman makanan sehat</td><td>6.22–6.24</td></tr><tr><td>G. Cara mengajar</td><td>6.25–6.26</td></tr><tr><td>Latihan · Rangkuman</td><td>6.27–6.30</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>6.30–6.33 · 6.63</td></tr><tr><td>➕ Tabel 6.4–6.8 lengkap</td><td>Kosong di pindaian; pengetahuan umum</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="6-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🩺 KB 2 — Kesehatan dan penyakit</h2>
+<section class="bag"><h3 class="s">Sehat dan sakit</h3>
+<ul><li><b>Sehat (WHO):</b> sempurna <b>fisik, mental, dan sosial</b>, bukan sekadar bebas penyakit.</li>
+<li>Kesehatan ada tiga: <b>perorangan, masyarakat, lingkungan</b>.</li>
+<li><b>Usaha perorangan (hygiene):</b> makan bergizi, cuci tangan, tutup tempat air, rebus air. <b>Masyarakat:</b> cegah penyakit, <b>perpanjang masa hidup</b>, <b>naikkan nilai kesehatan</b>. <b>Lingkungan (sanitasi):</b> jamban (MCK), air bersih, tempat sampah, kendali pencemaran.</li></ul></section>
+<section class="bag"><h3 class="s">Penyakit menular</h3>
+<div class="tw"><table><tr><th>Penyebab</th><th>Contoh penyakit</th></tr>
+<tr><td>Cacing</td><td>Kremi (gatal anus malam), cacing tambang (lewat kaki, anemia), askariasis, filariasis</td></tr>
+<tr><td>Protozoa</td><td><b>Malaria</b> (nyamuk Anopheles betina), <b>toksoplasmosis</b> (kucing), disentri amuba</td></tr>
+<tr><td>Bakteri</td><td><b>Difteri, tifoid (Salmonella), kolera, disentri basiler, TBC, tetanus</b></td></tr>
+<tr><td>Virus</td><td>Campak, DBD (nyamuk <i>Aedes</i>), hepatitis, polio, rabies</td></tr>
+<tr><td>Jamur / kutu</td><td>Panu / skabies</td></tr></table></div>
+<ul><li><b>Pencegahan:</b> tingkatkan kesehatan, <b>vaksinasi</b> (aktif: BCG, DPT, campak; pasif: serum, mis. ATS), periksa berkala. Vaksin ada untuk TBC dan difteri; belum untuk cacing, skabies, disentri.</li></ul></section>
+<section class="bag"><h3 class="s">Penyakit menurun</h3>
+<ul><li>Hanya genetis: <b>brakidaktili</b> (satu orang tua sakit), polidaktili, albinisme dan tuli bisu (orang tua normal tetapi pembawa), <b>hemofili</b> (laki-laki sakit, wanita pembawa), buta warna, talasemia.</li>
+<li>Gen <b>+ lingkungan</b> (bisa dicegah gaya hidup sehat): <b>diabetes, hipertensi, jantung iskemik</b>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “Dia-Hiper-Jantung” bisa dicegah gaya hidup.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Perorangan: makan bergizi + tutup tempat air. Memberantas penyakit infeksi = usaha <b>masyarakat</b>.</li>
+<li>Malaria dan toksoplasmosis = protozoa. Gatal anus malam = cacing kremi.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Pengertian</td><td>6.34–6.37</td></tr><tr><td>B. Usaha kesehatan</td><td>6.37–6.38</td></tr><tr><td>C. Penyakit menular (penularan, penyebab, 20 penyakit)</td><td>6.38–6.50</td></tr><tr><td>D. Penyakit menurun</td><td>6.50–6.53</td></tr><tr><td>E. Cara mengajar</td><td>6.53–6.56</td></tr><tr><td>Latihan · Rangkuman</td><td>6.56–6.58</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>6.59–6.61 · 6.63</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="6-2"></div></div>
+</div>
+<!-- ===================== MODUL 7 ===================== -->
+<div class="modul" id="m7" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>📏 KB 1 — Pengukuran besaran</h2>
+<section class="bag"><h3 class="s">Satuan SI</h3>
+<p>Mengukur = membandingkan dengan satuan. Hasil ukur = angka + satuan. Ada <b>6 besaran pokok</b>:</p>
+<div class="tw"><table><tr><th>Besaran</th><th>Satuan</th></tr><tr><td>Panjang</td><td>meter (m)</td></tr><tr><td>Massa</td><td>kilogram (kg)</td></tr><tr><td>Waktu</td><td>sekon (s)</td></tr><tr><td>Temperatur</td><td>kelvin (K)</td></tr><tr><td>Arus listrik</td><td>ampere (A)</td></tr><tr><td>Intensitas cahaya</td><td>candela (cd)</td></tr></table></div>
+<p>Awalan: <b>tera</b> 10¹², <b>giga</b> 10⁹, <b>mega</b> 10⁶, <b>kilo</b> 10³, senti 10⁻², mili 10⁻³, mikro 10⁻⁶, nano 10⁻⁹, piko 10⁻¹². Gaya: 1 newton = 1 kg·m/s².</p>
+<div class="ingat">💡 <b>Ingat:</b> “Pa-Ma-Wa-Su-Ar-In” (6 besaran pokok). “Te-Ga-Me-Ki” = 12, 9, 6, 3.</div></section>
+<section class="bag"><h3 class="s">Ketidakpastian dan angka penting</h3>
+<ul><li>Tidak ada ukuran yang tepat sempurna. Contoh: lebar buku 20,6 ± 0,1 cm → ketidakpastian 0,5%.</li>
+<li><b>Angka penting:</b> 34,67 = 4; 0,049 = 2. <b>Kali/bagi:</b> ikuti angka penting <b>paling sedikit</b>. <b>Tambah/kurang:</b> ikuti ketelitian paling rendah.</li></ul></section>
+<section class="bag"><h3 class="s">Alat ukur dan besaran turunan</h3>
+<ul><li><b>Panjang:</b> mistar (1 mm), <b>jangka sorong</b> (0,1 mm), <b>mikrometer sekrup</b> (0,01 mm). Awas <b>paralaks</b>: mata harus tegak lurus skala.</li>
+<li><b>Luas:</b> lingkaran π r². <b>Volume:</b> balok l·w·h; zat tak beraturan: selisih air di gelas ukur. Permukaan air cekung (<b>meniskus</b>) → baca dasarnya.</li>
+<li><b>Massa</b> tetap di mana pun (diukur neraca). <b>Berat</b> = gaya tarik bumi, <b>w = mg</b> (satuan newton; di bulan ± 1/6). <b>Massa jenis ρ = m/V</b>; zat cair diukur <b>hidrometer</b>.</li>
+<li><b>Waktu:</b> stopwatch; ketelitian dibatasi waktu reaksi manusia.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>m/s adalah satuan laju (bukan panjang). Satuan berat = newton. Alat massa jenis zat cair = hidrometer.</li>
+<li>Luas lingkaran = π<b>r</b>².</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Satuan</td><td>7.5–7.7</td></tr><tr><td>B. Ketidakpastian, angka penting</td><td>7.7–7.9</td></tr><tr><td>C. Panjang (mistar, jangka sorong, mikrometer)</td><td>7.9–7.12</td></tr><tr><td>Luas, volume</td><td>7.12–7.15</td></tr><tr><td>Massa dan berat</td><td>7.15–7.18</td></tr><tr><td>Massa jenis</td><td>7.18–7.20</td></tr><tr><td>Waktu</td><td>7.20–7.21</td></tr><tr><td>Latihan · Rangkuman</td><td>7.21–7.23</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>7.23–7.24 · 7.70–7.71</td></tr><tr><td>➕ Tabel 7.1–7.5 lengkap</td><td>Kosong di pindaian</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="7-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🏃 KB 2 — Kinematika (gerak)</h2>
+<section class="bag"><h3 class="s">Gerak tanpa memikirkan gaya</h3>
+<ul><li><b>Jarak</b> = panjang lintasan (skalar). <b>Pergeseran</b> = perubahan posisi dengan arah (vektor). Ke timur 50 m lalu barat 20 m: jarak 70 m, pergeseran 30 m.</li>
+<li><b>Laju</b> = jarak ÷ waktu (skalar). <b>Kecepatan</b> = pergeseran ÷ waktu (vektor): <b>v = Δx/Δt</b>. Speedometer menunjukkan <b>laju</b>.</li>
+<li><b>Percepatan</b> a = Δv/Δt. Bernilai negatif = perlambatan.</li></ul></section>
+<section class="bag"><h3 class="s">Rumus GLBB (percepatan tetap)</h3>
+<div class="tw"><table><tr><th>Rumus</th><th>Dipakai untuk</th></tr><tr><td><b>v = v₀ + at</b></td><td>Kecepatan akhir</td></tr><tr><td><b>x = v₀t + ½at²</b></td><td>Jarak</td></tr><tr><td><b>v² = v₀² + 2ax</b></td><td>Tanpa waktu</td></tr></table></div>
+<p><b>Gerak vertikal:</b> g = 9,8 m/s² ke bawah. Di titik tertinggi <b>kecepatan = 0</b>, tapi percepatan tetap g. Naik dan turun, percepatannya sama. Tinggi maksimum ∝ v₀².</p>
+<div class="ingat">💡 <b>Ingat:</b> “V-O-T, X-O-T”. Di puncak lemparan: v = 0, a = g.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Bola dilempar ke atas, di titik tertinggi: kecepatan nol, percepatan <b>tidak</b> nol.</li>
+<li>Jatuh dari diam: v² = 2gy. Kembali ke titik lempar: kecepatan sama besar dengan awal.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar, A. Kerangka acuan, pergeseran</td><td>7.26–7.29</td></tr><tr><td>B. Kecepatan</td><td>7.29–7.30</td></tr><tr><td>C. Kecepatan sesaat</td><td>7.30–7.31</td></tr><tr><td>D. Percepatan</td><td>7.32–7.33</td></tr><tr><td>E. GLBB</td><td>7.33–7.34</td></tr><tr><td>F. Gerak vertikal</td><td>7.34–7.35</td></tr><tr><td>Latihan · Rangkuman</td><td>7.35–7.36</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>7.37–7.38 · 7.71–7.74</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="7-2"></div></div>
+<div class="pane" data-tab="📖 Materi KB3"><h2>⚙️ KB 3 — Dinamika (gaya dan energi)</h2>
+<section class="bag"><h3 class="s">Tiga hukum Newton</h3>
+<div class="tw"><table><tr><th>Hukum</th><th>Isi</th><th>Contoh</th></tr><tr><td>I (inersia)</td><td>Benda diam/bergerak lurus tetap begitu jika tak ada gaya neto</td><td>Penumpang terdorong ke depan saat mobil mengerem</td></tr><tr><td>II</td><td><b>ΣF = ma</b> (1 N = 1 kg·m/s²)</td><td>Dorong lebih keras → makin cepat</td></tr><tr><td>III (aksi–reaksi)</td><td>Gaya sama besar, <b>berlawanan arah</b>, pada <b>benda berbeda</b></td><td>Mobil derek menarik sedan</td></tr></table></div>
+<ul><li><b>Massa tetap, berat berubah</b> (astronot di Mars: massa sama, berat lebih kecil). Gaya normal dan berat <b>bukan</b> aksi-reaksi.</li>
+<li><b>Gesekan:</b> statis (F ≤ μₛN, belum bergerak) dan kinetik (F = μₖN).</li>
+<li><b>Gerak melingkar:</b> perlu gaya <b>sentripetal</b> menuju pusat: <b>F = mv²/r</b>. Jari-jari 2× → gaya setengah.</li></ul></section>
+<section class="bag"><h3 class="s">Usaha dan energi</h3>
+<ul><li><b>Usaha W = F x cos θ</b> (satuan <b>joule</b>). <b>Energi kinetik EK = ½mv²</b> (v 2× → EK 4×). <b>Energi potensial EP = mgh</b>. <b>Energi mekanik = EK + EP</b> (tetap jika hanya gaya konservatif).</li></ul></section>
+<section class="bag"><h3 class="s">Pesawat sederhana</h3>
+<ul><li><b>Torka = gaya × lengan</b>. <b>KM</b> (keuntungan mekanis) = F<sub>beban</sub>/F<sub>kuasa</sub>. <b>Efisiensi</b> = KM/NK × 100%.</li>
+<li><b>Tuas</b> (yang di <b>tengah</b>): <b>gol. 1 = tumpuan</b> (gunting), <b>gol. 2 = beban</b> (gerobak), <b>gol. 3 = kuasa</b> (pancing, jepitan, lengan bawah).</li>
+<li><b>Katrol tetap:</b> ubah arah (KM ≈ 1). <b>Katrol bergerak:</b> KM ≈ 2. <b>Bidang miring:</b> KM = panjang/tinggi. <b>Roda-gandar:</b> NK = R/r. Gir: gigi lebih banyak berputar lebih lambat.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Tuas: 1-Tumpu, 2-Beban, 3-Kuasa (yang di tengah).</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Satuan energi = joule (bukan watt/newton/dyne). Pembuka botol <b>bukan</b> tuas gol. 3.</li>
+<li>Usaha: θ = 90° → W = 0. Torka nol terhadap semua titik jika setimbang.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar</td><td>7.40</td></tr><tr><td>A. Hukum I–III, berat, gaya normal</td><td>7.41–7.43</td></tr><tr><td>Gesekan, gerak melingkar</td><td>7.44–7.46</td></tr><tr><td>B. Usaha, energi, energi mekanik</td><td>7.47–7.51</td></tr><tr><td>C. Gaya putar, kopel</td><td>7.52–7.53</td></tr><tr><td>Pesawat (KM, NK, efisiensi)</td><td>7.54–7.57</td></tr><tr><td>Tuas, katrol, bidang miring, roda-gandar, gir</td><td>7.57–7.65</td></tr><tr><td>Latihan · Rangkuman</td><td>7.65–7.67</td></tr><tr><td>Tes Formatif 3 · Kunci</td><td>7.67–7.69 · 7.74–7.76</td></tr><tr><td>Glosarium</td><td>7.78–7.79</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 3"><div class="quiz" data-q="7-3"></div></div>
+</div>
+<!-- ===================== MODUL 8 ===================== -->
+<div class="modul" id="m8" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌡️ KB 1 — Sifat termal zat</h2>
+<section class="bag"><h3 class="s">Temperatur dan skala</h3>
+<p><b>Temperatur</b> = ukuran seberapa panas benda (energi kinetik rata-rata partikel). Termometer bekerja dengan prinsip <b>pemuaian</b>.</p>
+<div class="tw"><table><tr><th>Skala</th><th>Beku</th><th>Didih</th></tr><tr><td>Celsius</td><td>0°C</td><td>100°C</td></tr><tr><td>Fahrenheit</td><td>32°F</td><td>212°F</td></tr><tr><td>Kelvin</td><td>273 K</td><td>373 K</td></tr></table></div>
+<ul><li><b>°F → °C:</b> t(°C) = 5/9 [t(°F) − 32]. <b>°C → °F:</b> t(°F) = 9/5 t(°C) + 32. <b>K = °C + 273</b>.</li>
+<li>Termometer baku: gas volume konstan. Nol mutlak = gerak partikel minimum.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> 5-9. °C ke °F: kali 9/5 lalu tambah 32. 45°C = 113°F; 330 K = 57°C.</div></section>
+<section class="bag"><h3 class="s">Pemuaian</h3>
+<ul><li><b>Muai panjang:</b> ΔL = α L₀ ΔT (sebanding panjang awal dan perubahan suhu). <b>Muai volume:</b> ΔV = β V₀ ΔT; zat padat: <b>β = 3α</b>.</li>
+<li><b>Anomali air:</b> dari 0 ke 4°C air malah <b>menyusut</b>. Massa jenis air terbesar pada <b>4°C</b>. Air membeku → memuai, es mengapung.</li></ul></section>
+<section class="bag"><h3 class="s">Hukum gas</h3>
+<div class="tw"><table><tr><th>Hukum</th><th>Tetap</th><th>Rumus</th></tr><tr><td><b>Boyle</b></td><td>Suhu</td><td>p₁V₁ = p₂V₂ (tekanan naik, volume turun)</td></tr><tr><td><b>Charles</b></td><td>Tekanan</td><td>V₁/T₁ = V₂/T₂</td></tr><tr><td><b>Gay-Lussac</b></td><td>Volume</td><td>p₁/T₁ = p₂/T₂</td></tr><tr><td>Gas ideal</td><td></td><td>p₁V₁/T₁ = p₂V₂/T₂</td></tr></table></div>
+<p>Selalu ubah suhu ke <b>kelvin</b>!</p></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Fahrenheit: 32 dan 212. Koefisien muai panjang = ΔL ÷ L₀ per kenaikan suhu.</li>
+<li>Boyle: 8 atm × 40 L = 10 atm × V → 32 liter. Air paling padat di 4°C.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pendahuluan</td><td>8.3–8.4</td></tr><tr><td>A. Temperatur, skala, termometer baku</td><td>8.5–8.7</td></tr><tr><td>B. Pemuaian zat, anomali air</td><td>8.7–8.9</td></tr><tr><td>C. Hukum Boyle</td><td>8.9–8.11</td></tr><tr><td>D. Charles dan Gay-Lussac</td><td>8.11–8.12</td></tr><tr><td>Latihan · Rangkuman</td><td>8.12–8.13</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>8.14–8.15 · 8.34</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="8-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🔥 KB 2 — Panas</h2>
+<section class="bag"><h3 class="s">Panas bukan benda</h3>
+<ul><li><b>Panas</b> = energi yang <b>berpindah</b> karena beda temperatur (dari panas ke dingin). Satuan: joule. <b>1 kal = 4,186 J</b> (percobaan Joule dengan kincir).</li>
+<li>Temperatur = rata-rata; <b>energi internal = total</b>; panas = perpindahan. Arah panas ditentukan <b>temperatur</b>, bukan energi internal.</li>
+<li><b>Q = m c ΔT</b> (c = panas jenis). Kalorimeter dipakai mencari panas jenis: panas dilepas = panas diterima.</li></ul></section>
+<section class="bag"><h3 class="s">Perubahan wujud</h3>
+<ul><li><b>Q = mL</b> (L = panas laten). Selama berubah wujud, <b>temperatur tetap</b>. Uap mengembun → <b>melepas</b> panas. Titik lebur = titik beku; didih = embun.</li>
+<li><b>Tekanan naik → titik didih naik</b> (dasar <i>pressure cooker</i>). Di gunung tinggi air mendidih &lt; 100°C.</li>
+<li><b>Sublimasi:</b> padat → gas tanpa cair (es kering, kamper). <b>Titik tripel:</b> es + air + uap bersama. <b>Titik kritis:</b> batas atas penguapan (air: 374°C, 218 atm).</li></ul></section>
+<section class="bag"><h3 class="s">Cara panas berpindah</h3>
+<div class="tw"><table><tr><th>Cara</th><th>Penjelasan</th><th>Rumus</th></tr><tr><td><b>Konduksi</b></td><td>Lewat tumbukan partikel; logam konduktor baik karena <b>elektron bebas</b>. Dipengaruhi A, ΔT, d, k (bukan panas jenis)</td><td>Q/t = kAΔT/d</td></tr><tr><td><b>Konveksi</b></td><td>Aliran fluida (beda massa jenis)</td><td>Q/t = hAΔT</td></tr><tr><td><b>Radiasi</b></td><td>Gelombang elektromagnetik, tanpa medium; tak bergantung massa</td><td>Q/t = eσAT⁴ (T kelvin)</td></tr></table></div>
+<ul><li><b>Termos:</b> ruang hampa (cegah konduksi dan konveksi) + lapisan perak (pantulkan radiasi). <b>Efek rumah kaca:</b> cahaya masuk lewat kaca, inframerah panjang tak bisa keluar.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> K-K-R: Konduksi = Kontak, Konveksi = Keliling (aliran), Radiasi = Ruang hampa. Radiasi: T kelvin pangkat 4.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Uap mengembun melepas panas. Pressure cooker → titik didih naik. Sublimasi = padat → gas.</li>
+<li>Konveksi alami: beda massa jenis. Radiasi (127°C → 327°C): (600/400)⁴ = 5,06× → 50,6 W.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Panas dan energi internal</td><td>8.17–8.18</td></tr><tr><td>B. Panas jenis dan kalorimeter</td><td>8.19–8.20</td></tr><tr><td>C. Perubahan wujud, diagram fase</td><td>8.20–8.23</td></tr><tr><td>D. Konduksi, konveksi, radiasi</td><td>8.23–8.27</td></tr><tr><td>E. Termos, efek rumah kaca</td><td>8.27–8.28</td></tr><tr><td>Latihan · Rangkuman</td><td>8.28–8.31</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>8.31–8.33 · 8.34–8.36</td></tr><tr><td>Glosarium</td><td>8.38</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="8-2"></div></div>
+</div>
+<!-- ===================== MODUL 9 ===================== -->
+<div class="modul" id="m9" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌊 KB 1 — Gelombang</h2>
+<section class="bag"><h3 class="s">Apa itu gelombang?</h3>
+<p><b>Gelombang</b> = gangguan periodik yang bergerak menjauhi sumber dan <b>membawa energi</b> (bukan membawa materi). Sumbernya benda <b>bergetar</b>.</p>
+<ul><li>Kecepatan pulsa pada tali: <b>v = √[T / (m/L)]</b> → makin <b>tegang</b> tali, makin cepat; makin berat per panjang, makin lambat.</li>
+<li><b>Superposisi:</b> dua gelombang bertemu → simpangan dijumlah. Bukit + bukit = makin tinggi (konstruktif); bukit + lembah = melemah (destruktif).</li></ul></section>
+<section class="bag"><h3 class="s">Besaran gelombang</h3>
+<div class="tw"><table><tr><th>Besaran</th><th>Arti</th></tr><tr><td>Panjang gelombang λ</td><td>Jarak dua puncak berurutan</td></tr><tr><td>Frekuensi f</td><td>Banyak gelombang per detik (Hz)</td></tr><tr><td>Periode T</td><td>Waktu satu gelombang: T = 1/f</td></tr><tr><td>Amplitudo A</td><td>Simpangan terbesar (tidak memengaruhi v, f, λ)</td></tr></table></div>
+<p><b>v = f λ</b> = λ/T.</p>
+<div class="ingat">💡 <b>Ingat:</b> “v = f λ”. Frekuensi tinggi → λ pendek (v tetap).</div></section>
+<section class="bag"><h3 class="s">Jenis dan sifat</h3>
+<ul><li><b>Transversal:</b> getaran tegak lurus arah rambat (tali). <b>Longitudinal:</b> searah (<b>bunyi</b>). <b>Permukaan air:</b> gabungan. <b>Cahaya</b> = gelombang elektromagnetik (tanpa medium).</li>
+<li><b>Gempa:</b> tiga jenis (longitudinal tercepat, lalu transversal, lalu permukaan). Pusat bumi cair karena gelombang transversal tak lewat.</li>
+<li><b>Pemantulan:</b> ujung tetap → pulsa <b>terbalik</b>; ujung bebas → tidak terbalik. Ringan → berat: pantul terbalik.</li></ul></section>
+<section class="bag"><h3 class="s">Gelombang diam (dawai)</h3>
+<ul><li>Dawai dua ujung terikat: ujung = <b>simpul</b> (amplitudo nol); titik paling besar = <b>perut</b>. <b>λ = 2L/n</b>; <b>nada dasar f₁ = v/2L</b>; <b>f<sub>n</sub> = n f₁</b>.</li>
+<li>Nada dasar naik jika dawai <b>diperpendek</b>, ditegangkan, atau lebih ringan. Nada atas kedua = 3f₁.</li></ul></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Kecepatan pada tali tergantung <b>tegangan tali</b>. Yang tak tergantung lainnya: <b>amplitudo</b>.</li>
+<li>Gempa = longitudinal + transversal + permukaan. Cahaya = elektromagnetik. Amplitudo di simpul = 0.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Pengertian</td><td>9.5</td></tr><tr><td>B. Pulsa pada tali</td><td>9.5–9.6</td></tr><tr><td>C. Superposisi</td><td>9.6–9.7</td></tr><tr><td>D. Gelombang periodik</td><td>9.7–9.10</td></tr><tr><td>E. Jenis gelombang</td><td>9.10–9.12</td></tr><tr><td>F. Pemantulan, transmisi</td><td>9.13–9.15</td></tr><tr><td>G. Gelombang diam</td><td>9.15–9.18</td></tr><tr><td>Latihan · Rangkuman</td><td>9.18–9.20</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>9.20–9.22 · 9.36–9.37</td></tr><tr><td>➕ Jawaban Latihan</td><td>Bukan dari modul</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="9-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🔊 KB 2 — Bunyi</h2>
+<section class="bag"><h3 class="s">Bunyi itu apa?</h3>
+<ul><li>Bunyi = gelombang <b>longitudinal</b> dari benda bergetar. <b>Butuh medium</b> (tidak merambat di ruang hampa).</li>
+<li><b>Titi nada (pitch)</b> ditentukan <b>frekuensi</b>. <b>Keras (loudness)</b> ditentukan intensitas/amplitudo. Warna bunyi ditentukan <b>nada-nada atas</b>.</li>
+<li>Telinga manusia: <b>20 Hz – 20.000 Hz</b>. Di bawah = <b>infrasonik</b>; di atas = <b>ultrasonik</b> (anjing, kelelawar mendengar).</li>
+<li>Kecepatan: udara 343 m/s, air 1440 m/s, kayu 4300 m/s (padat &gt; cair &gt; gas). Pesawat &gt; 343 m/s → <b>bom sonik</b>.</li></ul></section>
+<section class="bag"><h3 class="s">Pipa organ dan layangan</h3>
+<div class="tw"><table><tr><th>Tabung</th><th>Frekuensi</th></tr><tr><td><b>Terbuka</b> kedua ujung</td><td>f₁ = v/2L; nada atas 2, 3, 4… × f₁</td></tr><tr><td><b>Tertutup</b> satu ujung</td><td>f₁ = v/4L; nada atas <b>ganjil</b> saja (3, 5, 7…)</td></tr></table></div>
+<ul><li><b>Layangan</b> = dua bunyi berselisih frekuensi kecil menghasilkan keras-lemah: <b>f layangan = |f₂ − f₁|</b>.</li></ul></section>
+<section class="bag"><h3 class="s">Efek Doppler, intensitas, sonar</h3>
+<ul><li><b>Doppler:</b> sumber atau pendengar <b>mendekat → nada naik</b>; menjauh → turun. <b>f<sub>p</sub> = f<sub>s</sub> (v + v<sub>p</sub>)/(v − v<sub>s</sub>)</b>.</li>
+<li><b>Intensitas</b> (W/m²): ambang dengar 10⁻¹² W/m², ambang sakit 1 W/m² (120 dB). Ruang terbuka: berkurang dengan kuadrat jarak.</li>
+<li><b>Sonar:</b> pantulan ultrasonik; kedalaman <b>h = vt/2</b>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Pitch = frekuensi, Loudness = intensitas. Dekat = nada tinggi (ambulans mendekat). Tertutup = ganjil.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Bunyi tak merambat di <b>ruang hampa</b>. Bunyi udara → air: <b>frekuensi tetap</b>.</li>
+<li>Gitar dipetik, papan ikut bergetar = <b>resonansi</b>. Layangan = interferensi. 15 layangan/5 s = 3 Hz → 440 ± 3.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Karakteristik bunyi</td><td>9.23–9.24</td></tr><tr><td>B. Rambatan, gelombang kejut</td><td>9.24–9.26</td></tr><tr><td>C. Interferensi (tiup, layangan)</td><td>9.26–9.28</td></tr><tr><td>D. Efek Doppler</td><td>9.28–9.30</td></tr><tr><td>E. Intensitas</td><td>9.30–9.31</td></tr><tr><td>F. Penerapan (sonar, deru pesawat)</td><td>9.31</td></tr><tr><td>Latihan · Rangkuman</td><td>9.32–9.33</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>9.34–9.35 · 9.37–9.38</td></tr><tr><td>Glosarium</td><td>9.40–9.41</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="9-2"></div></div>
+</div>
+<!-- ===================== MODUL 10 ===================== -->
+<div class="modul" id="m10" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>💡 KB 1 — Cahaya dan sifatnya</h2>
+<section class="bag"><h3 class="s">Cahaya merambat lurus</h3>
+<p>Cahaya merambat lurus (bukti: bayang-bayang, gerhana). <b>Pemantulan:</b> sudut datang = sudut pantul (diukur dari garis <b>normal</b>). Permukaan licin = pantulan <b>spekuler</b> (cermin); kasar = <b>baur</b>.</p>
+<section class="bag" style="margin:6px 0"><h3 class="s">Pembiasan</h3>
+<ul><li><b>Indeks bias n = c/v</b> (c = 3×10⁸ m/s). Makin besar n, makin lambat cahaya. Air 1,33; kaca ± 1,5; intan 2,42.</li>
+<li><b>Hukum Snell:</b> n₁ sin i = n₂ sin r. Udara → air: mendekati normal. Air → udara: menjauhi normal.</li></ul></section></section>
+<section class="bag"><h3 class="s">Sifat gelombang cahaya</h3>
+<div class="tw"><table><tr><th>Gejala</th><th>Artinya</th><th>Contoh</th></tr><tr><td><b>Dispersi</b></td><td>Cahaya putih terurai karena n tergantung λ (merah dibelokkan paling kecil, ungu paling besar)</td><td>Prisma, pelangi</td></tr><tr><td><b>Interferensi</b></td><td>Dua gelombang berpadu (butuh sumber koheren)</td><td>Gelembung sabun, lapisan minyak</td></tr><tr><td><b>Difraksi</b></td><td>Pembelokan di tepi celah (sulit diamati karena λ cahaya pendek)</td><td>CD, kisi difraksi</td></tr><tr><td><b>Polarisasi</b></td><td>Getaran satu arah; bukti cahaya <b>transversal</b></td><td>Polaroid, kacamata, film kaca mobil</td></tr><tr><td><b>Hamburan</b></td><td>Intensitas ∝ 1/λ⁴ → biru dihamburkan paling banyak</td><td>Langit biru, senja merah</td></tr></table></div>
+<ul><li>Cahaya = <b>gelombang elektromagnetik</b> (Maxwell): medan listrik dan magnet saling tegak lurus dan tegak lurus arah rambat. Cahaya tampak 400–750 nm. Polarisasi pantulan sempurna: <b>tan p = n₂/n₁</b> (sudut Brewster).</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Prisma = dispersi. Gelembung sabun = interferensi. Film kaca mobil = polarisasi. Langit biru = hamburan λ pendek. Frekuensi tidak berubah saat ganti medium.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>n besar = laju kecil. Urutan lambat→cepat (korona 1,52; kuarsa 1,46; es 1,31): korona, kuarsa, es.</li>
+<li>Kedalaman semu: ikan di es 30 cm × 1,3 = 39 cm. I ∝ 1/λ⁴: (6000/4000)⁴ = 81 : 16.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pendahuluan</td><td>10.3–10.4</td></tr><tr><td>A. Model sinar</td><td>10.5</td></tr><tr><td>B. Pemantulan</td><td>10.6–10.7</td></tr><tr><td>C. Pembiasan, Snell</td><td>10.7–10.10</td></tr><tr><td>D. Gelombang EM</td><td>10.10–10.12</td></tr><tr><td>E. Dispersi</td><td>10.12–10.13</td></tr><tr><td>F. Interferensi</td><td>10.13–10.14</td></tr><tr><td>G. Difraksi</td><td>10.14–10.15</td></tr><tr><td>H. Polarisasi</td><td>10.15–10.18</td></tr><tr><td>I. Hamburan</td><td>10.18–10.19</td></tr><tr><td>Latihan · Rangkuman</td><td>10.19–10.21</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>10.21–10.23 · 10.54</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="10-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🔭 KB 2 — Alat optik</h2>
+<section class="bag"><h3 class="s">Cermin</h3>
+<ul><li><b>Cermin datar:</b> bayangan <b>maya</b>, tegak, sama besar, jarak bayangan = jarak benda.</li>
+<li><b>Cermin cekung</b> (f positif) mengumpulkan; <b>cembung</b> (f negatif) menyebarkan (bayangan selalu maya, tegak, kecil). <b>f = R/2</b>. <b>1/s + 1/s′ = 1/f</b>; <b>m = −s′/s</b> (m positif = tegak).</li>
+<li>Bayangan <b>nyata</b> pada cermin sferis selalu <b>terbalik</b>. Cekung: benda di dalam f → maya, tegak, diperbesar (cermin rias).</li></ul></section>
+<section class="bag"><h3 class="s">Lensa</h3>
+<ul><li><b>Lensa cembung</b> = konvergen (+f); <b>cekung</b> = divergen (−f; bayangan benda nyata tidak pernah nyata).</li>
+<li><b>1/s + 1/s′ = 1/f</b>. <b>Daya P = 1/f</b> (f meter) → satuan <b>dioptri</b>.</li></ul></section>
+<section class="bag"><h3 class="s">Mata dan cacat mata</h3>
+<div class="tw"><table><tr><th>Cacat</th><th>Bayangan jatuh</th><th>Kacamata</th></tr><tr><td><b>Miopi</b> (rabun jauh)</td><td>Di depan retina</td><td>Cekung (minus)</td></tr><tr><td><b>Hipermetropi</b> (rabun dekat)</td><td>Di belakang retina</td><td>Cembung (plus)</td></tr><tr><td><b>Presbiopi</b></td><td>Akomodasi berkurang (usia)</td><td>Cembung</td></tr><tr><td><b>Astigmatisme</b></td><td>Kornea tak bulat</td><td>Silindris</td></tr></table></div>
+<p>Mata normal: titik dekat 25 cm, titik jauh tak berhingga. Bagian: kornea, iris, pupil, lensa, retina (batang dan kerucut), bintik kuning.</p></section>
+<section class="bag"><h3 class="s">Alat optik</h3>
+<ul><li><b>Periskop:</b> dua prisma, pemantulan total (sudut 45° &gt; sudut kritis ± 42°).</li>
+<li><b>Lup (kaca pembesar):</b> lensa cembung, benda di dalam f → bayangan maya diperbesar. Tak berakomodasi: M = 25/f.</li>
+<li><b>Mikroskop:</b> objektif (bayangan <b>nyata</b>, terbalik) + okuler (sebagai lup). M = m<sub>ob</sub> × M<sub>ok</sub>.</li>
+<li><b>Teropong:</b> objektif + okuler; <b>panjang = f<sub>ob</sub> + f<sub>ok</sub></b> (tak berakomodasi); M = f<sub>ob</sub>/f<sub>ok</sub>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Cembung = kumpul = +f. Miopi → cekung; hipermetropi → cembung. Mikroskop: objektif bayangan nyata.</div></section>
+<h2>⚠️ Sering keluar di ujian</h2><div class="exam"><ul>
+<li>Astigmatisme → silindris. Bayangan nyata cermin sferis selalu terbalik.</li>
+<li>s = 25 cm, s′ = 100 cm → f = 20 cm → 5 dioptri. Mikroskop 40 × 10 = 400×.</li></ul></div>
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Cermin datar</td><td>10.25–10.26</td></tr><tr><td>B. Cermin sferis</td><td>10.26–10.30</td></tr><tr><td>C. Lensa</td><td>10.30–10.34</td></tr><tr><td>D. Mata (bagian, akomodasi, cacat)</td><td>10.34–10.37</td></tr><tr><td>Periskop · Kaca pembesar</td><td>10.37–10.40</td></tr><tr><td>Mikroskop</td><td>10.40–10.44</td></tr><tr><td>Teropong</td><td>10.45–10.48</td></tr><tr><td>Latihan · Rangkuman</td><td>10.48–10.50</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>10.50–10.52 · 10.55–10.56</td></tr><tr><td>Glosarium</td><td>10.58–10.59</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="10-2"></div></div>
+</div>
+<!-- ===================== MODUL 11 ===================== -->
+<div class="modul" id="m11" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>⚡ KB 1 — Kelistrikan</h2>
+<section class="bag"><h3 class="s">Cerita awal: dari batu ambar</h3>
+<p>Dulu, orang Yunani bernama <b>Thales</b> (abad ke-6 SM) melihat <b>ambar</b> (getah pohon damar yang membatu) yang digosok bisa menarik jerami. Kata Yunani ambar = <b>elektron</b> → dari situ lahir kata <b>listrik (electricity)</b>. Tahun 1600, dokter <b>William Gilbert</b> membagi benda jadi <b>konduktor</b> dan <b>isolator</b>.</p>
+<p>Listrik ada dua macam: <b>listrik statis</b> (muatan <b>diam</b>) dan <b>listrik dinamis</b> (muatan <b>bergerak</b>).</p>
+<div class="ingat">💡 <b>Ingat:</b> Statis = diam seperti patung. Dinamis = bergerak seperti air mengalir.</div></section>
+
+<section class="bag"><h3 class="s">A. Muatan listrik</h3>
+<p>Bayangkan atom seperti rumah kecil. Di tengah ada <b>inti</b> berisi <b>proton (+)</b> dan <b>neutron (netral)</b>. Di luar, <b>elektron (−)</b> berlari mengelilingi. Jumlah proton = jumlah elektron → atom <b>netral</b>.</p>
+<ul><li>Benda jadi <b>negatif</b> kalau <b>kelebihan elektron</b>. Jadi <b>positif</b> kalau <b>kekurangan elektron</b>. <b>Yang pindah selalu elektron</b>, bukan proton.</li>
+<li><b>Ebonit digosok kain wol:</b> elektron pindah dari wol ke ebonit → <b>ebonit negatif, wol positif</b>.</li>
+<li><b>Kaca digosok kain sutra:</b> elektron pindah dari kaca ke sutra → <b>kaca positif, sutra negatif</b>. (Jadi cara mudah mendapat muatan positif: gosok batang gelas dengan sutra.)</li>
+<li><b>Sejenis tolak-menolak, berlawanan tarik-menarik</b> (seperti dua anak yang “lawan jenis magnet”).</li>
+<li>Massa elektron ± 1/1836 massa proton (sangat ringan).</li></ul>
+<div class="tw"><table><tr><th>Jenis zat</th><th>Elektron bebas</th><th>Contoh</th></tr><tr><td>Konduktor</td><td>Banyak, mudah mengalir</td><td>Logam</td></tr><tr><td>Isolator</td><td>Hampir tidak ada</td><td>Plastik, karet, kaca</td></tr><tr><td>Semikonduktor</td><td>Sedikit</td><td>Silikon, germanium, karbon</td></tr><tr><td>Superkonduktor</td><td>Arus lewat tanpa hambatan (suhu sangat rendah)</td><td>Logam/senyawa tertentu</td></tr></table></div>
+<h3 class="s">Cara memuati benda</h3>
+<ul><li><b>Konduksi (sentuhan):</b> benda netral disentuh benda bermuatan → ikut bermuatan sejenis.</li>
+<li><b>Induksi (didekatkan saja):</b> muatan di benda netral <b>terpisah</b> (satu ujung +, ujung lain −), jumlahnya tetap nol.</li></ul>
+<p><b>Elektroskop</b> = alat pendeteksi muatan: dua daun logam tipis (perak/emas) membuka karena sama-sama bermuatan. Makin besar muatan, makin lebar membuka. Elektroskop kosong hanya tahu “ada muatan atau tidak”. Kalau <b>dimuati dulu</b>, ia bisa membedakan jenis: didekati muatan sejenis → membuka lebih lebar; berlawanan → menutup (kunci modul: elektroskop untuk menentukan <b>jenis muatan</b>).</p>
+<div class="ingat">💡 <b>Ingat:</b> “Elektron suka pindah, proton diam di inti.” Kaca + sutra → kaca positif.</div></section>
+
+<section class="bag"><h3 class="s">B. Hukum Coulomb: tarik-tolak ada rumusnya</h3>
+<p>Charles Coulomb meneliti gaya antar muatan. <b>F = k · Q₁Q₂ / r²</b> (k ≈ <b>9 × 10⁹ N·m²/C²</b>). Gaya makin besar kalau muatan besar, makin kecil kalau jarak jauh (<b>berbanding terbalik kuadrat jarak</b>). Satuan muatan: <b>coulomb (C)</b>. Gaya gravitasi selalu tarik; gaya listrik bisa tarik <i>atau</i> tolak.</p>
+<p>Contoh: elektron dan proton pada atom hidrogen berjarak 5,3 × 10⁻¹¹ m → F ≈ <b>8,2 × 10⁻⁸ N</b> (negatif = tarik-menarik).</p></section>
+
+<section class="bag"><h3 class="s">C. Medan listrik</h3>
+<p>Medan listrik = “daerah pengaruh” di sekitar muatan: muatan lain yang masuk ke situ merasakan <b>gaya</b>. Ia <b>vektor</b> (punya besar dan arah). Cara mengukur: pakai muatan uji kecil positif.</p>
+<ul><li><b>E = F/q</b> (satuan <b>N/C</b> = <b>V/m</b>); <b>F = qE</b>. Muatan positif: F searah E; negatif: berlawanan.</li>
+<li>Dari satu muatan titik: <b>E = kQ/r²</b>. Contoh: proton merasa gaya 3,2 × 10⁻¹⁴ N → E = F/q = <b>2,0 × 10⁵ N/C</b>.</li>
+<li><b>Garis medan:</b> keluar dari muatan <b>positif</b>, masuk ke muatan <b>negatif</b>. Makin <b>rapat</b> garisnya, makin <b>kuat</b> medannya.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “Garis medan: dari plus, ke minus. Rapat = kuat.”</div></section>
+
+<section class="bag"><h3 class="s">D. Energi potensial dan potensial listrik</h3>
+<p>Seperti mendorong bola ke atas bukit lalu melepasnya: usaha jadi energi potensial, lalu jadi energi gerak. Antara dua lempeng sejajar: <b>W = QEd</b>, energi potensial <b>Ep = QEd</b>.</p>
+<ul><li><b>Potensial listrik V = Ep/Q</b> (energi per muatan). Satuan <b>volt (V) = J/C</b> (dari <b>Alessandro Volta</b>, penemu baterai). Beda potensial = <b>tegangan</b>.</li>
+<li><b>V = W/Q</b>; di medan seragam <b>V = E·d</b>. Contoh: W = 5 J, Q = 0,025 C → <b>V = 200 V</b>. Perubahan energi: ΔEp = qΔV.</li>
+<li>Muatan titik: <b>V = kQ/r</b> (potensial ∝ 1/r; medan ∝ 1/r²). Garis <b>ekipotensial</b> (potensial sama) selalu <b>tegak lurus</b> garis medan. Tanah dianggap potensial nol.</li>
+<li><b>Elektron volt (eV)</b> = energi elektron melewati beda potensial 1 V: <b>1 eV = 1,6 × 10⁻¹⁹ J</b>. Contoh: elektron dipercepat 10.000 V → v ≈ <b>5,9 × 10⁷ m/s</b>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Skalar: muatan, energi, potensial (cuma besar). <b>Vektor: medan listrik</b> (besar + arah). Satuan energi: joule, eV, kWh. <b>V/m bukan satuan energi</b> (itu satuan medan).</div></section>
+
+<section class="bag"><h3 class="s">E–G. Arus, hambatan, Ohm, dan ggl</h3>
+<p><b>Arus listrik</b> = aliran muatan. <b>I = Q/t</b>, satuan <b>ampere (A) = C/s</b>. Arah arus (perjanjian) = arah muatan <b>positif</b>: dari kutub + ke kutub − di luar baterai. Padahal di logam yang mengalir elektron (arah sebaliknya).</p>
+<p>Bayangkan listrik seperti air di pipa: <b>tegangan</b> = tinggi tekanan air, <b>arus</b> = banyak air mengalir, <b>hambatan</b> = sempitnya pipa.</p>
+<ul><li><b>Hukum Ohm (George Ohm):</b> <b>V = I · R</b>, R satuan <b>ohm (Ω)</b>. Hanya berlaku kalau V/I tetap (misalnya logam).</li>
+<li><b>Hambatan kawat:</b> <b>R = ρ · L / A</b>. Makin panjang → makin besar; makin tebal → makin kecil; ρ = <b>resistivitas</b> (sifat bahan). <b>Konduktivitas σ = 1/ρ</b>. Suhu naik → hambatan logam naik.</li></ul>
+<div class="tw"><table><tr><th>Susunan</th><th>Arus</th><th>Tegangan</th><th>Hambatan total</th></tr><tr><td><b>Seri</b></td><td>Sama</td><td>Dijumlah</td><td><b>R = R₁ + R₂ + …</b></td></tr><tr><td><b>Paralel</b></td><td>Dijumlah</td><td>Sama</td><td><b>1/R = 1/R₁ + 1/R₂ + …</b></td></tr></table></div>
+<p>Contoh seri: 2 + 3 + 5 + 7 = 17 Ω; sumber 12 V → I = 12/17 ≈ <b>0,70 A</b>. Contoh campuran: (4 + 2) Ω seri = 6 Ω, paralel dengan 6 Ω → 6×6/(6+6) = <b>3 Ω</b>.</p>
+<p><b>Gaya gerak listrik (ggl, ε)</b> = tegangan baterai saat <b>tidak ada arus</b>. Saat arus mengalir, ada <b>hambatan dalam r</b>: <b>V terminal = ε − I·r</b>; <b>I = ε/(R + r)</b>. Makanya lampu motor redup waktu starter menyala: aki “kecapekan” (tegangan turun).</p>
+<div class="ingat">💡 <b>Ingat:</b> V = I R (“<b>Vi-Ir</b>”). Seri = satu jalan (arus sama). Paralel = bercabang (tegangan sama, hambatan makin kecil).</div></section>
+
+<h2>✍️ Latihan (dengan jawaban singkat <span class="plus">➕ tambahan</span>)</h2>
+<ol><li>Plastik digosok kain berbulu jadi negatif karena <b>elektron pindah dari kain ke plastik</b>.</li>
+<li>Percepatan ion neon: a = QE/m ≈ <b>4,0 × 10¹¹ m/s²</b> (eksponen soal kurang jelas di pindaian).</li>
+<li>ΔEp = qΔV = 6 × 40 = <b>240 J</b>.</li>
+<li>R = ρL/A = (1,5 × 10⁻⁶)(0,6)/(3 × 10⁻⁷) = <b>3 Ω</b>.</li>
+<li>(1 + 2) Ω seri = 3 Ω; paralel 3 Ω dan 4 Ω = 12/7 ≈ 1,71 Ω; total ≈ 4,71 Ω → I = 12/4,71 ≈ <b>2,55 A</b>.</li></ol>
+
+<h2>⚠️ Sering keluar di ujian</h2>
+<div class="exam"><ul>
+<li>Elektroskop → mengetahui <b>jenis muatan</b> (bila sudah dimuati lebih dulu).</li>
+<li>Cara dapat muatan <b>positif</b>: <b>kaca digosok sutra</b> (bukan besi-wol, karet-sutra, kaca-kain berbulu).</li>
+<li>Besaran <b>vektor: medan listrik</b>. Skalar: muatan, energi, potensial.</li>
+<li>Satuan arus = C/s = A (bukan N/C). <b>V/m bukan satuan energi</b>; eV, J, kWh satuan energi.</li>
+<li>E pada 30 cm dari 0,1 C: kQ/r² = 9×10⁹·0,1/0,09 = 10¹⁰ N/C. V = W/q = 5/0,025 = 200 V.</li>
+<li>R/L = ρ/(πr²) = 4,64 Ω/m. Seri 4 Ω + 2 Ω lalu paralel 6 Ω → 3 Ω.</li></ul></div>
+
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pendahuluan</td><td>11.3–11.4</td></tr><tr><td>A. Muatan listrik, elektroskop</td><td>11.6–11.10</td></tr><tr><td>B. Hukum Coulomb</td><td>11.10–11.12</td></tr><tr><td>C. Medan listrik</td><td>11.12–11.14</td></tr><tr><td>D. Energi potensial, potensial listrik</td><td>11.14–11.19</td></tr><tr><td>E–F. Arus, hambatan, Ohm, seri-paralel</td><td>11.19–11.24</td></tr><tr><td>G. Ggl</td><td>11.24–11.25</td></tr><tr><td>Latihan · Rangkuman</td><td>11.25–11.27</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>11.27–11.29 · 11.52–11.53</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="11-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🧲 KB 2 — Kemagnetan</h2>
+<section class="bag"><h3 class="s">Cerita awal</h3>
+<p>Kata <b>magnet</b> dari <b>Magnesia</b>, kota di Asia Kecil tempat orang menemukan batu yang menarik besi (<b>magnet alam</b>). Sejak tahun 121, bangsa Cina tahu besi yang didekatkan magnet jadi ikut bermagnet. Magnet ada dua: <b>alam</b> dan <b>buatan</b>.</p>
+<p><b>Magnet elementer</b> = magnet-magnet super kecil di dalam besi. Besi biasa: arahnya <b>acak</b> (kacau). Membuat magnet = membuat semua magnet kecil itu <b>searah</b>. Magnet buatan bisa hilang kalau magnet elementernya diacak lagi: <b>dipanaskan, dipukuli, atau disimpan sembarangan</b>.</p></section>
+
+<section class="bag"><h3 class="s">A–B. Sifat magnet dan medan magnetik</h3>
+<ul><li>Magnet punya dua <b>kutub</b> (paling kuat di ujung). Digantung bebas: ujung yang menunjuk utara = <b>kutub utara</b>. Itu prinsip <b>kompas</b>.</li>
+<li><b>Senama tolak-menolak, tidak senama tarik-menarik.</b> Tapi <b>kutub tunggal tidak bisa dipisah</b>: potong magnet, tetap dapat pasangan U–S.</li>
+<li><b>Medan magnetik (B)</b> bekerja pada muatan yang <b>bergerak</b>. Satuan <b>tesla (T) = N/A·m</b> (1 gauss = 10⁻⁴ T). B = F/(Qv sin θ). Gaya terbesar bila gerak <b>tegak lurus</b> B.</li></ul>
+<div class="tw"><table><tr><th>Sumber arus</th><th>Rumus B</th><th>Aturan tangan kanan</th></tr>
+<tr><td>Kawat lurus panjang</td><td><b>B = μ₀I / 2πa</b></td><td>Ibu jari = arah arus, jari melingkar = arah medan (lingkaran konsentris)</td></tr>
+<tr><td>Loop (satu lingkaran)</td><td>B = μ₀I / 2r (N lilitan: B = Nμ₀I / 2r)</td><td>Jari melingkar = arah arus, ibu jari = arah medan</td></tr>
+<tr><td>Solenoida (kumparan panjang)</td><td><b>B = μ₀ N I / l</b> (seragam di dalam)</td><td>Seperti loop</td></tr></table></div>
+<p>μ₀ = 4π × 10⁻⁷ T·m/A (ruang hampa). Makin besar arus dan makin dekat kawat → medan makin kuat. Contoh: kawat 9 A, jarak 45 cm → B = 4,0 × 10⁻⁶ T.</p>
+<div class="ingat">💡 <b>Ingat:</b> Medan makin kuat kalau <b>arus ditambah</b> (tambah baterai) atau lilitan ditambah. Medan kawat bergantung <b>arus dan jarak</b>, bukan bahan kawat.</div></section>
+
+<section class="bag"><h3 class="s">C. Sifat kemagnetan zat</h3>
+<div class="tw"><table><tr><th>Jenis</th><th>Efek pada B</th><th>Contoh</th></tr><tr><td><b>Feromagnetik</b></td><td>Naik <b>luar biasa</b> (ratusan–ribuan kali); kuat ditarik magnet</td><td>Besi, nikel, kobalt, ferit</td></tr><tr><td><b>Paramagnetik</b></td><td>Naik <b>sedikit</b></td><td>Oksigen, aluminium</td></tr><tr><td><b>Diamagnetik</b></td><td>Turun sedikit; <b>ditolak</b> magnet (hukum Lenz)</td><td>Air raksa, bismut</td></tr></table></div>
+<p>Asalnya dari elektron: berputar (spin) dan mengelilingi inti, masing-masing seperti magnet mungil. Solenoida dengan teras besi = <b>elektromagnet</b>; teras dari <b>besi lunak</b> cepat bermagnet dan cepat hilang bila arus dimatikan. Benda yang <b>ditolak</b> medan kuat = <b>diamagnetik</b>.</p></section>
+
+<section class="bag"><h3 class="s">D–E. Gaya magnetik</h3>
+<ul><li><b>Partikel bermuatan:</b> <b>F = Q v B sin θ</b>. Bila tegak lurus: F = QvB → lintasan <b>lingkaran</b>, jari-jari <b>R = mv / QB</b>.</li>
+<li><b>Kawat berarus:</b> <b>F = I L B sin θ</b>. Contoh: 8 A, B = 0,5 T, tegak lurus → F/L = IB = <b>4 N/m = 0,04 N/cm</b>.</li></ul></section>
+
+<section class="bag"><h3 class="s">F. Penerapan gaya magnetik</h3>
+<ul><li><b>Motor listrik:</b> listrik → gerak. Loop berarus dalam medan magnet berputar. Agar terus berputar, arus dibalik tiap setengah putaran oleh <b>komutator</b> (cincin bercelah) dan <b>sikat</b> (batang grafit). Motor starter mobil pakai elektromagnet. Motor arus bolak-balik tak butuh komutator.</li>
+<li><b>Pengeras suara:</b> arus suara → kumparan di dekat magnet bergerak maju-mundur → kerucut menggetarkan udara → bunyi. Energi listrik → energi bunyi.</li></ul></section>
+
+<section class="bag"><h3 class="s">G. Induksi elektromagnetik (Faraday)</h3>
+<p>Listrik bisa membuat magnet. Bisakah magnet membuat listrik? <b>Joseph Henry</b> dan <b>Michael Faraday</b>: bisa! Kumparan P (baterai) dan kumparan Q (galvanometer): jarum bergerak <b>hanya saat saklar ditutup atau dibuka</b> (saat medan <b>berubah</b>). Arus tetap → tidak ada arus di Q.</p>
+<ul><li><b>Medan magnet yang berubah</b> menghasilkan <b>ggl induksi</b> dan arus induksi. Magnet digerakkan masuk/keluar kumparan → arus (arah berbalik). Magnet <b>diam</b> → tidak ada arus.</li>
+<li><b>Fluks magnetik Φ = B·A·cos θ</b> (satuan <b>weber, 1 Wb = 1 T·m²</b>).</li>
+<li><b>Hukum Faraday: ε = −N · ΔΦ/Δt</b>. Makin cepat berubah, makin besar ggl. Kawat sepanjang L bergerak v tegak lurus B: <b>ε = B L v</b>.</li>
+<li><b>Hukum Lenz</b> (tanda minus): arah arus induksi <b>melawan perubahan</b> yang menimbulkannya (hukum kekekalan energi).</li></ul>
+<p>Contoh: simpal 5 cm × 5 cm (A = 25 × 10⁻⁴ m²), B = 0,08 T turun ke nol dalam 0,2 s → Φ = 2,0 × 10⁻⁴ Wb → ε = 2,0 × 10⁻⁴/0,2 = <b>1 mV</b>.</p></section>
+
+<section class="bag"><h3 class="s">H. Transformator (trafo)</h3>
+<p>Trafo menaikkan/menurunkan <b>tegangan bolak-balik</b>. Isinya: <b>kumparan primer</b> (masukan) dan <b>kumparan sekunder</b> (keluaran) pada <b>teras besi lunak berlapis</b>. Arus bolak-balik di primer → fluks berubah → menginduksi tegangan di sekunder (frekuensi sama).</p>
+<div class="tw"><table><tr><th>Rumus</th><th>Arti</th></tr><tr><td><b>V<sub>s</sub>/V<sub>p</sub> = N<sub>s</sub>/N<sub>p</sub></b></td><td>Tegangan sebanding jumlah lilitan</td></tr><tr><td><b>I<sub>s</sub>/I<sub>p</sub> = N<sub>p</sub>/N<sub>s</sub></b></td><td>Arus berbanding terbalik (daya ≈ sama: V<sub>p</sub>I<sub>p</sub> = V<sub>s</sub>I<sub>s</sub>)</td></tr></table></div>
+<ul><li>N<sub>s</sub> &gt; N<sub>p</sub> → <b>step-up</b> (tegangan naik). N<sub>s</sub> &lt; N<sub>p</sub> → <b>step-down</b> (tegangan turun). Efisiensi trafo bagus &gt; 99%.</li>
+<li><b>Mengapa listrik dikirim bertegangan tinggi?</b> Daya P = VI; tegangan tinggi → arus kecil → panas hilang <b>I²R</b> kecil. Contoh: 1000 W lewat kabel 20 Ω: pada 220 V hilang ± 414 W; pada 220 kV hilang jutaan kali lebih kecil. Pembangkit 10 kV → 700 kV → turun bertahap → 220 V di rumah.</li></ul>
+<p>Contoh soal: N<sub>p</sub> = 200, N<sub>s</sub> = 40, I<sub>s</sub> = 20 A → I<sub>p</sub> = (40/200)(20) = <b>4 A</b>.</p>
+<div class="ingat">💡 <b>Ingat:</b> “Tegangan ikut lilitan, arus kebalikannya.” Step-up = lilitan sekunder banyak. Faraday = magnet <b>bergerak/berubah</b> → listrik. Lenz = arus induksi <b>melawan</b>.</div></section>
+
+<h2>✍️ Latihan (jawaban singkat <span class="plus">➕ tambahan</span>)</h2>
+<ol><li>Solenoida 30 cm, 250 lilitan, meniadakan B bumi (3,5 × 10⁻⁵ T): I = Bl/(μ₀N) ≈ <b>0,033 A</b>.</li>
+<li>Elektron v = 4,0 × 10⁷ m/s, B = 0,01 T: R = mv/(eB) ≈ <b>2,3 cm</b>.</li>
+<li>Kumparan 20 lilitan, d = 80 mm, B = 0,40 T → 0, ggl 8,0 V: Φ ≈ 2,0 × 10⁻³ Wb; Δt = NΔΦ/ε ≈ <b>5 × 10⁻³ s</b>.</li>
+<li>Kawat 100 A, 50 m, B = 4,0 × 10⁻⁵ T, θ = 45°: F = ILB sin θ ≈ <b>0,14 N</b>.</li>
+<li>Trafo 220 V → 12 V, N<sub>s</sub> = 30, I<sub>s</sub> = 0,5 A: N<sub>p</sub> = 30 × 220/12 = <b>550 lilitan</b>; I<sub>p</sub> ≈ <b>0,027 A</b>; daya = 12 × 0,5 = <b>6 W</b>.</li></ol>
+
+<h2>⚠️ Sering keluar di ujian</h2>
+<div class="exam"><ul>
+<li>Benda <b>ditolak</b> medan kuat = <b>diamagnetik</b>. Feromagnetik bisa jadi magnet karena punya <b>magnet elementer</b> (bukan sekadar “mengandung besi”).</li>
+<li>Magnet hilang kekuatannya saat dipanaskan/dipukul karena <b>magnet elementer jadi acak</b>.</li>
+<li>Medan magnet kawat lurus: <b>mengelilingi kawat</b> (kaidah tangan kanan), bergantung <b>arus dan jarak</b>. Magnet makin kuat: <b>tambah baterai</b>.</li>
+<li>Arus barat→timur: medan di atas kawat ke <b>utara</b>.</li>
+<li>F/L = IB = 8 × 0,5 = 0,04 N/cm. Ggl = 1 mV. Trafo: I<sub>p</sub> = 4 A.</li></ul></div>
+
+<h2>📖 Kamus mini</h2>
+<div class="tw"><table><tr><th>Istilah</th><th>Artinya, mudahnya</th></tr><tr><td>Ggl</td><td>Tegangan baterai saat tak ada arus</td></tr><tr><td>Fluks magnetik</td><td>“Banyak garis medan” yang menembus lingkaran kawat</td></tr><tr><td>Induksi</td><td>Medan berubah → muncul listrik</td></tr><tr><td>Komutator</td><td>Cincin pembalik arus di motor</td></tr><tr><td>Solenoida</td><td>Kumparan kawat panjang berbentuk pegas</td></tr></table></div>
+
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pengantar, A. Sifat kemagnetan</td><td>11.30–11.31</td></tr><tr><td>B. Medan magnetik (kawat, loop, solenoida)</td><td>11.31–11.35</td></tr><tr><td>C. Sifat kemagnetan zat</td><td>11.35–11.37</td></tr><tr><td>D–E. Gaya magnetik</td><td>11.37–11.39</td></tr><tr><td>F. Motor listrik, pengeras suara</td><td>11.39–11.41</td></tr><tr><td>G. Induksi elektromagnetik</td><td>11.41–11.44</td></tr><tr><td>H. Transformator</td><td>11.44–11.46</td></tr><tr><td>Latihan · Rangkuman</td><td>11.46–11.49</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>11.49–11.51 · 11.53–11.54</td></tr><tr><td>Glosarium</td><td>11.56</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="11-2"></div></div>
+</div>
+<!-- ===================== MODUL 12 ===================== -->
+<div class="modul" id="m12" hidden>
+<div class="pane" data-tab="📖 Materi KB1"><h2>🌍 KB 1 — Bumi dan Sumber Daya Alam</h2>
+<section class="bag"><h3 class="s">A. Lapisan bumi: seperti telur rebus 🥚</h3>
+<p>Para ilmuwan tidak bisa menggali sampai pusat bumi, jadi mereka mempelajari <b>gelombang gempa</b>. Hasilnya: bumi punya <b>tiga lapisan</b> (seperti telur: kuning, putih, kulit).</p>
+<div class="tw"><table><tr><th>Lapisan</th><th>Ciri</th></tr>
+<tr><td><b>Teras (inti)</b> = “kuning telur”</td><td>Terdalam. Isi <b>nikel dan besi</b>. Inti dalam <b>padat</b> (jari-jari ± 1.200 km); inti luar <b>cair kental</b> (tebal ± 2.250 km). Cairnya inti luar dikaitkan dengan medan magnet bumi.</td></tr>
+<tr><td><b>Mantel</b> = “putih telur”</td><td>Tebal ± 2.900 km; batuan (besi-magnesium).</td></tr>
+<tr><td><b>Kerak (litosfer)</b> = “kulit telur”</td><td>Tipis: 5–8 km di bawah samudra, 24–28 km di bawah benua. ± <b>65%</b> permukaan bumi = kerak samudra (batuan <b>basal</b>); benua umumnya <b>granit</b>.</td></tr></table></div>
+<ul><li><b>Litosfer:</b> lapisan luar yang kaku dan rapuh (kerak + bagian atas mantel, sampai ± 80 km).</li>
+<li><b>Astenosfer:</b> di bawahnya sampai ± 700 km; batuan <b>panas, lunak, plastis</b>, kerak “menggelincir” di atasnya.</li>
+<li><b>Hidrosfer</b> = semua air (laut, danau, sungai, air tanah). <b>Atmosfer</b> = selimut udara paling luar.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Telur: kuning = inti, putih = mantel, kulit = kerak. Urutan dari luar: kerak → mantel → inti luar (cair) → inti dalam (padat).</div></section>
+
+<section class="bag"><h3 class="s">B. Permukaan bumi</h3>
+<h3 class="s">1. Batuan: tiga keluarga</h3>
+<div class="tw"><table><tr><th>Keluarga</th><th>Terbentuk dari</th><th>Contoh</th></tr>
+<tr><td><b>Beku</b></td><td>Magma/lava yang mendingin. <b>Intrusif</b> = beku di dalam bumi, pelan, kristal <b>besar</b>/kasar. <b>Ekstrusif</b> = keluar ke permukaan, cepat dingin, halus.</td><td>Intrusif: <b>granit</b>, gabro, peridotit. Ekstrusif: obsidian, basal, batu apung</td></tr>
+<tr><td><b>Sedimen</b></td><td>Endapan yang memadat. <b>Klastik</b> (pecahan batu), <b>kimia</b> (mineral dari air menguap), <b>organik</b> (sisa makhluk hidup)</td><td>Konglomerat, batu pasir; batu kapur, <b>batu bara</b></td></tr>
+<tr><td><b>Metamorf</b></td><td>Batuan lain “dimasak” <b>panas, tekanan, kimia</b> (metamorfisme regional atau kontak). <b>Terfoliasi</b> (berlapis): sabak, sekis, genes. <b>Tak terfoliasi</b>: marmer, kuarsit</td><td>Marmer dari batu kapur</td></tr></table></div>
+<div class="ingat">💡 <b>Ingat:</b> “Beku = dari lelehan, Sedimen = dari endapan, Metamorf = berubah bentuk (metamorfosis).” Siklus batuan dimulai dari batuan beku.</div>
+<h3 class="s">2. Gerak kerak bumi</h3>
+<p>Ada gaya dari dalam (<b>endogen</b>: menekan, menarik, menggeser) dan dari luar (<b>eksogen</b>: rotasi bumi, tarikan bulan dan matahari). Hasilnya:</p>
+<ul><li><b>Kekar:</b> rekahan, sisi-sisinya <b>belum</b> bergeser. <b>Sesar:</b> rekahan, sisi-sisinya <b>sudah</b> bergeser (Sesar San Andreas).</li>
+<li><b>Lipatan:</b> batuan melengkung. <b>Antiklin</b> = lengkung ke <b>atas</b>; <b>sinklin</b> = lengkung ke <b>bawah</b>.</li>
+<li><b>Pegunungan</b> (naik &gt; 600 m): <b>lipatan</b> (Himalaya, Alpina, Bukit Barisan) atau <b>sesar bongkah</b> (Sierra Nevada). <b>Plato</b> = dataran tinggi luas (Dieng). <b>Dataran rendah</b> = dataran rendah luas.</li></ul>
+<h3 class="s">3. Pembentuk wajah bumi</h3>
+<div class="tw"><table><tr><th>Pelaku</th><th>Hasil</th></tr>
+<tr><td><b>Sungai</b></td><td><b>Muda</b>: curam, cepat, lembah <b>V</b>, air terjun. <b>Dewasa</b>: landai, berkelok (<b>meander</b>). <b>Tua</b>: sangat landai, meander makin lengkung. Endapan: danau tapal kuda (<i>oxbow</i>), tanggul, <b>delta</b> (di muara), kipas aluvial.</td></tr>
+<tr><td><b>Angin</b></td><td>Deflasi (angkut sedimen), korasi (ampelas batuan), <b>loess</b>, bukit pasir.</td></tr>
+<tr><td><b>Es (gletser)</b></td><td>Lembah V jadi <b>U</b>; endapan: morena, drumilin, iratik, ketel, danau glasial.</td></tr>
+<tr><td><b>Gravitasi</b></td><td>Luncuran batuan (cepat), aliran lumpur, aliran tanah, <b>rayapan tanah</b> (paling lambat).</td></tr></table></div></section>
+
+<section class="bag"><h3 class="s">4. Atmosfer, cuaca, awan, angin</h3>
+<div class="tw"><table><tr><th>Lapisan (dari bawah)</th><th>Ciri</th></tr><tr><td><b>Troposfer</b></td><td>Tempat cuaca; makin tinggi makin dingin</td></tr><tr><td><b>Stratosfer</b></td><td>Ada <b>ozon (O₃)</b> ± 50 km: menyerap sinar ultraviolet, melindungi makhluk hidup</td></tr><tr><td><b>Mesosfer</b></td><td>Suhu turun lagi ke atas</td></tr><tr><td><b>Termosfer</b></td><td>Dipanaskan UV; ada <b>ionosfer</b> (gas terionisasi)</td></tr></table></div>
+<ul><li><b>Cuaca</b> = keadaan atmosfer di suatu tempat dan waktu. Alat: <b>termometer</b> (suhu), <b>barometer</b> (tekanan), <b>higrometer</b> (kelembapan), <b>anemometer</b> (kecepatan angin), penakar hujan; teknologi: radiosonde, radar, satelit.</li>
+<li><b>Awan</b> terbentuk saat udara mendingin sampai titik embun. Nama dasar: <b>cirrus</b> (serat), <b>cumulus</b> (bertumpuk bulat), <b>stratus</b> (berlapis), <b>nimbus</b> (hujan). Menurut tinggi: <b>tinggi</b> (&gt; 6 km: cirrus, cirrocumulus, cirrostratus); <b>tengah</b> (1,8–6 km: altostratus, altocumulus); <b>rendah</b> (0–1,8 km: stratus, stratocumulus, nimbostratus); <b>vertikal</b> (cumulus, cumulonimbus).</li>
+<li><b>Angin</b> = udara bergerak mendatar, dari tekanan <b>tinggi ke rendah</b> (sel konveksi). <b>Angin laut</b>: siang, dari laut ke darat (darat lebih cepat panas). <b>Angin darat</b>: malam, dari darat ke laut. <b>Angin musim</b>: sel konveksi besar (musim panas lembap dari laut → hujan).</li>
+<li><b>Efek Coriolis</b> (karena rotasi bumi): benda bergerak berbelok <b>ke kanan di belahan utara</b>, <b>ke kiri di selatan</b>.</li>
+<li>Pusaran kuat: <b>angin ribut</b> (awan cumulonimbus, petir), <b>tornado</b> (corong), <b>topan</b> (siklon tropis).</li>
+<li><b>Angin global:</b> doldrum (dekat ekuator), angin pasat, angin barat. <b>Iklim</b> = rata-rata cuaca bertahun-tahun: tropis, gurun, lintang pertengahan, kutub. Dipengaruhi <b>ketinggian, jarak dari laut, garis lintang</b>.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “Tro-Stra-Meso-Termo” (T-S-M-T). Ozon di <b>stratosfer</b>. Angin laut = siang, darat = malam.</div></section>
+
+<section class="bag"><h3 class="s">C. Daur air 💧</h3>
+<p>Air bumi: <b>97,2% laut</b>, <b>2,8% tawar</b> (gletser/es 2,2%, air permukaan, danau-sungai, uap di udara). Laut menguap (panas matahari) → uap naik, mendingin, <b>mengembun</b> → awan → <b>hujan</b>. Air hujan: jatuh ke laut/sungai, <b>limpasan</b> (mengalir di permukaan), atau <b>meresap</b> ke tanah (<b>infiltrasi</b>).</p>
+<ul><li>Resapan tergantung <b>porositas</b> (banyak pori) dan permeabilitas. Di bawah tanah: <b>zona aerasi</b> (banyak udara) → <b>muka air tanah</b> → <b>zona saturasi</b> (jenuh air). <b>Akuifer</b> = lapisan tempat air tanah bergerak bebas. Urutan dari atas: <b>aerasi, muka air tanah, saturasi</b>.</li>
+<li>Limpasan makin besar bila hujan deras/lama, lereng curam, atau <b>tanah gundul</b> (tumbuhan memperlambat air). <b>Sungai</b>: sumber → alur → muara; anak sungai; <b>debit</b> = volume air per waktu; banjir bila debit &gt; alur.</li>
+<li><b>Dasar laut:</b> beting benua (&lt; 200 m) → lereng benua → tanjakan → dataran tubir; punggung tengah samudra, lembah retak, gunung laut, guyot (puncak datar), <b>palung</b> (&gt; 6 km).</li>
+<li><b>Gelombang laut:</b> air hanya naik-turun, tidak ikut berjalan. <b>Tsunami</b> = gelombang panjang dari gempa/erupsi/longsor bawah laut. <b>Arus laut</b>: oleh angin dan beda kerapatan.</li></ul></section>
+
+<section class="bag"><h3 class="s">D. Peristiwa alam</h3>
+<ul><li><b>Volkanisme:</b> gerak batuan cair panas. Di bawah tanah = <b>magma</b>; sampai permukaan = <b>lava</b>. Bentuk intrusi: retas, sill, lakolit (kubah), batolit. <b>Erupsi tenang</b> (lava mengalir) vs <b>eksplosif</b> (menyembur). <b>Kawah</b>; <b>kaldera</b> (kawah sangat luas, gunung runtuh); mata air panas; <b>geiser</b>.</li>
+<li><b>Gempa:</b> getaran kerak tiba-tiba. <b>Fokus</b> = titik asal di bawah tanah; <b>episenter</b> = titik di permukaan tepat di atasnya. Penyebab terbanyak: <b>pesesaran</b>. <b>Seismograf</b> (alat) → seismogram. Gelombang: <b>P</b> (pertama terekam), <b>S</b> (kedua), <b>L</b> (terakhir). <b>Magnitudo</b> (energi) = skala <b>Richter</b>; <b>intensitas</b> (kerusakan) = skala <b>Mercalli</b>. Sabuk gempa: Mediteran, <b>Lingkar Pasifik</b>, Pegunungan Tengah Atlantik.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Fokus = “di dalam”, Epi-senter = “di atas” (epi = atas). Richter = tenaga, Mercalli = “merusak”.</div></section>
+
+<section class="bag"><h3 class="s">E–F. Sumber daya alam dan cara menjaganya</h3>
+<p><b>Dapat diperbarui:</b> tanah, air, makhluk hidup. <b>Tidak dapat diperbarui:</b> mineral, batu bara, minyak bumi, gas alam.</p>
+<ul><li><b>Tanah:</b> campuran batuan lapuk + <b>humus</b> (sisa tumbuhan/hewan, sumber hara). Lapisan (<b>horizon</b>): <b>A</b> (tanah atas, kaya humus, gelap), <b>B</b> (tanah bawah, kaya lempung, cokelat), <b>C</b> (batuan lapuk).
+<br><b>Mencegah erosi (6):</b> pembajakan minimum, <b>pertanian kontur</b>, penanaman dalam barisan, <b>terasering</b>, reklamasi selokan liar, lajur pelindung (pohon penahan angin).
+<br><b>Menjaga hara:</b> <b>pupuk organik</b> (kotoran hewan, kompos, pupuk hijau), pupuk buatan (UREA, ZA; berlebihan mencemari air), <b>penanaman bergilir</b> (misalnya padi diselingi pupuk hijau).</li>
+<li><b>Air:</b> masalah: persediaan kurang, ambil air tanah berlebihan (<b>intrusi air garam</b>, tanah turun), polusi, banjir, dll. Solusi: bendungan (ada untung-rugi), <b>desalinasi</b> (<b>penguapan</b> atau <b>osmosis balik</b>), daur ulang air industri, aturan tata guna air. <b>Kekeringan</b> = hujan 70% di bawah rata-rata selama ≥ 21 hari.</li>
+<li><b>Mineral:</b> kilap logam/nonlogam, warna muda/tua. Contoh: talk (bedak), gipsum, halit (garam), kaolinit (keramik), belerang, kuarsa; grafit (pensil), galena (timbal), kalkopirit (tembaga), hematit (besi); bauksit (aluminium), sfalerit (seng). <b>Permata mulia</b>: intan, delima, zamrud, nilam. Strategi: <b>cari pengganti, daur ulang, lestarikan</b>.</li>
+<li><b>Minyak dan gas:</b> dari sisa makhluk hidup (tekanan + bakteri). <b>Cebakan</b>: antiklin, terumbu, sesar, kubah garam, lensa pasir, ketidakselarasan.</li>
+<li><b>Batu bara:</b> gambut → <b>lignit</b> → <b>bituminus</b> → <b>antrasit</b> (karbon terbanyak, paling keras).</li>
+<li><b>Energi:</b> bahan bakar fosil terbatas → naikkan efisiensi mesin, cari pengganti (sinar matahari, tenaga air, nuklir, bahan bakar bio).</li></ul>
+<div class="ingat">💡 <b>Ingat batu bara:</b> “<b>G-L-B-A</b>” = Gambut, Lignit, Bituminus, Antrasit (makin keras, karbon naik). Erosi: terasering, kontur. Hara: pupuk organik, bergilir.</div></section>
+
+<h2>✍️ Latihan (jawaban singkat <span class="plus">➕ tambahan</span>)</h2>
+<ol><li>Mengenali mineral: <b>kilap</b> (logam/nonlogam) dan <b>warna</b> (muda/tua); juga kekerasan dan goresan.</li>
+<li>Intrusif: beku di bawah tanah, <b>dingin pelan, kristal besar</b>. Ekstrusif: beku di permukaan, <b>dingin cepat, halus</b>.</li>
+<li>Air hujan: sebagian jatuh ke sungai/danau/laut, sebagian <b>limpasan</b>, sebagian <b>meresap</b> jadi air tanah; lalu menguap kembali (daur air).</li>
+<li>Pelaut berangkat sebelum fajar: <b>angin darat</b> (malam–pagi) bertiup ke laut; pulang sebelum petang: <b>angin laut</b> bertiup ke darat.</li>
+<li>Hemat energi: matikan lampu/alat, pakai lampu hemat energi, jemur pakaian di matahari.</li></ol>
+
+<h2>⚠️ Sering keluar di ujian</h2>
+<div class="exam"><ul>
+<li>Intrusif: <b>granit</b>. Batu kapur/konglomerat = sedimen; marmer = metamorf.</li>
+<li>Lapisan plastis tempat kerak bergeser = <b>astenosfer</b> (bukan litosfer, mantel, hidrosfer).</li>
+<li>Kekar = sisi belum bergeser; sesar = sudah (pada soal ini huruf kunci modul tertulis B, tetapi pembahasannya “kekar” = pilihan A).</li>
+<li>Perembesan air hujan = <b>infiltrasi</b> (intrusi = magma mendingin; ekstrusi = lava; erosi = pengikisan).</li>
+<li>Stratosfer = ozon. Stratus = awan rendah. Antrasit = paling banyak karbon.</li>
+<li>Mencegah hara turun = <b>penanaman bergilir</b> (terasering, kontur, reklamasi = erosi). Energi paling bersih = <b>sinar matahari</b>.</li></ul></div>
+
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>Pendahuluan</td><td>12.3–12.4</td></tr><tr><td>A. Struktur bumi</td><td>12.5–12.6</td></tr><tr><td>B. Batuan, gerak kerak, bentuk daratan</td><td>12.7–12.13</td></tr><tr><td>Atmosfer, cuaca, awan, angin, iklim</td><td>12.13–12.21</td></tr><tr><td>C. Daur air, dasar laut, gelombang</td><td>12.21–12.25</td></tr><tr><td>D. Volkanisme, gempa</td><td>12.25–12.27</td></tr><tr><td>E. Jenis sumber daya alam</td><td>12.27–12.33</td></tr><tr><td>F. Manfaat dan pelestarian</td><td>12.33–12.37</td></tr><tr><td>Latihan · Rangkuman</td><td>12.38–12.39</td></tr><tr><td>Tes Formatif 1 · Kunci</td><td>12.40–12.42 · 12.62</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 1"><div class="quiz" data-q="12-1"></div></div>
+<div class="pane" data-tab="📖 Materi KB2"><h2>🪐 KB 2 — Tata Surya</h2>
+<section class="bag"><h3 class="s">A. Keluarga tata surya</h3>
+<p>Tata surya = keluarga besar dengan <b>matahari</b> sebagai “ayah” (99,87% bahan penyusunnya). Anggota lain: <b>planet dan satelitnya, asteroid, komet, meteoroid, debu antarplanet</b>. Planet ada <b>8</b>: <b>Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus</b>.</p>
+<div class="ingat">💡 <b>Ingat urutan planet:</b> “<b>Me</b>mang <b>Ve</b>ga <b>Bu</b>kan <b>Ma</b>kanan <b>Ju</b>ara <b>Sa</b>tu <b>U</b>ntuk <b>Ne</b>gara”. Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus.</div>
+<div class="tw"><table><tr><th>Cara menggolongkan</th><th>Isinya</th></tr><tr><td><b>Interior vs superior</b> (menurut lintasan terhadap bumi)</td><td>Interior (lintasan lebih kecil dari bumi): Merkurius, Venus. Superior (lebih besar): Mars sampai Neptunus.</td></tr><tr><td><b>Terestrial vs jovian</b> (sifat)</td><td>Terestrial/kebumian: Merkurius, Venus, Bumi, Mars. Jovian (mirip Jupiter): Jupiter, Saturnus, Uranus, Neptunus.</td></tr><tr><td><b>Planet dalam vs luar</b> (terhadap sabuk asteroid)</td><td>Dalam: Merkurius–Mars. Luar: Jupiter–Neptunus.</td></tr></table></div>
+<div class="tw"><table><tr><th>Planet</th><th>Revolusi</th><th>Rotasi</th><th>Satelit</th><th>Ciri singkat</th></tr>
+<tr><td>Merkurius</td><td>88 hari</td><td>59 hari</td><td>Tidak ada</td><td>Terdekat matahari; suhu 700 K (siang) – 100 K (tengah malam)</td></tr>
+<tr><td>Venus</td><td>225 hari</td><td>243 hari</td><td>Tidak ada</td><td>“Bintang pagi/sore”; atmosfer 96% CO₂, 90 atm, 750 K (efek rumah kaca)</td></tr>
+<tr><td>Bumi</td><td>365 hari</td><td>23 j 56 m</td><td>Bulan</td><td>Diameter 12.756 km; 2/3 laut; medan magnet, sabuk radiasi Van Allen</td></tr>
+<tr><td>Mars</td><td>687 hari</td><td>24 j 37,4 m</td><td>Phobos, Deimos</td><td>Kemerahan; CO₂ 95%; Olympus Mons, lembah Marineris</td></tr>
+<tr><td>Jupiter</td><td>11,86 th</td><td>10 j 55 m</td><td>± 16</td><td><b>Terbesar</b> (318× massa bumi); H₂ 82%, He 17%; cincin tipis; −123°C</td></tr>
+<tr><td>Saturnus</td><td>29,5 th</td><td>10 j 38 m</td><td>± 16 (Titan)</td><td>Kerapatan ± 700 kg/m³; <b>cincin A, B, C</b>, celah Cassini</td></tr>
+<tr><td>Uranus</td><td>84 th</td><td>10–25 j</td><td>5</td><td>Ditemukan Herschel (1781); 9 cincin; <b>sumbu rotasi sejajar bidang revolusi</b></td></tr>
+<tr><td>Neptunus</td><td>165 th</td><td>± 18 j</td><td>Triton, Nereid</td><td>Ditemukan dari <b>hitungan</b> (Leverrier, Adams; diamati Galle); −217°C</td></tr>
+<tr><td>Pluto</td><td>248,6 th</td><td>6,4 hari</td><td>Charon</td><td>Ditemukan Tombaugh (1930); sejak <b>IAU 2006</b> = <b>planet katai</b> (lintasan memotong Neptunus)</td></tr></table></div></section>
+
+<section class="bag"><h3 class="s">B. Asteroid, komet, meteor</h3>
+<ul><li><b>Asteroid</b> (planet kecil): ditemukan <b>Ceres</b> (1801, Piazzi). Kebanyakan membentuk <b>sabuk antara Mars dan Jupiter</b>. Contoh: Pallas, Juno, Vesta.</li>
+<li><b>Komet</b> (“bintang berekor”, “lintang kemukus”): 4 bagian: <b>inti, koma (kepala), ekor, awan hidrogen</b>. Contoh: komet <b>Halley</b>.</li>
+<li><b>Meteoroid</b> = benda kecil di angkasa. <b>Meteor</b> = kilatan cahaya saat meteoroid terbakar di atmosfer (“bintang beralih”). <b>Meteorit</b> = sisanya yang jatuh ke bumi.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> “Oid di angkasa, Or di udara (kilat), Orit di bumi” → Meteor<b>oid</b> (angkasa), Meteor (kilat), Meteor<b>it</b> (jatuh).</div></section>
+
+<section class="bag"><h3 class="s">C. Matahari ☀️</h3>
+<div class="tw"><table><tr><th>Bagian</th><th>Isi</th></tr>
+<tr><td><b>Teras</b></td><td>Pusat, ± 15.000.000 K; <b>reaksi fusi</b> (proton-proton): massa jadi energi. Matahari = <b>plasma</b> (fase keempat).</td></tr>
+<tr><td>Zona radiatif → zona konvektif</td><td>Energi dari teras mengalir keluar.</td></tr>
+<tr><td><b>Fotosfer</b></td><td>“Permukaan” yang tampak; granule (butiran cemerlang); <b>noda matahari</b> (bintik gelap, lebih dingin).</td></tr>
+<tr><td><b>Kromosfer</b></td><td>Terlihat saat gerhana; spekule, plage, facule, <b>flare</b> (erupsi mendadak di sekitar noda).</td></tr>
+<tr><td><b>Korona</b></td><td>Lapisan paling luar, jutaan km, sampai 2.000.000 K; ada <b>prominens</b> (nyala api besar dari tepi matahari menembus korona).</td></tr></table></div>
+<small class="pg">Fotosfer, kromosfer, korona = atmosfer matahari.</small></section>
+
+<section class="bag"><h3 class="s">D. Gerhana 🌑🌕</h3>
+<p>Gerhana = cahaya sebuah benda langit tertutup benda lain. Bayangan ada dua: <b>umbra</b> (gelap) dan <b>penumbra</b> (samar).</p>
+<div class="tw"><table><tr><th></th><th>Gerhana matahari</th><th>Gerhana bulan</th></tr><tr><td>Fase bulan</td><td><b>Bulan baru</b> (konjungsi)</td><td><b>Purnama</b></td></tr><tr><td>Urutan</td><td>Matahari – <b>Bulan</b> – Bumi</td><td>Matahari – <b>Bumi</b> – Bulan</td></tr><tr><td>Yang terjadi</td><td>Bayangan bulan jatuh ke bumi: <b>total di umbra</b>, sebagian di penumbra</td><td>Bulan masuk penumbra → umbra (total) → penumbra lagi</td></tr></table></div>
+<p><b>Kenapa tidak tiap bulan?</b> Orbit bulan <b>miring ± 5°</b> terhadap ekliptika; gerhana hanya terjadi dekat <b>simpul</b> (titik bulan menembus bidang ekliptika: simpul naik dan turun).</p></section>
+
+<section class="bag"><h3 class="s">E. Rotasi dan revolusi bumi</h3>
+<ul><li><b>Rotasi</b> = bumi berputar pada sumbunya, <b>barat → timur</b>, periode <b>23 j 56 m 4 s</b>. Akibat: <b>(1)</b> gerak semu harian benda langit (terbit timur, tenggelam barat); <b>(2)</b> bumi <b>pepat</b> di kutub; <b>(3)</b> siang dan malam; <b>(4)</b> pembagian daerah waktu. Bukti: angin berbelok (kanan di utara, kiri di selatan).</li>
+<li><b>Revolusi</b> = bumi mengelilingi matahari (lintasan elips = <b>ekliptika</b>), 1 tahun. <b>Presesi</b> = sumbu bumi berputar seperti gasing (25.800 tahun). <b>Nutasi</b> = “anggukan” kecil.</li></ul>
+<h3 class="s">Garis lintang dan bujur</h3>
+<ul><li><b>Lintang:</b> sejajar ekuator, 0° (ekuator) – 90° (kutub), LU/LS. <b>Bujur:</b> garis kutub ke kutub; 0° = meridian <b>Greenwich</b>, sampai 180° BT/BB.</li></ul>
+<h3 class="s">Waktu</h3>
+<ul><li><b>Hari surya</b> (matahari melewati meridian dua kali) ≈ 4 menit lebih panjang dari <b>hari sideris</b> (bintang).</li>
+<li><b>24 zona waktu</b>, masing-masing 15° = 1 jam (bumi berputar 15° tiap jam). Indonesia: <b>WIB</b> (105° BT, GMT+7), <b>WITA</b> (120°, +8), <b>WIT</b> (135°, +9). Ke timur: arloji dimajukan; ke barat: dimundurkan. <b>Garis tanggal internasional</b> = 180°.</li>
+<li><b>Tahun tropis</b> 365,2422 hari; <b>tahun sideris</b> 365,2536 hari (tropis ≈ 20 menit lebih pendek karena presesi).</li></ul>
+<h3 class="s">Musim 🍂</h3>
+<ul><li>Sumbu bumi miring <b>23,5°</b> dari garis tegak lurus ekliptika (jadi ± <b>66,5°</b> terhadap bidang ekliptika) dan <b>selalu menunjuk arah sama</b> saat revolusi → terjadi <b>musim</b> dan gerak semu tahunan matahari (ekuator ↔ 23,5° LU ↔ 23,5° LS).</li>
+<li><b>Ekinoks</b> (matahari tepat di atas ekuator): ± <b>21 Maret</b> dan <b>23 September</b>; siang = malam = 12 jam. <b>Solstis</b> (paling jauh dari ekuator): ± <b>21 Juni</b> (belahan utara musim panas, selatan dingin) dan ± <b>22 Desember</b> (kebalikannya).</li>
+<li>Presesi: <b>Polaris</b> tidak selamanya bintang utara; ± 12.000 tahun lagi <b>Vega</b> (rasi Lyra). Zodiak bergeser 1 bulan tiap ± 2.150 tahun.</li></ul>
+<div class="ingat">💡 <b>Ingat:</b> Rotasi = “Rotari”, putar di tempat (siang-malam). Revolusi = “Revolusi bumi keliling matahari” (musim, tahun). Musim terjadi karena <b>sumbu miring</b>, bukan karena jarak ke matahari.</div></section>
+
+<h2>✍️ Latihan (jawaban singkat <span class="plus">➕ tambahan</span>)</h2>
+<ol><li>Planet bercincin: <b>Jupiter, Saturnus, Uranus, Neptunus</b> (planet jovian).</li>
+<li>Muka bulan sama karena <b>periode rotasi bulan = periode revolusinya</b> (± 27,3 hari).</li>
+<li>Venus sulit dihuni: suhu ± 750 K, tekanan 90 atm, atmosfer 96% CO₂, tak ada air cair dan oksigen.</li>
+<li>Gerhana bulan: <b>purnama + dekat simpul</b> (ekliptika), bumi di antara matahari dan bulan. Tidak tiap bulan karena orbit bulan <b>miring 5°</b>.</li>
+<li>Presesi = sumbu bumi berputar seperti gasing (25.800 th). Akibat: Polaris bukan bintang utara kelak, bintang musiman bergeser, tahun tropis lebih pendek ± 20 menit dari sideris.</li></ol>
+
+<h2>⚠️ Sering keluar di ujian</h2>
+<div class="exam"><ul>
+<li>Anggota tata surya selain matahari: planet, <b>asteroid</b>, komet, <b>meteoroid</b>.</li>
+<li>Nyala api besar dari tepi matahari = <b>prominens</b> (plage = daerah cemerlang kromosfer, flare = erupsi dekat noda, granule = butir fotosfer).</li>
+<li>Sumbu bumi ↔ ekliptika = <b>66,5°</b> (23,5° dari garis tegak lurus; 5° = orbit bulan).</li>
+<li>Planet jovian: <b>Neptunus</b>. Sumbu sejajar bidang revolusi = <b>Uranus</b>. Tanpa satelit: Merkurius dan <b>Venus</b>.</li>
+<li>Asteroid: antara <b>Mars dan Jupiter</b> (soal kunci modul tercetak huruf C, tetapi isinya = pilihan B). Gerhana matahari: bulan <b>konjungsi</b> (bulan baru).</li>
+<li>13.00 GMT di WIB = 13.00 + 7 = <b>20.00 WIB</b>. Berkelebat = meteor.</li></ul></div>
+
+<h2>📖 Kamus mini</h2>
+<div class="tw"><table><tr><th>Istilah</th><th>Artinya, mudahnya</th></tr><tr><td>Ekliptika</td><td>Jalan bumi mengelilingi matahari</td></tr><tr><td>Konjungsi</td><td>Bulan sejajar di antara matahari dan bumi (bulan baru)</td></tr><tr><td>Simpul</td><td>Titik orbit bulan memotong bidang ekliptika</td></tr><tr><td>Plasma</td><td>“Fase keempat”: gas inti dan elektron bebas, seperti di matahari</td></tr></table></div>
+
+<h2>📍 Letak materi di modul</h2>
+<div class="tw"><table><tr><th>Bagian</th><th>Halaman</th></tr><tr><td>A. Anggota tata surya, planet</td><td>12.43–12.47</td></tr><tr><td>B. Asteroid, komet, meteoroid</td><td>12.47–12.48</td></tr><tr><td>C. Matahari</td><td>12.48–12.50</td></tr><tr><td>D. Gerhana</td><td>12.50–12.51</td></tr><tr><td>E. Rotasi, revolusi, waktu, musim, presesi</td><td>12.52–12.57</td></tr><tr><td>Latihan · Rangkuman</td><td>12.57–12.58</td></tr><tr><td>Tes Formatif 2 · Kunci</td><td>12.59–12.60 · 12.62–12.63</td></tr></table></div></div>
+<div class="pane" data-tab="✅ Tes Formatif 2"><div class="quiz" data-q="12-2"></div></div>
+</div>
+<!--NEXT-MODUL-->
+</main>
+<script>
+const M=[["Makhluk Hidup: Asal Mula, Ciri-Ciri, dan Organisasi Kehidupan","🧬","Teori asal mula, ciri, dan tingkat organisasi"],["Struktur Tubuh Makhluk Hidup","🦴","Alat gerak hewan, manusia, dan tumbuhan"],["Organ dan Sistem Organ Tubuh Makhluk Hidup","🫀","Organ tumbuhan dan vertebrata"],["Perkembangbiakan dan Pemuliaan","🌱","Tumbuhan, hewan, manusia, pemuliaan"],["Makhluk Hidup dan Lingkungan","🌳","Ekosistem, keanekaragaman, pencemaran"],["Makanan, Kesehatan, dan Penyakit","🍎","Makanan, penyakit, pencegahan"],["Pengukuran, Kinematika, Dinamika","📏","Besaran, gerak, gaya"],["Materi dan Sifatnya","🔥","Sifat termal zat dan panas"],["Gelombang dan Bunyi","🌊","Gelombang, bunyi, efek Doppler"],["Optika","🔭","Cahaya dan alat optik"],["Kelistrikan dan Kemagnetan","⚡","Listrik dan magnet"],["Bumi dan Tata Surya","🌍","Bumi, sumber daya, tata surya"]];
+const Q={"1-1":{o:["(1) dan (2) benar","(1) dan (3) benar","(2) dan (3) benar","(1), (2), dan (3) benar"],l:[
+["Pernyataan tentang teori abiogenesis yang benar adalah ....",["pertama kali dikemukakan oleh Aristoteles","percaya makhluk hidup timbul begitu saja dari benda tak hidup","ilmuwan pertama yang menentang abiogenesis adalah Louis Pasteur"],0,"(3) salah: sebelum Pasteur ada Redi dan Spallanzani."],
+["Pernyataan yang sejalan dengan abiogenesis adalah ....",["jamur merang timbul begitu saja dari jerami yang membusuk","paramaecium terbentuk dari air rendaman jerami","ulat bulu berasal dari telur kupu-kupu pada daun"],0,"(3) salah: itu mendukung biogenesis."],
+["Antonie van Leeuwenhoek, penemu mikroskop, berperan dalam teori asal mula kehidupan, antara lain ....",["kesimpulannya bertentangan dengan hasil percobaan Louis Pasteur","membuktikan dari air rendaman jerami timbul protozoa","memperkuat posisi teori abiogenesis"],3,"Semua pernyataan benar."],
+["Percobaan yang berusaha menumbangkan generatio spontanea dilakukan oleh ....",["Francesco Redi","Lazaro Spallanzani","Louis Pasteur"],3,"Ketiganya membuktikan makhluk hidup tidak timbul begitu saja dari benda tak hidup."],
+["Petani percaya ulat daun avokad berasal dari telur kupu-kupu yang hinggap di dedaunan. Hal itu sejalan dengan ....",["teori biogenesis","bertentangan dengan hasil percobaan Antonie Van Leeuwenhoek","hipotesis Oparin dan Haldane"],0,"(3) salah: Leeuwenhoek dan Oparin-Haldane pendukung abiogenesis/neoabiogenesis."],
+["Teori yang sangat bertentangan dengan abiogenesis adalah ....",["evolusi kimia","panspermia","biogenesis"],2,"(1) salah: evolusi kimia secara tidak langsung mendukung generatio spontanea."],
+["Pernyataan tentang evolusi kimia yang benar adalah ....",["pertama kali dikemukakan oleh Oparin dan Haldane","merupakan reinkarnasi dari abiogenesis","percaya makhluk hidup berasal dari benih kehidupan yang berevolusi di tempat cocok"],0,"(3) salah: itu inti teori panspermia."],
+["Teori panspermia sejalan dengan pernyataan ....",["makhluk hidup di bumi berasal dari benih dari luar angkasa","secara tidak langsung memperkuat biogenesis","bertentangan dengan kesimpulan percobaan Leeuwenhoek tentang asal mula kehidupan"],3,"Semua benar."],
+["Teori asal mula kehidupan yang bertentangan dengan teori penciptaan adalah ....",["abiogenesis","biogenesis","neoabiogenesis"],3,"Semua bertentangan; hanya penciptaan yang menyebut Tuhan sebagai pencipta."],
+["Pernyataan tentang teori penciptaan yang benar adalah ....",["didasari oleh ilmu agama","bertentangan dengan ajaran agama Islam","kebenarannya sulit dibuktikan secara ilmiah"],1,"(2) salah: ajaran Islam mendukung penciptaan."]]}
+,"1-2":{o:["(1) dan (2) benar","(1) dan (3) benar","(2) dan (3) benar","(1), (2), dan (3) benar"],l:[
+["Makhluk hidup dapat dibedakan dari makhluk tak hidup karena makhluk hidup ....",["menempati ruang","memiliki keturunan","memberikan tanggapan terhadap rangsang"],2,"(2) dan (3) benar. (1) salah karena bukan ciri utama makhluk hidup."],
+["Ciri-ciri makhluk tak hidup yang juga dimiliki makhluk hidup adalah ....",["memiliki bobot","menempati ruang","menekan ke semua arah"],0,"(1) dan (2) benar. (3) salah: itu sifat benda yang tidak khas dimiliki makhluk hidup."],
+["Pernyataan yang benar tentang iritabilitas pada tumbuhan adalah ....",["terjadi secara spontan","berlangsung dalam waktu yang cukup lama","tergantung dari jenis tumbuhannya"],3,"Semua benar: umumnya lama, tetapi ada yang spontan, misalnya putri malu disentuh."],
+["Ciri-ciri umum hewan, yaitu ....",["tumbuh kembang berlangsung selama hidupnya","tidak dapat membuat makanan sendiri","bentuk dan jumlah bagian tubuh tertentu"],2,"(2) dan (3) benar. (1) salah, seharusnya tumbuh terjadi pada seluruh bagian tubuh."],
+["Gerak hewan berbeda dari gerak tumbuhan karena ....",["gerak hewan selalu tampak","hewan bergerak secara simultan","hewan dapat bergerak bebas"],3,"Semua benar: gerak hewan umumnya tampak walau tidak berpindah, terus-menerus, dan bebas ke mana saja."],
+["Tujuan perkembangbiakan hewan dan tumbuhan berikut benar, kecuali ....","",3,"Menambah ukuran individu adalah pertumbuhan.",["melestarikan individu","melestarikan jenis","memperbanyak anggota jenis","menambah ukuran individu"]],
+["Pada proses tumbuh terjadi hal berikut, kecuali ....","",1,"Proses pematangan menunjukkan perkembangan, bukan pertumbuhan.",["pertambahan besar volume","proses pematangan","proses pembentukan jaringan baru","penambahan jumlah sel"]],
+["Ciri-ciri yang dimiliki tumbuhan pada umumnya adalah ....","",0,"B, C, dan D merupakan ciri hewan.",["jumlah bagian-bagian tubuh tidak tertentu","reaksi terhadap rangsang cepat, simultan, dan aktif","bentuk tubuh tertentu dan jumlah bagian tubuh tertentu","makanan diambil dalam bentuk padat dan cair"]],
+["Perbedaan hewan dan tumbuhan dalam pernapasan secara umum adalah ....","",0,"B, C, D salah: keduanya sama-sama memerlukan O₂ dan menghasilkan CO₂.",["hewan perlu alat khusus untuk bernapas, sedangkan tumbuhan melalui seluruh tubuh","hewan memerlukan oksigen untuk bernapas, sedangkan tumbuhan tidak","dalam bernapas hewan menyebabkan oksidasi, sedangkan tumbuhan reduksi","hewan menghasilkan karbondioksida, sedangkan tumbuhan oksigen"]],
+["Perbedaan perkembangbiakan pada hewan dan tumbuhan adalah ....","",2,"A, B, D kurang tepat: tumbuhan tidak hanya lewat biji, bisa seksual, akarnya tidak terbatas, dan jumlah anak hewan umumnya terbatas.",["hewan secara seksual, tumbuhan secara aseksual","umumnya hewan punya alat perkembangbiakan khusus, tumbuhan hanya berupa biji","pembuahan pada hewan dapat di dalam atau di luar tubuh, pada tumbuhan di dalam alat perkembangbiakan","umumnya jumlah anak hewan tidak terbatas, pada tumbuhan terbatas"]]]}
+,"1-3":{o:[],l:[
+["Organel yang berfungsi sebagai tempat pembuatan protein adalah ....","",2,"Ribosom merupakan organel tempat pembuatan protein.",["retikulum endoplasma","mitokondria","ribosom","lisosom"]],
+["Ciri dari serabut otot polos adalah ....","",0,"Serabut otot polos tidak beraturan dan tidak berlurik.",["tidak beraturan, tidak berlurik","tidak beraturan, berlurik","beraturan, tidak berlurik","beraturan, berlurik"]],
+["Jaringan meristem pada tumbuhan terdapat pada bagian ....","",3,"Jaringan meristem terdapat pada kambium.",["daun","batang","akar","kambium"]],
+["Jenis epitel yang terdapat pada lensa mata adalah ....","",2,"Epitel pada lensa mata adalah epitel kubus selapis.",["epitel pipih berlapis","epitel silindris berlapis","epitel kubus selapis","epitel pipih selapis"]],
+["Fungsi dari jaringan tulang rawan adalah ....","",0,"Menguatkan dan melindungi bagian-bagian tubuh yang lemah.",["menguatkan tubuh dan melindungi bagian-bagian tubuh yang lemah","mengikat atau menghubungkan antara macam-macam jaringan lain","menutupi dan membatasi permukaan di luar atau di dalam tubuh","sebagai pengisi dan penyimpanan cadangan makanan"]],
+["Otak, sumsum tulang belakang, serabut saraf, dan alat indra adalah organ penyusun sistem ....","",1,"Keempatnya organ penyusun sistem saraf.",["otot","saraf","pengeluaran","pernapasan"]],
+["Stomata (mulut daun) yang berfungsi dalam penguapan terdapat pada jaringan ....","",2,"Stomata terdapat pada jaringan epidermis bawah daun.",["epidermis atas","bunga karang","epidermis bawah","tiang"]],
+["Sel-sel parenkim, kolenkim, dan sklerenkim pada batang menyusun jaringan ....","",2,"Jaringan korteks pada batang tersusun oleh ketiganya.",["epidermis","endodermis","korteks","stele"]],
+["Pita kaspari merupakan penebalan sel yang terdapat pada akar di bagian jaringan ....","",3,"Pita kaspari ada pada endodermis.",["epidermis","korteks","stele","endodermis"]],
+["Mengatur aktivitas otot dan organ serta menerima dan meneruskan rangsangan merupakan fungsi jaringan ....","",0,"Itu fungsi jaringan saraf.",["saraf","otot","penyokong","epitel"]]]}
+,"2-1":{o:[],l:[
+["Sirip ikan digunakan untuk berenang dan memberi keseimbangan. Gerakan sirip ekor disebabkan oleh ....","",2,"Kontraksi otot di kedua sisi tubuh ikan agar tidak terguling.",["otot biseps","otot triseps","kontraksi otot","relaksasi otot"]],
+["Burung dapat terbang karena adanya struktur tulang yang beradaptasi, yaitu ....","",3,"Sternum yang pipih dan luas untuk melekatnya otot terbang.",["tungkai belakangnya panjang dan memiliki otot yang sangat kuat","anggota gerak yang pendek memiliki jari dengan cakar","asetabulum merupakan tempat melekatnya femur","sternum (tulang dada) yang pipih dan luas"]],
+["Otot dada yang menyokong burung terbang dibentuk oleh otot ....","",0,"Otot pektoralis dan supracoracoideus.",["pektoralis dan supracoracoid","biseps dan triseps","gluteus maksimus dan gluteus medius","gastrocnemius dan tibialis anterior"]],
+["Pada burung muda dan burung yang sedang mengerami telur, yang berfungsi sebagai isolator adalah bulu ....","",3,"Plumulae berfungsi sebagai isolator.",["remiges","retrices","plumae","plumulae"]],
+["Salah satu tulang muka di bagian depan kepala adalah ....","",0,"Tulang mata (lakrimal). Oksipital, parietal, temporal ada di kranium.",["lakrimal","osipital","parietal","temporal"]],
+["Tulang punggung (vertebra dorsalis) berjumlah ....","",1,"12 ruas.",["33 ruas","12 ruas","7 ruas","5 ruas"]],
+["Tulang yang letaknya searah dengan ibu jari adalah tulang ....","",1,"Tulang pengumpil (radius).",["hasta","pengumpil","klavikula","scapula"]],
+["Salah satu ciri otot jantung adalah gerak dan ketahanannya ....","",1,"Teratur dan tidak cepat lelah.",["lambat, teratur, dan tidak cepat lelah","teratur dan tidak cepat lelah","cepat, tidak teratur, dan cepat lelah","lambat, tidak teratur, dan cepat lelah"]],
+["Lengan bawah siku dapat dibengkokkan karena adanya otot ....","",1,"Otot biseps membengkokkan lengan bawah di siku.",["triseps","biseps","quadriceps","sartorius"]],
+["Otot betis yang paling menonjol di bagian belakang betis adalah otot ....","",1,"Gastrocnemius.",["latisimus dorsi","gastrocnemius","tibialis anterior","rectus abdominis"]]]}
+,"2-2":{o:[],l:[
+["Susunan sel parenkim berdinding tipis yang berpotensi meristematik merupakan lapisan ....","",0,"Perisikel (disebut juga perikambium).",["perisikel","perikambium","kambium vaskuler","kambium gabus"]],
+["Tonjolan di permukaan luar sel epidermis akar membentuk ....","",2,"Rambut akar.",["xilem","floem","rambut akar","kolenkim"]],
+["Jaringan pada korteks batang yang menyokong dan memperkuat batang adalah ....","",0,"Kolenkim dan sklerenkim.",["kolenkim dan sklerenkim","kolenkim dan parenkim","sklerenkim dan palisade","parenkim dan palisade"]],
+["Pada batang tua, jaringan kolenkim akan diganti menjadi ....","",0,"Sklerenkim.",["sklerenkim","parenkim","palisade","epidermis"]],
+["Klorofil pada daun terletak pada ....","",1,"Jaringan palisade.",["jaringan spons","jaringan palisade","jaringan xilem","jaringan floem"]],
+["Pada daun, stomata terletak pada bagian ....","",0,"Jaringan epidermis.",["jaringan epidermis","jaringan palisade","jaringan spons","jaringan pengangkut"]],
+["Perhiasan bunga yang berwarna disebut ....","",1,"Corolla (mahkota).",["calyx","corolla","stamen","pistilum"]],
+["Polen merupakan sel jantan yang dibentuk di bagian ....","",2,"Teka, ruang sari di dalam antera.",["antera","filamen","teka","stigma"]],
+["Buah yang termasuk kelompok buah majemuk di antaranya adalah ....","",2,"Cempedak.",["jambu","mangga","cempedak","sirsak"]],
+["Pada biji terdapat lembaga, yaitu ....","",3,"Lembaga = bakal tanaman baru.",["bakal buah","bakal biji","bakal bunga","bakal tanaman"]]]}
+,"3-1":{o:[],l:[
+["Pernyataan yang dapat dikelompokkan dalam organ tumbuhan adalah ....","",2,"Akar, batang, daun, dan bunga adalah organ tumbuhan.",["xylem, ploem, dan daun","jaringan, akar, batang, dan daun","akar, batang, daun, dan bunga","sel, jaringan, organ, dan sistem organ"]],
+["Gambar (akar yang keluar dari pangkal batang dan menopang pohon, seperti pada bakau) adalah ....","",0,"Hasil analisis gambar menunjukkan akar tunjang.",["akar tunjang","akar serabut","modifikasi akar","akar gantung"]],
+["Rhizoid pada lumut belum dapat dikatakan sebagai akar karena ....","",2,"Rhizoid hanya berupa benang.",["tidak memiliki jaringan","bentuknya sederhana","hanya berupa benang","tidak mempunyai plasma sel"]],
+["Gambar tumbuhan (pohon dengan akar menyebar dan bercabang-cabang halus) termasuk tumbuhan yang berakar ....","",0,"Kunci: serabut.",["serabut","tunggang","napas","tunjang"]],
+["Tumbuhan yang memiliki rizoma adalah ....","",3,"Rizoma = batang di dalam tanah; hanya jahe.",["ubi jalar","ubi kayu","kentang","jahe"]],
+["Batang yang berperan menyimpan cadangan makanan terdapat pada tanaman ....","",1,"Hanya kentang yang merupakan batang penyimpan cadangan makanan.",["bawang","kentang","singkong","wortel"]],
+["Batang yang menjalar di atas permukaan tanah terjadi pada tanaman ....","",1,"Rumput teki memiliki stolon.",["anggrek","rumput teki","suplir","umbi-umbian"]],
+["Duri bunga ros adalah modifikasi dari ....","",0,"Menurut kunci modul: duri merupakan modifikasi daun.",["daun","batang","cabang","kuncup"]],
+["Yang dimaksud dengan sistem organ adalah ....","",1,"Bentuk kerja sama antarorgan untuk aktivitas dalam tubuh organisme.",["kelompok jaringan yang bekerja sama untuk melakukan aktivitas hidup suatu organisme","bentuk kerja sama antarorgan untuk melakukan aktivitas yang berlangsung dalam tubuh suatu organisme","kerjasama seluruh komponen organ yang akan membentuk sebuah jaringan kehidupan","suatu sistem yang membentuk unit-unit kecil kehidupan yang berperan dalam metabolisme tubuh makhluk hidup"]],
+["Pernyataan yang benar mengenai respirasi pada tumbuhan adalah ....","",0,"Dua tahap: pertukaran gas dan respirasi sel.",["ada dua tahap, yaitu pertukaran gas dan respirasi sel","ada dua tahap, yaitu menghirup dan mengeluarkan gas","meliputi tahap inpirasi dan ekspirasi","meliputi tahap mengambil oksigen dan mengeluarkan karbon dioksida"]]]}
+,"3-2":{o:[],l:[
+["Hewan yang menggunakan kulit sebagai salah satu organ pernapasannya adalah ....","",2,"Katak sawah di air bernapas dengan kulit tipis, di darat dengan paru-paru.",["ikan hiu","ayam","katak sawah","kura-kura"]],
+["Hewan yang jantungnya beruang tiga di antaranya adalah ....","",3,"Jantung tiga ruang pada amfibi: katak dan kodok.",["kura-kura dan ayam","buaya dan kura-kura","burung dan buaya","katak dan kodok"]],
+["Pernyataan yang benar mengenai sistem gerak pada manusia adalah ....","",1,"Bagian tubuh dapat digerakkan jika memiliki otot dan saraf; tanpa tulang tetap bisa bergerak (lidah, bibir).",["semua bagian tubuh manusia hanya dapat bergerak jika memiliki otot, tulang, dan saraf","tanpa adanya otot dan saraf, semua bagian tubuh tidak akan dapat bergerak","semua bagian tubuh yang memiliki otot dan tulang dapat bergerak","bagian tubuh dapat digerakkan jika memiliki tulang"]],
+["Mata yang tidak dapat melihat benda dekat disebut rabun dekat karena bayangan benda jatuh ....","",2,"Bola mata terlalu pendek: bayangan jatuh di belakang bintik kuning.",["pada bintik buta","pada bintik kuning","di belakang bintik kuning","di depan bintik kuning"]],
+["Keadaan saat mata tidak jelas melihat benda yang terlalu jauh atau terlalu dekat disebut ....","",0,"Presbiop: daya akomodasi berkurang, lensa pipih sukar mencembung.",["presbiop","hipermetrop","miop","astigmatism"]],
+["Minum air terlalu panas membuat kita tidak dapat membedakan rasa makanan karena ....","",2,"Sel sensoris pada pucuk pengecap terganggu sesaat.",["air panas menghilangkan rasa pada makanannya","air panas menyebabkan lidah menjadi bengkak","pucuk pengecap akan kehilangan fungsinya untuk sesaat","makanan berubah rasanya"]],
+["Mencium bau makanan sedap kadang membuat keluar air liur karena ....","",1,"Ada hubungan antara indra pembau dan pengecap.",["makanan yang baunya sedap pasti rasanya enak","ada hubungan antara indra pembau dengan pengecap","ada hubungan positif antara bau makanan dan rasanya","air liur keluar dengan sendirinya tanpa ada rangsangan"]],
+["Pernyataan yang benar mengenai sistem gerak ikan adalah ....","",1,"Sirip ekor yang lebar membantu mendorong gerakan ikan ke depan.",["arah pergerakan ditentukan oleh gelembung udara","sirip ekor yang lebar membantu mendorong gerakan ke depan","sirip punggung, sirip dada, dan sirip perut mengarahkan gerakan yang diinginkan","susunan otot dan tulang yang fleksibel membantu melayang di permukaan air"]],
+["Di tempat berbukit gangguan telinga hilang dengan menelan air liur karena ....","",0,"Pembuluh eustachius terbuka sehingga tekanan di luar dan dalam gendang telinga seimbang.",["pembuluh eustachius terbuka sehingga tekanan udara di luar dan di dalam gendang telinga seimbang","pembuluh eustachius tertutup sehingga tekanan udara di luar dan di dalam gendang telinga seimbang","saluran telinga luar melebar sehingga tekanan udara di luar dan di dalam gendang telinga seimbang","saluran telinga luar menyempit sehingga tekanan udara di luar dan di dalam gendang telinga seimbang"]],
+["Orang buta dapat membaca huruf braille dengan ujung jarinya karena ....","",3,"Kesan huruf yang diraba diteruskan ke otak oleh saraf peraba untuk diartikan.",["ujung jari dapat mengartikan perbedaan-perbedaan huruf yang dirabanya","sel-sel saraf peraba tersebar merata pada seluruh permukaan ujung jari","kegiatan yang dilakukan oleh ujung jari diartikan secara refleks oleh sumsum tulang belakang","kesan dari huruf-huruf yang diraba diteruskan ke otak oleh saraf peraba untuk diartikan"]]]}
+,"4-1":{o:["(1) dan (2) benar","(1) dan (3) benar","(2) dan (3) benar","(1), (2), dan (3) benar"],l:[
+["Tumbuhan yang belum dikenal menghasilkan sel kelamin berbentuk dan berstruktur sama; penyatuannya menghasilkan zigot yang tumbuh menjadi individu baru. Pernyataan yang benar ....",["tumbuhan tersebut berkembang biak secara generatif","proses penyatuan kedua sel kelamin disebut isogami","tumbuhan tersebut adalah ganggang biru hijau"],0,"(3) salah: ganggang biru hijau umumnya membelah diri."],
+["Tumbuhan rendah dapat berkembang biak vegetatif dengan cara ....",["bertunas pada ganggang biru hijau","membelah diri pada bakteri","spora pada paku"],2,"(1) salah: ganggang biru hijau membelah diri. (2) dan (3) benar."],
+["Perkembangbiakan generatif tumbuhan rendah yang melibatkan sel kelamin adalah ....",["konjugasi","anisogami","isogami"],2,"(1) salah: konjugasi tidak melibatkan sel kelamin, melainkan pertukaran atau penyatuan inti sel dua individu."],
+["Tumbuhan rendah yang berkembang biak dengan anisogami antara lain ....",["Fucus","Oedogonium","Chlamydomonas"],0,"(3) salah: Chlamydomonas berkembang biak dengan isogami."],
+["Alat perkembangbiakan vegetatif tumbuhan tinggi antara lain ....",["umbi lapis pada bawang putih","umbi batang pada singkong","tunas adventif pada cocor bebek"],1,"(2) salah: singkong bukan umbi batang, melainkan umbi akar."],
+["Perkembangbiakan vegetatif buatan yang biasa untuk tumbuhan mangga adalah ....",["mencangkok","setek batang","mengokulasi"],1,"(2) salah: setek batang tidak umum untuk mangga."],
+["Pernyataan yang benar tentang perkembangbiakan generatif tumbuhan tinggi ....",["bunga merupakan bagian penting dalam proses perkembangbiakan","alat perkembangbiakan jantan adalah benang sari","alat perkembangbiakan betina adalah putik"],3,"Semua benar."],
+["Pada saat pembuahan Angiospermae, buluh serbuk mengandung inti ....",["vegetatif yang berfungsi membuahi inti polar","sperma yang akan membuahi sel telur","sperma yang akan membuahi inti polar"],2,"(1) salah: inti vegetatif tidak membuahi inti polar."],
+["Tumbuhan yang berkembang vegetatif dengan tunas adventif antara lain ....",["pisang","cocor bebek","sukun"],2,"(1) salah: pisang berkembang biak dengan bertunas."],
+["Tumbuhan yang melakukan pembuahan ganda ....",["mangga","rambutan","tomat"],3,"Ketiganya Angiospermae yang melakukan pembuahan ganda."]]}
+,"4-2":{o:[],l:[
+["Hewan yang berkembang biak hanya dengan membelah diri adalah ....","",0,"Amoeba sp.",["Amoeba sp","Paramaecium sp","Planaria sp","Hydra sp"]],
+["Hewan rendah yang membelah diri dengan arah membujur adalah ....","",2,"Euglena sp membelah membujur.",["Amoeba sp","Paramaecium sp","Euglena sp","Planaria sp"]],
+["Planaria dipotong tiga (kepala, badan, ekor), bagian yang dapat beregenerasi menjadi individu utuh adalah ....","",3,"Daya regenerasi planaria sangat tinggi: setiap potongan membentuk individu baru.",["kepala dan badan","badan dan ekor","kepala dan ekor","kepala, badan, dan ekor"]],
+["Paramaecium dapat berkembang biak dengan cara ....","",2,"Membelah diri dan konjugasi.",["membelah diri dan fragmentasi","fragmentasi dan konjugasi","konjugasi dan membelah diri","spora dan konjugasi"]],
+["Hydra berkembang biak vegetatif dengan cara ....","",2,"Bertunas.",["membelah diri","fragmentasi","bertunas","konjugasi"]],
+["Pada umumnya perkembangbiakan ikan dilakukan dengan fertilisasi ....","",0,"Eksternal.",["eksternal","internal","tunggal","ganda"]],
+["Hewan yang umumnya fertilisasi eksternal ....","",0,"Katak dan ikan; kadal internal.",["katak dan ikan","ikan dan kadal","kadal dan katak","katak, ikan, dan kadal"]],
+["Hewan yang testisnya terletak di dalam skrotum ....","",3,"Tikus, kucing, kelinci; testis buaya dan burung di rongga abdomen.",["burung, kelinci, buaya","kelinci, buaya, tikus","buaya, tikus, kucing","tikus, kucing, kelinci"]],
+["Siklus menstruasi dapat terjadi pada ....","",2,"Kera (primata). Mamalia nonprimata memiliki siklus estrus.",["kucing","anjing","kera","badak"]],
+["Agar segera mendapat keturunan, berhubungan badan pada siklus menstruasi hari ke ... (dari hari pertama menstruasi)","",2,"Hari ke-14, saat ovulasi (kunci modul tertulis “hari keempat”, typo).",["1","7","14","21"]]]}
+,"4-3":{o:[],l:[
+["Prinsip dasar hibridisasi adalah ....","",1,"Membuat kombinasi baru dengan memadukan materi genetik jantan dan betina melalui perkawinan.",["merangsang mutasi pada tingkat gen atau kromosom","membuat kombinasi baru dengan memadukan materi genetik individu jantan dan betina melalui perkawinan","menambah potongan gen dari individu lain yang mungkin berbeda jenis","mengubah materi genetik sehingga terjadi mutasi yang menimbulkan variasi baru"]],
+["Hukum Mendel merupakan dasar pemuliaan dengan teknik ....","",0,"Hibridisasi.",["hibridisasi","radiasi","mutasi","rekayasa genetik"]],
+["Padi atomita I dan II diperoleh dengan teknik radiasi menggunakan sinar ....","",2,"Sinar gamma (γ).",["α (alfa)","β (beta)","γ (gamma)","x"]],
+["Teknik radiasi memakai prinsip ....","",1,"Materi genetik dapat bermutasi akibat pengaruh lingkungan (radiasi).",["materi genetik anak perpaduan kedua induk","materi genetik dapat bermutasi akibat pengaruh lingkungan","materi genetik diubah dengan mengurangi atau menambah gen","sinar radioaktif menyisipkan gen dari individu lain"]],
+["Gen Bt pada kapas transgenik diperoleh dengan ....","",2,"Menyisipkan gen dari Bacillus thuringiensis pada materi genetik kapas.",["radiasi sinar gamma","hibridisasi kapas dan bakteri thuringiensis","menyisipkan gen dari Bacillus thuringiensis pada materi genetik kapas","gabungan hibridisasi dan radiasi"]],
+["Tanaman hasil rekayasa genetik, kecuali ....","",3,"Padi atomita I dihasilkan dengan teknik radiasi.",["kedelai penghasil bahan terapeutik","kentang penghasil vaksin diare","jagung penghasil bahan pembeku darah","padi atomita I tahan wereng cokelat/hijau"]],
+["Yang dimaksud dengan kawin suntik adalah ....","",2,"Mentransfer sperma ke uterus calon induk betina lewat vagina dengan alat suntik khusus.",["menyuntikkan sperma lewat pembuluh darah arteri","menyuntikkan zigot ke pembuluh darah menuju uterus","mentransfer sperma ke uterus melalui vagina dengan alat suntik khusus","mentransfer embrio ke uterus dengan alat suntik khusus"]],
+["Teknik bayi tabung: membuahi sel telur dengan sperma secara in vitro lalu mengultur zigot ....","",1,"Hingga morula/blastosis, lalu ditransfer ke uterus calon ibu.",["hingga jadi bayi di tabung mirip uterus","hingga tahap morula/blastosis, lalu mentransfernya ke uterus calon ibu","hingga embrio umur dua bulan, lalu mentransfernya ke uterus","di tabung yang diletakkan di rongga uterus"]],
+["Rekayasa genetik pada hewan ternak antara lain dilakukan dengan ....","",2,"Menyisipkan gen yang diinginkan ke materi genetik zigot hewan yang bersangkutan.",["mentransfer inti sel tubuh hewan unggul ke sel telur tanpa inti","mentransfer gen ke sel telur hingga zigot transgenik","menyisipkan gen yang diinginkan ke materi genetik zigot hewan","menyisipkan gen ke sel tubuh induk betina yang sedang hamil"]],
+["Hewan hasil rekayasa genetik, kecuali ....","",2,"Ayam broiler diperoleh lewat kawin silang.",["ikan salem tahan beku","domba bersusu pembeku darah","ayam broiler yang tumbuh sangat cepat","sapi bersusu kasein tinggi"]]]}
+
+,"5-1":{o:[],l:[["Keadaan yang menunjukkan individu adalah ....","",1,"Individu = satu organisme; yang lain adalah kelompok.",["sekumpulan domba di padang rumput","seekor burung elang terbang melayang","serumpun bambu di pekarangan","sekelompok suku terasing di Kubu"]],
+["Makhluk hidup dengan faktor-faktor abiotik pada suatu daerah tertentu merupakan kesatuan yang disebut ....","",0,"Ekosistem.",["ekosistem","populasi","komunitas","habitat"]],
+["Hutan tropis di Kalimantan ditumbuhi berbagai macam tumbuhan. Kumpulan tumbuhan tersebut merupakan suatu ....","",0,"Berbagai populasi tumbuhan = komunitas.",["komunitas","ekosistem","populasi","habitat"]],
+["Salah satu bentuk interaksi dua populasi adalah mutualisme, yaitu ....","",1,"Kedua belah pihak mendapat keuntungan.",["dua populasi berinteraksi yang satu mendapat keuntungan","dua populasi berinteraksi keduanya mendapat keuntungan","hutan berinteraksi dengan semua makhluk hidup di dalamnya","beberapa populasi tumbuhan berinteraksi dengan faktor abiotik"]],
+["Contoh interaksi dua populasi yang bersifat predasi adalah ....","",2,"Predasi adalah saling makan dan dimakan.",["populasi rumput dengan padi","kupu-kupu dengan bunga","populasi harimau dengan kelinci","cacing pita dengan babi atau sapi"]],
+["Pada ekosistem sawah ditemukan serumpun padi, seekor burung pipit, seekor ular, seekor katak, dan sekumpulan belalang. Yang menunjukkan populasi adalah ....","",3,"Populasi: sekumpulan individu sejenis, yaitu serumpun padi dan sekumpulan belalang.",["1 dan 2","2 dan 3","3 dan 4","1 dan 5"]],
+["Ciri-ciri populasi berikut benar, kecuali ....","",3,"Dalam populasi hanya terdapat satu jenis organisme.",["memiliki ukuran kepadatan","mempunyai pola persebaran","dinamis dan mengalami perubahan","keanekaragam spesies tinggi"]],
+["Guru mencari cacing tanah untuk praktikum; dapat ditemukan di tanah yang lembap. Pernyataan itu ....","",1,"Habitat cacing adalah tanah yang lembap.",["benar karena cacing tanah menyukai air","benar karena tanah lembab sebagai habitat cacing","salah karena habitat cacing dalam tanah pasir","salah cacing tidak menyukai tanah basah"]],
+["Organisme yang dapat berfungsi sebagai produsen di dalam ekosistem adalah ....","",2,"Tumbuhan berklorofil membuat bahan organik lewat fotosintesis.",["semua jenis makhluk hidup","semua tumbuhan hidup di darat","tumbuhan yang memiliki klorofil","hewan yang menghasilkan energi"]],
+["Pernyataan yang tidak sesuai untuk ekosistem adalah ....","",1,"Itu pengertian biosfer.",["tempat makhluk hidup dan faktor abiotik berinteraksi dan saling bergantung","lapisan permukaan bumi tempat semua makhluk hidup melangsungkan kehidupannya","ekosistem daratan dengan struktur vegetasi dan sifat abiotik sama","kesatuan berbagai ekosistem yang berinteraksi untuk aliran energi dan daur materi"]]]}
+,"5-2":{o:[],l:[["Pengelompokan makhluk hidup sistem lima kingdom dari yang paling rendah ke tinggi adalah ....","",2,"Kunci modul: C (urutan seperti pada uraian modul).",["animalia-plantae-protista-fungia-monera","monera-protista-fungia-plantae-animalia","monera-protista-plantae-fungia-animalia","protista-plantae-monera-fungia-animalia"]],
+["Tingkat takson yang paling banyak memiliki kesamaan ciri di antara anggotanya adalah ....","",3,"Spesies.",["kingdom","classis","genus","species"]],
+["Ciri dari kelompok protista adalah ....","",0,"⚠️ Kunci modul: A. Namun uraian modul menyebut protista eukariotik (pilihan C). Ikuti kunci modul untuk ujian, tetapi pahami perbedaannya.",["prokariotik, uniseluler","prokariotik, multiseluler","eukariotik, uniseluler","eukariotik, multiseluler"]],
+["Kunyit, jahe, kumis kucing dikelompokkan sebagai tanaman obat. Sistem yang dipakai ....","",1,"Pengelompokan berdasarkan tujuan praktis.",["alami","artifisial","filogenetik","buatan"]],
+["Anggota kelompok fungia memiliki ciri ....","",2,"Eukariotik, uni/multiseluler, tidak berhijau daun.",["prokariotik, uniseluler, tidak berhijau daun","prokariotik, uniseluler atau multiseluler, berhijau daun","eukariotik, uniseluler atau multiseluler, tidak berhijau daun","eukariotik, uniseluler atau multiseluler, berhijau daun"]],
+["Bagian tubuh hewan yang menunjukkan organ homolog adalah ....","",0,"B dan D contoh organ analog; C salah karena kaki belakang gajah yang homolog dengan kaki manusia.",["tangan manusia dengan sayap burung","sayap burung dengan sayap kupu-kupu","kaki depan gajah dengan kaki manusia","sayap kelelawar dengan sayap belalang"]],
+["Linnaeus Carolus dijuluki bapak taksonomi karena ....","",0,"Menelaah dan menemukan sistem klasifikasi.",["telah menelaah dan menemukan sistem pengelompokan makhluk hidup","telah berjasa dalam pembudidayaan tumbuhan dan hewan","menemukan protista sebagai organisme hidup pertama","menemukan perbedaan bakteria dengan fungia"]],
+["Cara penulisan nama spesies padi yang paling tepat adalah ....","",1,"Genus kapital, spesies huruf kecil, ditulis miring atau digarisbawahi. (Huruf kunci di modul kurang terbaca; dari aturan penulisan, jawabannya B.)",["Oryza Sativa (miring)","Oryza sativa (miring)","Oryza Sativa (tegak)","Oryza sativa (tegak)"]],
+["Solanaceae pada sistematika terung-terungan menunjukkan takson tingkat ....","",0,"Akhiran -aceae = suku.",["suku","marga","bangsa","jenis"]],
+["Ketentuan pemberian nama ilmiah untuk spesies, kecuali ....","",0,"Tata nama spesies memakai binomial, bukan polinomial.",["harus menggunakan sistem nama polinomial","harus menggunakan sistem nama binomial","dalam bahasa Latin atau yang dilatinkan","digarisbawahi terpisah atau dimiringkan"]]]}
+,"5-3":{o:[],l:[["Membuang sampah ke saluran air melanggar etika lingkungan karena dapat mengganggu keseimbangan lingkungan berupa ....","",2,"Sampah menyumbat saluran, menyebabkan banjir.",["berkurangnya karbon dioksida dalam perairan","meningkatkan kadar oksigen dalam air","terjadi banjir di musim hujan","meningkatkan pertumbuhan tanaman"]],
+["Faktor penyebab gangguan keseimbangan alam adalah ....","",0,"Pupuk kimia.",["pupuk kimia","pupuk kandang","pupuk hijau","kompos"]],
+["Untuk menanggulangi polusi udara CO₂ dari kendaraan, salah satu usaha adalah ....","",1,"Penghijauan, tumbuhan menyerap CO₂ lewat fotosintesis.",["membuat saringan untuk CO₂","menggalakkan penghijauan","membatasi jumlah kendaraan","mengganti bahan bakar"]],
+["Jumlah gas CO₂ yang paling besar dihasilkan dari kegiatan manusia berupa ....","",0,"Pembakaran hutan dan sampah.",["pembakaran hutan dan sampah","pembakaran batu bara","pembangkit listrik","letusan gunung berapi"]],
+["Dampak negatif kemajuan teknologi terhadap lingkungan ialah ....","",1,"Teknologi menyejahterakan sehingga penduduk naik, tapi menimbulkan pencemaran dan kerusakan SDA.",["meningkatnya sumber daya alam dan timbul pencemaran","meningkatnya jumlah penduduk dan timbulnya pencemaran","meningkatnya sumber daya alam dan keanekaragaman hayati","menurunnya jumlah penduduk dan meningkatkan sumber daya alam"]],
+["Tindakan berikut melanggar etika lingkungan, kecuali ....","",1,"Menanam penghijauan sesuai etika lingkungan.",["merokok di tempat sembarangan","menanam tanaman penghijauan","membunyikan musik keras-keras","membuang sampah sembarangan"]],
+["Limbah pabrik kertas yang menyebabkan gatal-gatal termasuk pencemaran tingkat ....","",1,"Tingkat kedua: iritasi ringan.",["pertama","kedua","keempat","ketiga"]],
+["Hujan asam akibat sulfur oksida dapat menimbulkan kerugian berupa ....","",0,"Bersifat korosif, merusak bangunan termasuk patung bersejarah.",["merusak bangunan karena bersifat korosif","menyebabkan gangguan pernapasan","penyebab efek rumah kaca yang paling utama","menyebabkan gangguan ginjal, hati, dan tulang"]],
+["Yang termasuk sampah abiotik adalah ....","",2,"Sampah abiotik berasal dari bukan makhluk hidup.",["kertas koran, kardus, dan daun pisang","kulit pisang, plastik, dan kulit jagung","plastik, botol bekas, dan pecahan kaca","kaleng bekas dan potongan bambu"]],
+["Pasangan polutan dan penyakit yang tidak tepat pada polusi air adalah ....","",2,"Tembaga menyebabkan gangguan ginjal, hati, dan asam amino.",["merkuri — gangguan saraf","cadmium — gangguan ginjal","tembaga — gangguan fungsi enzim","timbal — gangguan tulang"]]]}
+
+,"6-1":{o:[],l:[["Pak Ari makan karbohidrat tiga kali dari seharusnya, Pak Bandi sedikit sekali, Pak Dudu setengah dari seharusnya (gizi lain setara). Kemungkinan yang terjadi adalah ....","",3,"Kelebihan karbohidrat → kegemukan (Pak Ari). Pak Bandi cenderung kekurangan.",["Pak Bandi dan Pak Ari akan mengalami kegemukan","Pak Bandi akan mengalami kegemukan","Pak Ari dan Pak Dudu akan mengalami keracunan keton","Pak Ari akan mengalami kegemukan"]],
+["Menik menderita marasmus dan Melur menderita kwashiorkor. Pernyataan yang benar adalah ....","",1,"Kwashiorkor: kurang protein, energi cukup. Marasmus: kurang energi dan protein.",["Menik dan Melur kurang protein tetapi cukup energi","Melur mendapatkan makanan yang kurang protein, tetapi cukup energi","Menik dan Melur kurang energi dan kurang protein","Melur mendapatkan makanan kurang energi dan kurang protein"]],
+["(Soal disusun ulang karena tabel di pindaian tidak terbaca) Fungsi yang hanya dimiliki lemak, tetapi tidak dimiliki protein dan karbohidrat, adalah ....","",2,"Sumber energi juga dimiliki karbohidrat dan protein; pembangun juga dimiliki protein. Kunci modul: C (fungsi c, d, e). ➕ Pilihan direkonstruksi.",["sumber energi, pembangun jaringan, dan pelarut vitamin","pengatur suhu tubuh dengan menarik air ke usus","pelindung organ, isolator suhu, dan pemberi rasa kenyang","sumber energi, pembentuk enzim, dan pembentuk hormon"]],
+["Bahan makanan: (1) hati, (2) daging, (3) telur, (4) susu. Vitamin A, D, dan E terdapat pada nomor ....","",0,"Sumber utama vitamin A, D, E: hati dan telur.",["(1) dan (3)","(2), (3), dan (4)","(3) dan (4)","(1), (2), (3), dan (4)"]],
+["Dengan segelas susu, kebutuhan vitamin yang dapat terpenuhi adalah ....","",3,"Susu bukan sumber vitamin C.",["B1, B2, B6, B12, C, kecuali niasin","B2, niasin, B6, B12, C, kecuali B1","B1, niasin, B6, B12, C, kecuali B2","B1, B2, niasin, B6, B12, kecuali C"]],
+["Gejala osteoporosis, rakitis/osteomalasia, tulang dan gigi kurang baik, tetani, koagulasi terhambat disebabkan kekurangan mineral ....","",0,"Kekurangan kalsium.",["kalsium","kalium","fosfor","natrium"]],
+["Penyakit dengan pembesaran kelenjar tiroid disebabkan kekurangan mineral ....","",1,"Gondok = kekurangan yodium (besi → anemia).",["besi","yodium","seng","mangan"]],
+["Memakan daging yang dicemari Salmonella, gejala yang timbul adalah ....","",2,"Salmonella menyerang saluran cerna: diare.",["batuk-batuk","sesak napas","buang-buang air besar","muka membiru"]],
+["Penyakit yang selain dipengaruhi makanan juga dipengaruhi faktor lain adalah penyakit ....","",2,"Kanker dan kardiovaskular butuh faktor penguat lain.",["keracunan dan cacingan","cacingan dan kanker","kanker dan kardiovaskular","kardiovaskular dan keracunan"]],
+["Menu Didu (kue cokelat, susu, soto babat, es krim, nasi, mi rebus, sosis, kue bolu, kopi susu). Menurut pedoman makanan sehat, makanan Didu ....","",3,"Kurang sayur dan buah (serat), banyak makanan manis.",["memenuhi kecukupan gizi yang dianjurkan","mengandung semua zat makanan yang diperlukan","mengandung serat yang cukup","mengandung banyak makanan yang manis"]]]}
+,"6-2":{o:[],l:[["(a) mengonsumsi makanan bergizi, (b) mencegah penyakit infeksi, (c) memberantas penyakit infeksi, (d) menutup tempat air di rumah. Yang termasuk usaha kesehatan perorangan adalah ....","",3,"Mencegah/memberantas penyakit menular bukan usaha perorangan.",["(a) dan (b)","(b) dan (c)","(c) dan (d)","(d) dan (a)"]],
+["(a) menjaga rumah bersih, (b) memperhatikan ventilasi, (c) membangun jamban (MCK), (d) mengendalikan pencemaran. Yang termasuk usaha kesehatan lingkungan adalah ....","",2,"Jamban dan pengendalian pencemaran = sanitasi.",["(a) dan (b)","(b) dan (c)","(c) dan (d)","(d) dan (a)"]],
+["Tujuan usaha kesehatan masyarakat di antaranya ....","",1,"Memperbaiki lingkungan hidup fisik bukan tujuan usaha kesehatan masyarakat.",["mencegah timbulnya penyakit dan memperbaiki lingkungan hidup fisik","memperpanjang masa hidup dan mempertinggi nilai kesehatan","mempertinggi nilai kesehatan dan memperbaiki lingkungan hidup fisik","memperbaiki lingkungan hidup fisik dan mengendalikan pencemaran"]],
+["Si A terinfeksi cacing; keluhan hanya malam hari saat cacing dewasa bertelur di anus/alat kelamin, gatal dan sulit tidur. Si A terkena infeksi ....","",2,"Cacing kremi bertelur malam hari.",["cacing gelang","cacing tambang","cacing kremi","cacing filaria"]],
+["Penyakit oleh bakteri salmonella lewat saluran pencernaan, dengan demam, keluhan perut, pembesaran limpa, erupsi kulit adalah ....","",1,"Demam tifoid (Salmonella typhi).",["difteri","demam tifoid","disentri hasiler","kolera"]],
+["(a) malaria, (b) toksoplasmosis, (c) difteri, (d) disentri hasiler; penyebab (1) protozoa, (2) bakteri. Hubungan yang benar ....","",0,"Malaria dan toksoplasmosis protozoa; difteri dan disentri basiler bakteri.",["(a), (b) = 1","(b), (c) = 2","(c), (d) = 1","(d), (a) = 2"]],
+["Salah satu usaha mencegah penyakit dengan vaksinasi sesuai karakteristiknya ....","",3,"Cacing, skabies, disentri belum dicegah dengan vaksinasi.",["disentri dan enterobiasis","campak dan skabies","ankhylostomiasis dan askariasis","tuberkulosis dan difteri"]],
+["(Soal disusun ulang; premis tidak terbaca) (a) salah satu orang tua menderita kelainan; (b) kedua orang tua tampak normal tetapi membawa potensi tersimpan; (1) brakidaktili, (2) polidaktili, (3) albinisme, (4) tuli bisu. Pasangan yang benar adalah ....","",3,"Kunci modul: D. Albinisme dan tuli bisu muncul dari orang tua normal pembawa. ➕ Soal direkonstruksi.",["(a) = (3) dan (4)","(a) = (1) dan (3)","(b) = (1) dan (2)","(b) = (3) dan (4)"]],
+["Perbedaan polidaktili dan hemofili adalah ....","",0,"Hemofili diderita laki-laki, wanita pembawa.",["laki-laki maupun wanita yang diwarisi polidaktili akan mengalami kelainan","laki-laki maupun wanita yang diwarisi hemofili akan mengalami kelainan","wanita penderita polidaktili tidak akan mewariskan kelainan","wanita penderita hemofili tidak akan mewariskan kelainan"]],
+["Dodo (talasemia), Udi (diabetes), Ono (hipertensi), Lulu (buta warna parsial). Yang dapat mencegah dengan gaya hidup dan makan sehat ....","",1,"Diabetes dan hipertensi dipengaruhi gen dan lingkungan.",["Dodo dan Udi","Udi dan Ono","Ono dan Lulu","Lulu dan Dodo"]]]}
+
+,"7-1":{o:[],l:[["Awalan mega menggambarkan ....","",1,"Mega = 10⁶. 10³ = kilo, 10⁹ = giga, 10¹² = tera.",["10³","10⁶","10⁹","10¹²"]],
+["Panjang dapat dinyatakan dalam beberapa satuan berikut, kecuali ....","",3,"m/s adalah satuan laju.",["nanometer","angstrom","tahun cahaya","m/s"]],
+["Jarak rata-rata antara proton dan elektron adalah 5,3 × 10⁻¹¹ m atau .... (eksponen pilihan dipulihkan dari pembahasan kunci)","",1,"5,3 × 10⁻¹¹ m = 5,3 × 10⁻² nm.",["5,3 × 10⁻¹ nm","5,3 × 10⁻² nm","5,3 × 10¹ nm","5,3 × 10² nm"]],
+["Satu hari kira-kira sama dengan .... (eksponen pilihan dipulihkan dari pembahasan kunci)","",3,"24 jam × 3600 s/jam = 8,64 × 10⁴ s.",["7,20 × 10² s","1,44 × 10³ s","4,32 × 10⁴ s","8,64 × 10⁴ s"]],
+["Jika diameter batang besi beton 8,00 mm, luas penampangnya kira-kira ....","",1,"A = πr² = 3,14 × 4² = 50,24 mm².",["25,12 mm²","50,25 mm²","110,5 mm²","201,0 mm²"]],
+["Jika percepatan gravitasi bulan 1/6 kali gravitasi bumi, astronot bermassa 72 kg di bumi akan bermassa di bulan ....","",2,"Massa di mana pun tetap: 72 kg.",["12 kg","60 kg","72 kg","432 kg"]],
+["Salah satu alat untuk mengukur massa jenis zat cair adalah ....","",3,"Hidrometer.",["mikrometer","higrometer","manometer","hidrometer"]],
+["Pengukuran panjang menghasilkan 3,27 ± 0,25 m. Persen ketidakpastiannya adalah ....","",2,"0,25/3,27 × 100% = 7,6% (dua angka penting).",["7,645%","7,65%","7,6%","8%"]],
+["Dalam SI, berat benda dinyatakan dengan satuan ....","",1,"Newton.",["pound","newton","kg","ton"]],
+["Atom berdiameter ± 1,0 Å. Sepanjang garis 1,0 cm kira-kira terdapat .... (eksponen pilihan dipulihkan dari kunci)","",0,"1,0 × 10⁻² m ÷ 1,0 × 10⁻¹⁰ m = 1,0 × 10⁸ atom.",["1,0 × 10⁸ atom","1,0 × 10⁶ atom","1,0 × 10¹⁰ atom","1,0 × 10¹² atom"]]]}
+,"7-2":{o:[],l:[["Speedometer pada kendaraan bermotor menunjukkan besaran ....","",1,"Laju kendaraan.",["pergeseran","laju","percepatan","energi"]],
+["Bola yang dilempar vertikal ke atas mempunyai percepatan ....","",1,"Percepatan sama, yaitu g. Di titik tertinggi kecepatan nol, bukan percepatan.",["lebih besar daripada bola dilempar vertikal ke bawah","sama dengan bola yang dilemparkan vertikal ke bawah","lebih kecil daripada bola dilemparkan vertikal ke bawah","sama dengan nol ketika mencapai titik tertinggi"]],
+["Pitcher memerlukan 0,10 s untuk melempar bola dengan kecepatan 30 m/s. Percepatan bola ....","",1,"a = 30/0,10 = 300 m/s².",["3 m/s²","300 m/s²","600 m/s²","6.000 m/s²"]],
+["Pengendara sepeda menempuh 15 km dalam 50 menit. Laju rata-ratanya ....","",1,"15 km ÷ (50/60 jam) = 18 km/jam.",["0,3 km/jam","18 km/jam","300 km/jam","1080 km/jam"]],
+["Mobil v₀ = 20 m/s, percepatan −2 m/s². Mobil berhenti setelah menempuh jarak ....","",1,"t = 10 s; x = 20·10 − ½·2·100 = 100 m.",["10 m","100 m","1900 m","1990 m"]],
+["Jika benda dilemparkan vertikal ke atas, benda mencapai titik tertinggi dengan ....","",2,"Kecepatan nol; percepatan tetap g.",["energi potensial sama dengan nol","pergeserannya sama dengan nol","kecepatannya sama dengan nol","percepatannya sama dengan nol"]],
+["Dua bola dilempar vertikal ke atas; satu berkecepatan awal dua kali bola lain. Bola yang cepat mencapai ketinggian maksimum ....","",3,"y_maks = v₀²/2g: berbanding lurus kuadrat v₀.",["seperempat kali","setengah kali","dua kali","empat kali"]],
+["Roda pesawat terbang horizontal terlepas pada ketinggian 1,96 km. Roda akan membentur tanah setelah ....","",1,"t = √(2y/g) = √(2·1960/9,8) = 20 s.",["10 s","20 s","200 s","400 s"]],
+["Batu dilepaskan dari tebing; setelah jatuh 19,6 m, kecepatannya sama dengan ....","",2,"v² = 2gy = 2·9,8·19,6 → v = 19,6 m/s.",["4,9 m/s","9,8 m/s","19,6 m/s","39,2 m/s"]],
+["Bola dilempar vertikal dengan kecepatan awal 20,0 m/s, lalu jatuh ke bawah. Besar kecepatan bola saat kembali ke posisi terlempar adalah ....","",3,"y = 0 → v² = v₀² → 20,0 m/s.",["0 m/s","9,8 m/s","10,0 m/s","20,0 m/s"]]]}
+,"7-3":{o:[],l:[["Percepatan gravitasi permukaan Mars 3,7 m/s². Dibanding di bumi, astronot di Mars mempunyai ....","",2,"Massa tetap; berat lebih kecil.",["massa lebih besar dan berat sama","massa lebih kecil dan berat sama","massa sama dan berat lebih kecil","massa sama dan berat lebih besar"]],
+["Mobil derek menarik sedan mogok. Gaya derek terhadap sedan sama dengan ....","",0,"Hukum ketiga Newton: aksi-reaksi.",["gaya yang dilakukan sedan pada mobil derek","gaya yang dilakukan sedan pada jalan","gaya yang dilakukan jalan pada sedan","gaya berat mobil derek"]],
+["Gaya 1,00 N bekerja pada benda 1,00 kg yang bebas bergerak. Percepatannya ....","",3,"a = F/m = 1,00 m/s².",["10,8 m/s²","9,80 m/s²","8,80 m/s²","1,00 m/s²"]],
+["Jari-jari lintasan benda bergerak melingkar seragam dibuat dua kali lipat, laju tetap. Gaya sentripetal menjadi ....","",1,"a_s = v²/r: berbanding terbalik dengan r.",["seperempat kali","setengah kali","dua kali","empat kali"]],
+["Balok 10 kg di lantai horizontal (μk = 0,10) ditarik gaya tetap 20 N dengan sudut θ (tan θ = 3/4) di atas lantai. Usaha gaya itu setelah terseret 5,0 m adalah ....","",3,"W = F cos θ · x = 20 × 0,8 × 5,0 = 80 J. (Pembahasan kunci modul untuk nomor ini tidak cocok dengan soalnya; huruf kunci D.)",["37 J","43 J","60 J","80 J"]],
+["Satuan energi dalam SI adalah ....","",2,"Joule.",["watt","newton","joule","dyne"]],
+["Jika kecepatan benda dilipatduakan, energi kinetik benda menjadi .... kali energi mula-mula.","",3,"EK ∝ v².",["seperempat","setengah","dua kali","empat kali"]],
+["Jika jumlah torka benda dalam keadaan setimbang nol terhadap suatu titik, jumlah torka itu adalah ....","",2,"Nol terhadap semua titik.",["tidak nol terhadap semua titik lainnya","nol terhadap beberapa titik lainnya","nol terhadap semua titik lainnya","tidak nol terhadap beberapa titik lainnya"]],
+["Pesawat berikut termasuk tuas golongan ketiga, kecuali ....","",0,"Pembuka botol bukan tuas golongan ketiga.",["pembuka botol","jepitan","tangkai pancing","lengan bawah manusia"]],
+["Diameter roda 0,60 m dan diameter gandar 1,5 cm. Nisbah kecepatannya adalah ....","",1,"NK = R/r = D/d = 60/1,5 = 40.",["0,025","40,0","58,5","61,5"]]]}
+
+,"8-1":{o:[],l:[["Suhu nol mutlak adalah ketika gerak partikel dalam gas akan ....","",2,"Kunci modul: C (penjelasan modul: gerak partikel berhenti sehingga tak ada panas terukur).",["nol","tetap","seminimal mungkin","semaksimal mungkin"]],
+["Temperatur ruang dengan termometer skala Kelvin menunjukkan 330 K. Dalam Celsius menjadi ....","",1,"T(°C) = 330 − 273 = 57°C.",["27°C","57°C","270°C","570°C"]],
+["Pada skala Fahrenheit, titik lebur es dan titik didih air ditunjukkan dengan angka ....","",2,"32°F dan 212°F.",["0 dan 100","0 dan 273","32 dan 212","32 dan 273"]],
+["Temperatur benda terukur 45°C. Dalam skala Fahrenheit adalah ....","",3,"T(°F) = 9/5(45) + 32 = 113°F.",["25°F","57°F","81°F","113°F"]],
+["Termometer Fahrenheit dalam ruangan menunjukkan 122°F. Termometer Celsius akan menunjukkan ....","",3,"T(°C) = 5/9(122 − 32) = 50°C.",["5°C","9°C","20°C","50°C"]],
+["Perubahan panjang sebatang logam karena perubahan temperatur ....","",1,"Berbanding lurus dengan panjang mula-mula dan perubahan temperatur.",["berbanding lurus dengan massa logam","berbanding lurus dengan panjang mula-mula","berbanding terbalik dengan perubahan temperatur","berbanding terbalik dengan berat logam"]],
+["Koefisien muai panjang (α) suatu bahan adalah perbandingan antara ....","",1,"α = ΔL / (L₀ ΔT).",["panjang awal terhadap pertambahan panjang benda per satuan kenaikan suhu","pertambahan panjang terhadap panjang awal benda per satuan kenaikan suhu","pertambahan panjang terhadap panjang awal benda dikali satuan kenaikan suhu","panjang awal terhadap pertambahan panjang benda dikali satuan kenaikan suhu"]],
+["Kawat tembaga 50 m, suhu 20°C → 50°C, α = 1,7 × 10⁻⁵/°C. Pertambahan panjangnya adalah ....","",1,"ΔL = αL₀ΔT = 1,7×10⁻⁵ × 50 × 30 = 2,55 × 10⁻² m.",["2,55 × 10⁻¹ m","2,55 × 10⁻² m","2,55 × 10⁻³ m","2,55 × 10⁻⁵ m"]],
+["Kawat aluminium α = 2,4 × 10⁻⁵/°C dipanaskan 10°C → 40°C, panjang bertambah 0,0144 m. Panjang sebelum dipanaskan ....","",0,"L₀ = ΔL/(αΔT) = 0,0144/(2,4×10⁻⁵ × 30) = 20 m.",["20 m","24 m","200 m","240 m"]],
+["Ruang berdinding karet 40 liter berisi gas 8 atm, temperatur konstan. Bila tekanan jadi 10 atm, volumenya menjadi ....","",2,"p₁V₁ = p₂V₂ → V₂ = 8×40/10 = 32 liter. (Pilihan C tercetak “32 cm”, typo untuk liter.)",["2 liter","4 liter","32 liter","80 liter"]]]}
+,"8-2":{o:[],l:[["Ketika uap mengembun menjadi zat cair ....","",1,"Pengembunan melepaskan panas; temperatur tetap saat perubahan fase.",["uap itu memerlukan panas","uap itu melepaskan panas","temperaturnya turun","temperaturnya naik"]],
+["Memasak daging dengan pressure cooker lebih cepat karena tekanan tinggi akan menaikkan ....","",0,"Tekanan naik → titik didih air naik.",["titik didih air","massa jenis air","panas jenis air","panas penguapan air"]],
+["Sublimasi berkaitan dengan proses ....","",3,"Sublimasi: padat → gas tanpa fase cair.",["peleburan zat padat","penguapan zat cair","pembekuan zat cair","penguapan zat padat tanpa melewati zat cair lebih dulu"]],
+["Es, air, dan uap air dapat terjadi serentak pada titik ....","",2,"Titik tripel.",["didih","lebur","tripel","kritis"]],
+["Logam merupakan konduktor panas baik karena ....","",0,"Elektron bebas.",["berisi elektron-elektron bebas","atom-atomnya terpisah relatif jauh","atom-atomnya kurang sering bertumbukkan","berisi ion-ion bermuatan positif yang berjauhan"]],
+["Laju aliran panas konduksi pada lempeng logam tidak tergantung pada ....","",1,"Bergantung pada A, ΔT, d, k, bukan panas jenis.",["luas penampang","panas jenis logam","perbedaan temperatur antara ujung-ujungnya","tebal logam"]],
+["Pintu besi (k = 50 W/m°C) tungku setebal 2,0 mm diganti kuningan (k = 109 W/m°C) setebal 8 mm. Terhadap laju mula-mula, laju melalui pintu baru adalah .... (modul mencetak k kuningan “10⁹”, typo untuk 109)","",3,"(109/50)(2,0/8,0) = 0,545 = 54,50%.",["11,47%","25,00%","45,87%","54,50%"]],
+["Dalam konveksi alami, bagian fluida yang dipanaskan bergerak karena perbedaan ... dengan bagian lainnya.","",1,"Perbedaan massa jenis (gaya apung).",["panas jenis","massa jenis","konduktivitas","panas laten"]],
+["Laju energi yang dipancarkan suatu benda tidak tergantung pada ....","",0,"Q/t = eσAT⁴: tak tergantung massa.",["massa benda","luas permukaan benda","temperatur benda","kemampuan menyerap radiasi"]],
+["Batang tembaga 127°C memancarkan energi dengan laju 10 W. Bila temperaturnya dinaikkan jadi 327°C, laju radiasinya menjadi ....","",3,"Q₂ = (600/400)⁴ × 10 = 50,625 W (T dalam kelvin).",["15,000 W","25,748 W","43,952 W","50,625 W"]]]}
+
+,"9-1":{o:[],l:[["Kecepatan gelombang pada tali yang direntangkan tergantung pada ....","",0,"Menurut persamaan (9-1), v tergantung pada tegangan tali.",["tegangan tali","amplitudo gelombang","panjang gelombang","percepatan gravitasi"]],
+["Makin tinggi frekuensi gelombang, makin ....","",3,"Kunci modul: D (frekuensi merupakan kebalikan periode). Secara fisika, makin tinggi frekuensi, periode dan panjang gelombang makin pendek; kemungkinan pilihan D tercetak “panjang” padahal maksudnya “pendek”.",["rendah kecepatannya","pendek panjang gelombangnya","besar amplitudonya","panjang periodenya"]],
+["Dari besaran sifat gelombang berikut, besaran yang tidak tergantung pada besaran lainnya adalah ....","",0,"Persamaan v = fλ tidak memuat amplitudo.",["amplitudo","kecepatan","panjang gelombang","frekuensi"]],
+["Salah satu contoh gelombang yang terdiri atas gelombang longitudinal, transversal, dan permukaan sekaligus adalah gelombang ....","",3,"Gelombang gempa.",["cahaya","bunyi","air","gempa"]],
+["Salah satu jenis gelombang elektromagnetik adalah gelombang ....","",2,"Cahaya.",["gempa","bunyi","cahaya","permukaan air"]],
+["Jika tegangan senar yang sedang bergetar dibuat dua kali tegangan semula, amplitudo pada simpul ....","",3,"Pada simpul tidak terjadi simpangan, amplitudonya nol.",["menjadi empat kali amplitudo semula","menjadi dua kali amplitudo semula","menjadi setengah amplitudo semula","tetap nol"]],
+["Gelombang amplitudo A berinterferensi dengan gelombang sejenis amplitudo sama A tetapi frekuensi berbeda. Gelombang hasilnya mempunyai amplitudo ....","",3,"Amplitudo minimum nol, maksimum 2A.",["2A","bervariasi antara 0 dan A","bervariasi antara A dan 2A","bervariasi antara 0 dan 2A"]],
+["Tali 180 cm mempunyai nada dasar 300 Hz. Panjang tali sejenis, tegangan sama, berfrekuensi 200 Hz adalah ....","",2,"L₂ = (f₁/f₂) L₁ = 300/200 × 180 = 270 cm.",["80 cm","120 cm","270 cm","405 cm"]],
+["Frekuensi dawai gitar dapat dinaikkan dengan cara ....","",0,"f₁ = (1/2L)√(T/(m/L)): memperpendek dawai menaikkan frekuensi.",["memperpendek dawai","menggunakan dawai yang lebih berat","menggunakan dawai yang lebih tebal","menurunkan tegangan dawai"]],
+["Frekuensi nada dasar C gitar 262 Hz. Nada atas kedua yang menyertainya adalah ....","",3,"f₃ = 3f₁ = 3(262) = 786 Hz.",["131 Hz","262 Hz","524 Hz","786 Hz"]]]}
+,"9-2":{o:[],l:[["Gelombang bunyi tidak merambat melalui ....","",3,"Rambatan gelombang bunyi memerlukan medium.",["udara","air","baja","ruang hampa"]],
+["Frekuensi gelombang bunyi menentukan ....","",0,"Frekuensi berkaitan dengan titi nada.",["titi nada","keras bunyi","intensitas","timbre"]],
+["Warna bunyi nada yang dihasilkan instrumen musik ditentukan oleh ....","",1,"Warna bunyi ditentukan nada-nada atas yang menyertai nada dasarnya.",["frekuensi nada dasarnya","struktur nada-nada atasnya","amplitudo nada yang dihasilkan","intensitas nada yang dihasilkan"]],
+["Ketika gelombang bunyi merambat dari udara menuju air, besaran yang tetap tidak berubah adalah ....","",2,"Frekuensi tidak berubah saat gelombang berpindah medium.",["kecepatan","amplitudo","frekuensi","panjang gelombang"]],
+["Dawai gitar dipetik, nada tertentu dihasilkan dan menyebabkan papan panel yang tipis bergetar. Peristiwa ini contoh ....","",1,"Resonansi.",["interferensi","resonansi","difraksi","polarisasi"]],
+["Layangan gelombang bunyi terjadi karena peristiwa ....","",0,"Interferensi dua gelombang bunyi yang frekuensinya sedikit berbeda.",["interferensi","difraksi","dispersi","polarisasi"]],
+["Sinyal radio dipancarkan pesawat yang bergerak menjauhi bumi. Sinyal itu akan diterima di bumi dengan ....","",3,"Efek Doppler: frekuensi lebih rendah, panjang gelombang lebih besar.",["kecepatan lebih rendah","kecepatan lebih besar","frekuensi lebih tinggi","panjang gelombang lebih besar"]],
+["Garpu tala 440 Hz dipukul dekat dawai gitar bergetar; terdengar 15 layangan dalam 5 sekon. Salah satu frekuensi yang mungkin dihasilkan dawai gitar adalah ....","",2,"f_layangan = 15/5 = 3 Hz; frekuensi dawai 437 Hz atau 443 Hz.",["455 Hz","445 Hz","437 Hz","425 Hz"]],
+["Pemancar radio bekerja pada 100 meter; kecepatan gelombang radio 300000 km/s. Frekuensinya ....","",1,"f = c/λ = 3,0 × 10⁸ / 100 = 3,0 × 10⁶ Hz.",["3,0 × 10³ Hz","3,0 × 10⁶ Hz","3,0 × 10⁷ Hz","3,0 × 10¹⁰ Hz"]],
+["Bom sonik terdengar setelah pesawat terbang melintas. Hal ini berarti pesawat itu dengan ....","",2,"Bom sonik terjadi bila kecepatan pesawat melebihi kecepatan bunyi.",["mengirimkan bunyi dengan frekuensi melebihi 200000 Hz","mengirimkan bunyi dengan intensitas lebih besar dari 1 W/m²","bergerak dengan kecepatan melebihi 343 m/s pada temperatur udara 20°C","bergerak dengan kecepatan melebihi 300000 km/s"]]]}
+
+,"10-1":{o:[],l:[["Indeks bias kuarsa, kaca korona, dan es berturut-turut 1,46; 1,52; dan 1,31. Laju cahaya dari yang paling lambat sampai paling cepat adalah dalam ....","",2,"v = c/n: makin besar n, makin kecil v.",["kuarsa, kaca korona, dan es","kaca korona, es, dan kuarsa","kaca korona, kuarsa, dan es","es, kuarsa, dan kaca korona"]],
+["Sinar jatuh dengan sudut datang 30° pada bahan transparan berindeks bias 2,0. Sudut biasnya adalah ....","",0,"sin r = sin 30°/2,0 = 0,25 → r = 14,5°.",["14,5°","30,0°","60,0°","75,5°"]],
+["Sinar jatuh pada bahan transparan dengan sudut datang 45°; sudut biasnya 17°. Indeks bias bahan adalah ....","",2,"n = sin 45°/sin 17° = 0,7071/0,2924 = 2,42.",["0,41","1,41","2,42","3,42"]],
+["Seekor ikan yang membeku di danau es tampak 30 cm di bawah permukaan. Indeks bias es 1,3. Kedalaman sebenarnya adalah ....","",3,"h = h′ × n₂/n₁ = 30 × 1,3 = 39,0 cm.",["23,0 cm","28,7 cm","31,3 cm","39,0 cm"]],
+["Medan magnetik dalam suatu gelombang elektromagnetik adalah ....","",3,"Medan listrik dan magnet saling tegak lurus dan tegak lurus arah rambat.",["sejajar dengan medan listrik dan arah gerak gelombang","tegak lurus pada medan listrik dan sejajar dengan arah gerak gelombang","sejajar pada medan listrik dan tegak lurus dengan arah gerak gelombang","tegak lurus pada medan listrik dan arah gerak gelombang"]],
+["Ketika seberkas cahaya merambat dari satu medium ke medium lain, besaran yang tidak pernah berubah adalah ....","",2,"Frekuensi cahaya tidak berubah.",["arah","laju","frekuensi","panjang gelombang"]],
+["Warna-warni berikut yang menunjukkan gejala interferensi cahaya adalah ....","",0,"Warna gelembung sabun: interferensi pada lapisan tipis.",["gelembung sabun","pelangi","kisi difraksi","prisma segitiga"]],
+["Film kaca mobil sebagai pelindung cahaya matahari merupakan contoh peristiwa ....","",3,"Film pelindung = polaroid → polarisasi.",["dispersi","difraksi","interferensi","polarisasi"]],
+["Warna biru langit terjadi karena ....","",2,"Makin pendek λ, makin banyak dihamburkan.",["molekul-molekul udara berwarna biru","lensa mata berwarna biru","hamburan cahaya lebih efisien untuk panjang gelombang yang lebih pendek","hamburan cahaya lebih efisien untuk panjang gelombang yang lebih besar"]],
+["Dua cahaya monokromatis berpanjang gelombang 4000 Å dan 6000 Å dihamburkan molekul udara yang sama. Perbandingan intensitas terhambur cahaya pertama (I₁) dan kedua (I₂) adalah ....","",3,"Intensitas ∝ 1/λ⁴: (6000/4000)⁴ = 81/16.",["3 : 2","9 : 4","27 : 8","81 : 16"]]]}
+,"10-2":{o:[],l:[["Cermin cekung menghasilkan bayangan sama tegak dengan bendanya jika jarak benda ....","",0,"Bayangan tegak bila benda di dalam jarak fokus.",["kurang dari f","antara f dan 2f","sama dengan 2f","lebih besar dari 2f"]],
+["Relatif terhadap bendanya, bayangan nyata yang dibentuk cermin sferis selalu ....","",1,"Bayangan nyata selalu terbalik.",["sama tegak","terbalik","lebih kecil","lebih besar"]],
+["Bayangan dari benda nyata yang dihasilkan lensa divergen tidak pernah ....","",0,"Selalu maya, lebih kecil, tegak.",["nyata","maya","sama tegak dengan bendanya","lebih kecil bendanya"]],
+["Penderita astigmatisme dapat ditolong dengan kacamata berlensa ....","",3,"Lensa silindris.",["konvergen","divergen","bikonveks","silindris"]],
+["Pensil 10 cm vertikal pada 75 cm di depan cermin cekung R = 100 cm. Panjang bayangan adalah ....","",2,"f = 50 cm; s′ = 150 cm; m = −2; h′ = 20 cm.",["4 cm","6 cm","20 cm","30 cm"]],
+["Benda 25 cm di depan lensa konvergen, bayangan nyata 100 cm dari lensa. Daya lensa adalah ....","",3,"f = (100 × 25)/(125) = 20 cm = 0,20 m → P = 5 dioptri.",["1 dioptri","3 dioptri","4 dioptri","5 dioptri"]],
+["Penderita presbiopi bertitik dekat 50 cm. Agar jelas melihat benda pada 25 cm, ia memakai kacamata berjarak fokus ....","",3,"s = 25, s′ = −50 → f = (−50)(25)/(−25) = 50 cm.",["16,7 cm","25,0 cm","33,3 cm","50,0 cm"]],
+["Penderita miopi bertitik jauh 60 cm memakai kacamata −1,5 dioptri. Ia dapat melihat jelas benda pada jarak ....","",3,"f = −2/3 m = −66,7 cm; s′ = −60 cm → s = 600 cm = 6,0 m (kunci modul).",["0,3 m","0,4 m","0,9 m","6,0 m"]],
+["Mikroskop: objektif f = 4,0 mm, okuler 10×. Preparat 4,1 mm di depan objektif, bayangan akhir 250 mm di depan okuler. Perbesarannya adalah ....","",2,"s′ = 164 mm; m = 40×; M = 40 × 10 = 400×.",["40 kali","41 kali","400 kali","410 kali"]],
+["Teropong: objektif f = 750 mm, okuler f = 15 mm; bayangan akhir 25 cm di depan okuler. Jarak antara kedua lensa adalah ....","",3,"s_ok = 93,75 mm; d = 750 + 93,75 = 843,75 mm.",["765,00 mm","775,00 mm","787,50 mm","843,75 mm"]]]}
+
+,"11-1":{o:[],l:[["Elektroskop adalah alat yang dapat digunakan untuk menentukan ....","",1,"Elektroskop yang sudah dimuati dapat membedakan muatan positif dan negatif.",["jenis bahan listrik","jenis muatan listrik","potensial listrik","arah medan listrik"]],
+["Cara sederhana untuk mendapatkan muatan positif adalah ....","",3,"Gelas digosok sutra: elektron pindah ke sutra, gelas jadi positif.",["menggosok besi dengan kain wol","menggosok kaca dengan kain berbulu","menggosok batang karet dengan kain sutra","menggosok batang gelas dengan kain sutra"]],
+["Besarnya medan listrik pada titik berjarak 30 cm dari muatan 0,1 C adalah .... (eksponen pilihan dipulihkan dari pembahasan kunci)","",0,"E = kQ/r² = 9×10⁹ × 0,1 / 0,09 = 10¹⁰ N/C.",["10¹⁰ N/C","10⁹ N/C","10¹¹ N/C","10¹⁰ N/statC"]],
+["Usaha memindahkan muatan 0,025 C dari satu titik ke titik lain adalah 5 J. Beda potensial kedua titik itu ....","",2,"V = W/q = 5/0,025 = 200 V.",["2 V","20 V","200 V","0,2 V"]],
+["Besaran berikut yang termasuk besaran vektor dalam fisika adalah ....","",0,"Medan listrik punya besar dan arah.",["medan listrik","energi listrik","muatan listrik","potensial listrik"]],
+["Satuan arus listrik dapat dinyatakan dengan ....","",1,"I = Q/t → C/s = ampere.",["N/C","C/s","J/V","kWh"]],
+["Kawat nichrome berjari-jari penampang 0,321 mm, hambatan jenis 1,5 × 10⁻⁶ Ω·m. Hambatan per satuan panjang kawat adalah ....","",2,"R/L = ρ/(πr²) = 4,64 Ω/m.",["2 Ω/m","4 Ω/m","4,64 Ω/m","46 Ω/m"]],
+["Dua hambatan seri 4 Ω dan 2 Ω disusun paralel dengan hambatan 6 Ω. Hambatan total adalah ....","",1,"4 + 2 = 6 Ω; paralel dengan 6 Ω → (6×6)/(6+6) = 3 Ω.",["2 Ω","3 Ω","6 Ω","9 Ω"]],
+["Dari empat besaran berikut, yang termasuk besaran vektor adalah ....","",2,"Medan listrik = vektor; yang lain skalar.",["muatan listrik","energi listrik","medan listrik","beda potensial listrik"]],
+["Dari empat besaran berikut, yang tidak termasuk satuan energi adalah ....","",1,"V/m adalah satuan medan listrik.",["eV","V/m","J","kWh"]]]}
+,"11-2":{o:[],l:[["Benda diletakkan di medan magnet sangat kuat dan ditolak. Benda tersebut berarti ....","",1,"Bahan itu tidak memiliki unsur-unsur sifat kemagnetan (diamagnetik).",["paramagnetik","diamagnetik","feromagnetik","elektromagnetik"]],
+["Arus dalam kawat jaringan mengalir dari barat ke timur. Jika medan bumi diabaikan, arah medan magnetik di atas kawat ke ....","",0,"Aturan tangan kanan: ke utara.",["utara","timur","selatan","barat"]],
+["Benda feromagnet dapat dibuat menjadi magnet sebab ....","",2,"Membuat magnet = mengatur arah magnet elementer.",["memiliki permeabilitas besar","mengandung unsur besi","memiliki magnet elementer","pengantar listrik yang baik"]],
+["Magnet batang yang dipanaskan atau dipukul lama-kelamaan hilang kemagnetannya karena ....","",3,"Magnet elementer menjadi acak.",["magnet rusak","sifat magnetnya pindah ke palu","magnet tersebut merupakan magnet buatan","susunan magnet elementernya menjadi tidak teratur"]],
+["Kawat lurus dialiri arus; di sekitarnya timbul medan magnet. Arah medan magnetnya ....","",1,"Mengelilingi kawat sesuai kaidah tangan kanan.",["sesuai dengan arah arus","mengelilingi kawat","berlawanan dengan arah arus","tegak lurus terhadap arus"]],
+["Dalam motor listrik, kawat berarus 8 A tegak lurus medan 0,5 T. Gaya pada tiap cm kawat adalah ....","",0,"F/L = IB = 8 × 0,5 = 4 N/m = 0,04 N/cm.",["0,04 N/cm","0,16 N/cm","4,00 N/cm","16,0 N/cm"]],
+["Kawat lurus dialiri arus konstan. Besar medan magnet di sekitar kawat ....","",2,"B tergantung arus dan jarak terhadap kawat.",["sama untuk tiap titik","tergantung dari panjang kawat","tergantung jaraknya terhadap kawat","tergantung bahan kawat"]],
+["Kumparan dihubungkan baterai menimbulkan magnet. Agar magnet lebih kuat dilakukan ....","",3,"Menambah baterai menambah arus, medan makin kuat.",["mengurangi jumlah baterai","membalik arah arus listrik","membungkus kumparan agar medan tidak bocor","menambah jumlah baterai"]],
+["Simpal bujur sangkar sisi 5 cm tegak lurus medan 0,08 T. Medan turun ke nol dalam 0,2 s. Ggl induksi rata-rata adalah ....","",2,"Φ = 2,0 × 10⁻⁴ Wb; ε = 2,0 × 10⁻⁴/0,2 = 1 mV.",["0,04 mV","0,50 mV","1,00 mV","8,00 mV"]],
+["Transformator: primer 200 lilitan, sekunder 40 lilitan. Arus sekunder 20 A. Arus primernya adalah ....","",2,"I_p = (N_s/N_p) I_s = (40/200)(20) = 4 A.",["100 A","5 A","4 A","2 A"]]]}
+
+,"12-1":{o:[],l:[["Salah satu contoh batuan beku intrusif adalah ....","",3,"Granit. Batu kapur dan konglomerat sedimen; marmer metamorf.",["batu kapur","konglomerat","marmer","granit"]],
+["Lapisan cairan yang pekat dan plastis tempat kerak bumi bisa bergeser disebut ....","",1,"Astenosfer.",["litosfer","astenosfer","mantel","hidrosfer"]],
+["Rekahan-rekahan pada kerak bumi yang sisi-sisinya belum bergerak satu sama lain disebut ....","",0,"Kekar. (Huruf kunci tercetak B, tetapi pembahasan modul menyebut “kekar”; jika sisi sudah bergerak disebut sesar.)",["kekar","sesar","sinklin","antiklin"]],
+["Perembesan air hujan ke dalam tanah disebut ....","",1,"Infiltrasi.",["intrusi","infiltrasi","ekstrusi","erosi"]],
+["Diurutkan dari atas ke bawah, zona-zona bawah permukaan tanah adalah ....","",2,"Aerasi → muka air tanah → saturasi.",["muka air tanah, zona aerasi, dan zona saturasi","zona aerasi, zona saturasi, dan muka air tanah","zona aerasi, muka air tanah, dan zona saturasi","zona saturasi, muka air tanah, dan zona aerasi"]],
+["Lapisan atmosfer yang banyak mengandung ozon adalah ....","",1,"Stratosfer.",["troposfer","stratosfer","mesosfer","termosfer"]],
+["Salah satu jenis awan rendah adalah ....","",0,"Stratus. Cirrus = tinggi; cumulus dan cumulonimbus = pengembangan vertikal.",["stratus","cirrus","cumulonimbus","cumulus"]],
+["Jenis batu bara yang paling banyak mengandung karbon adalah ....","",0,"Antrasit (paling keras).",["antrasit","bituminus","lignit","gambut"]],
+["Salah satu cara untuk mencegah penurunan hara tanah adalah ....","",2,"Penanaman bergilir. Yang lain mengatasi erosi.",["terasering","reklamasi","penanaman bergilir","pertanian kontur"]],
+["Dari beberapa sumber energi berikut, yang paling sedikit menimbulkan pencemaran lingkungan adalah ....","",1,"Sinar matahari.",["batu bara","sinar matahari","minyak bumi","panas bumi"]]]}
+,"12-2":{o:[],l:[["Anggota tata surya, selain matahari, terdiri atas ....","",1,"Planet, asteroid, komet, meteoroid.",["planet, planetoid, komet, meteorit","planet, asteroid, komet, meteoroid","planet, planetoid, bintang berekor, meteor","planet, asteroid, bintang berekor, meteorit"]],
+["Aliran gas panas berupa nyala-nyala api besar dari tepi matahari sampai menembus korona disebut ....","",0,"Prominens.",["prominens","plage","flare","granule"]],
+["Sumbu bumi dan bidang ekliptika membentuk sudut kira-kira ....","",2,"23,5° dari garis tegak lurus → 66,5° terhadap bidang ekliptika.",["5°","23,5°","66,5°","90°"]],
+["Salah satu contoh planet jovian adalah ....","",3,"Planet jovian: Jupiter, Saturnus, Uranus, Neptunus.",["merkurius","venus","mars","neptunus"]],
+["Peristiwa berkelebatnya cahaya karena benda angkasa terbakar saat memasuki atmosfer bumi disebut ....","",2,"Meteor.",["komet","meteoroid","meteor","meteorit"]],
+["Planet yang sumbu rotasinya sejajar dengan bidang revolusinya adalah ....","",2,"Uranus.",["jupiter","saturnus","uranus","neptunus"]],
+["Sebagian besar lintasan asteroid terletak di antara ....","",1,"Mars dan jupiter. (Huruf kunci tercetak C, tetapi pembahasan modul menyebut “antara mars dan jupiter” = pilihan B.)",["bumi dan mars","mars dan jupiter","jupiter dan saturnus","saturnus dan uranus"]],
+["Gerhana matahari bisa terjadi pada saat kedudukan bulan ....","",2,"Bulan di antara bumi dan matahari (konjungsi).",["sedemikian rupa sehingga bulan purnama terlihat dari bumi","oposisi terhadap matahari jika dilihat dari bumi","konjungsi terhadap matahari jika dilihat dari bumi","kuadrat terhadap matahari jika dilihat dari bumi"]],
+["Salah satu planet yang tidak memiliki satelit adalah ....","",0,"Merkurius dan venus tidak memiliki satelit.",["venus","mars","neptunus","pluto"]],
+["Siaran BBC dipancarkan dari London pukul 13.00 GMT. Siaran itu tertangkap di Indonesia pukul ....","",2,"WIB = GMT + 7 → 20.00 WIB.",["05.00 WIB","06.00 WIB","20.00 WIB","21.00 WIB"]]]}
+/*QUIZ-NEXT*/};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$("#grid").innerHTML=M.map((m,i)=>`<a class="card" href="#modul-${i+1}"><b>Modul ${i+1}</b><span class="em">${m[1]}</span><h3>${m[0]}</h3><p>${m[2]}</p></a>`).join("");
+function quiz(el){const d=Q[el.dataset.q];if(!d){el.innerHTML='<p class="soon">🚧 Belum diisi. Ketik “lanjut” ya!</p>';return}
+let ok=0,n=0,t=d.l.length;el.innerHTML=`<div class="score">Skor: 0/${t}</div>`;const sc=el.firstChild;
+d.l.forEach((x,i)=>{const op=x[4]?x[4]:d.o,st=Array.isArray(x[1])?"<br>"+x[1].map((s,j)=>`(${j+1}) ${s}`).join("<br>"):"";
+const q=document.createElement("div");q.className="q";q.innerHTML=`<p><b>${i+1}.</b> ${x[0]}${st}</p>`+op.map((p,j)=>`<button class="o">${"ABCD"[j]}. ${p}</button>`).join("")+`<p class="ex">🔑 Kunci: ${"ABCD"[x[2]]}. ${x[3]}</p>`;
+q.querySelectorAll(".o").forEach((b,j)=>b.onclick=()=>{if(q.classList.contains("done"))return;q.classList.add("done");n++;if(j==x[2])ok++;b.classList.add(j==x[2]?"ok":"no");q.querySelectorAll(".o")[x[2]].classList.add("ok");sc.textContent=`Skor: ${ok}/${t}${n==t?" 🎉":""}`});el.appendChild(q)})}
+$$(".quiz").forEach(quiz);
+$$(".modul").forEach(m=>{const ps=[...m.querySelectorAll(":scope>.pane")],bar=document.createElement("div");bar.className="tabs";
+ps.forEach((p,i)=>{const b=document.createElement("button");b.textContent=p.dataset.tab;b.onclick=()=>{ps.forEach(x=>x.classList.remove("on"));bar.querySelectorAll("button").forEach(x=>x.classList.remove("on"));p.classList.add("on");b.classList.add("on");scrollTo({top:0,behavior:"smooth"})};bar.appendChild(b);if(!p.innerHTML.trim()||p.innerHTML.trim().startsWith("<!--"))p.innerHTML='<p class="soon">🚧 Belum diisi. Ketik “lanjut” ya!</p>'});
+m.prepend(bar);bar.firstChild.click()});
+function route(){const h=location.hash.match(/^#modul-(\d+)$/),id=h?"m"+h[1]:null;$$(".modul").forEach(m=>m.hidden=m.id!=id);
+$("#menu").hidden=!!id;if(id&&!$("#"+id)){$("#menu").hidden=false;$("#menu").insertAdjacentHTML("afterbegin",'<p class="soon" id="ns">🚧 Modul '+h[1]+' belum diisi. Ketik “lanjut” ya!</p>')}else{const n=$("#ns");if(n)n.remove()}}
+addEventListener("hashchange",route);route();
+const R=document.documentElement;R.dataset.theme=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";
+$("#theme").onclick=()=>R.dataset.theme=R.dataset.theme=="dark"?"light":"dark";
+</script>
+</body>
+</html>
